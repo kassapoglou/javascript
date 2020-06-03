@@ -177,297 +177,191 @@
 									<div class="desc desc2">
 										<h3 align="center"><a
 												href="https://kassapoglou.github.io/java/java-programming.html">ΕΝΟΤΗΤΑ
-												4 JAVASCRIPT - Primitive Data Types - Numbers</a></h3>
-										<p>Στο σημερινό δωωρεάν μάθημα JavaScript θα δούμε πως να κάνουμε πράξεις με
-											integer αριθμούς, ποια προβλήματα μπορεί να αντιμετωπίσουμε, και
-											ποια functions μας προσφέρει η JavaScript για να κάνουμε ελέγχους σε int
-											μεταβλητές.
-										</p>
-										<p>Σε αυτή την ενότητα θα δούμε τα primitive data
-											types και ποιο συγκεκριμένα τα numbers. Κάθε μεταβλητή
-											που χρησιμοποιούμε στην JavaScript θα περιέχει δεδομένα που
-											θα ανήκουν σε μια από τις πιο κάτω κατηγορίες:</p>
+												5 JAVASCRIPT - String Data Type</a></h3>
+										<p>Στο σημερινό δωρεάν μάθημα JavaScript θα περιγράψουμε τι είναι τα Strings και
+											θα δούμε αναλυτικά κάποια απλά παραδείγματα που δείχνουν την λειτουργία τους
+											και την χρησιμότητα τους.</p>
 
-										<ol>
-											<li><strong>Number:</strong> Σε αυτή την κατηγορία ανήκουν οι ακέραιοι αλλά
-												και οι δεκαδικοί αριθμοί.</li>
-											<li><strong>String:</strong> Αποτελείται από οποιαδήποτε αριθμό χαρακτήρων
-											</li>
-											<li><strong>Boolean:</strong> Οι μόνες πιθανές τιμές που μπορούμε να έχουμε
-												είναι true ή false</li>
-											<li><strong>Undefined: </strong>Όταν προσπαθούμε να διαβάσουμε μια μεταβλητή
-												που δεν
-												υπάρχει ή υπάρχει αλλά δεν έχουμε ορίσει μια αρχική τιμή,
-												τότε το αποτέλεσμα είναι undefined.</li>
-											<li><strong>Null:</strong> Αυτό είναι ένα ειδικό είδος στοιχείου που
-												έχει αποκλειστικά και μόνο μια τιμή – null. Η διαφορά ανάμεσα με
-												το undefined είναι ότι μια μεταβλητή που ισούται με null
-												έχει αρχικοποιηθεί απλά η αρχική της τιμή είναι null. Θα δείξουμε
-												την διαφορά λίγο πιο κάτω στα παραδείγματα που θα αναλύσουμε.</li>
+										<p>Ένα string είναι μια σειρά από χαρακτήρες που όλοι μαζί ανήκουν στην ίδια
+											λέξη
+											ή έκφραση. Στην JavaScript, οτιδήποτε (γράμματα, αριθμοί, σύμβολα, κτλ)
+											βάλουμε
+											ανάμεσα σε single quotes (‘ ’) ή σε double quotes(“ ”) θεωρείται να είναι
+											είδος string.</p>
 
-										</ol>
+										<p>Αυτό σημαίνει ότι ο αριθμός 1 μέσα σε double quotes (“1”) θεωρείται σαν
+											ένα string που περιέχει τον χαρακτήρα 1.</p>
 
-										<p>Κάθε άλλη τιμή που δεν ανήκει σε μια από τις πιο πάνω
-											κατηγορίες σημαίνει ότι είναι αντικείμενο (object).
-											Έχοντας λοιπόν την πιο πάνω θεωρία στο μυαλό μας, μπορούμε
-											να μιλάμε για δύο μεγάλες κατηγορίες στην JavaScript:</p>
-										<ol>
-											<li><strong>Primitive</strong> (με τις 5 κατηγορίες που μόλις αναφέραμε)
-											</li>
-											<li><strong>Non-primitive</strong> (αντικείμενα – objects)</li>
+										<p>Με βάση τα προηγούμενα παραδείγματα που έχουμε τρέξει, έχετε ήδη καταλάβει
+											ότι μπορούμε να χρησιμοποιήσουμε το <strong>typeof</strong> τελεστή για να
+											βεβαιωθούμε για
+											το είδος του data που περιέχει μια μεταβλητή.</p>
 
-										</ol>
+										<p><strong>MyScript.js</strong></p>
+										<pre class="prettyprint"><xmp>
+var s = "Michail";
+document.writeln(typeof s);
+document.writeln('</BR');
+var x = "1";
+document.writeln(typeof s);
+	</xmp></pre>
 
-										<p>Σε αυτή την ενότητα θα δούμε μερικά παραδείγματα στα number
-											primitives. Αλλά πριν φτάσουμε σε αυτό το σημείο, ας
-											λύσουμε πρώτα μια άλλη απορία που ίσως ήδη σκέφτεστε –
-											πως μπορώ να γνωρίζω τι είδος τιμής έχει μια μεταβλητή ή
-											αλλιώς ποιο είναι το data type της μεταβλητής?</p>
+										<p><strong>output</strong></p>
+										<pre class="prettyprint">
+	 <xmp>
+string 
+string 
+	</xmp></pre>
 
-										<p>Η απάντηση έρχεται από έναν operator που ονομάζεται
-											typeof και όταν το καλούμε επιστρέφει το όνομα της κατηγορίας
-											στην οποία ανήκει η μεταβλητή. Οι πιθανές απαντήσεις που μπορούμε
-											να πάρουμε από τον typeof τελεστή είναι οι ακόλουθες:</p>
-										<ul>
-											<li>number</li>
-											<li>string</li>
-											<li>boolean</li>
-											<li>undefined</li>
-											<li>object</li>
-											<li>function</li>
-										</ul>
+										<p>Εάν δεν βάλουμε τίποτα ανάμεσα στα double quotes (“ ”), το αποτέλεσμα είναι
+											επίσης string.</p>
 
-										<p>Ας ξεκινήσουμε λοιπόν να βλέπουμε μερικά παραδείγματα
-											που περιέχουν αριθμούς με τον πιο απλό παράδειγμα
-											να είναι εκείνο που χρησιμοποιεί ακεραίους αριθμούς.</p>
+										<p><strong>MyScript.js</strong></p>
+										<pre class="prettyprint"><xmp>
+var s = "";
+document.writeln(typeof s);
+</xmp></pre>
+
+										<p><strong>output</strong></p>
+										<pre class="prettyprint">
+<xmp>
+string  
+</xmp></pre>
+
+										<p>Όπως ήδη γνωρίζετε, το σύμβολο της πρόσθεσης (+) εκτελεί την αριθμητική πράξη
+											της πρόσθεσης ανάμεσα σε αριθμούς. Εάν όμως το χρησιμοποιήσετε ανάμεσα σε
+											δύο ή
+											περισσότερα strings τότε αυτό που θα έχουμε σαν αποτέλεσμα δεν θα είναι
+											αριθμητική
+											πρόσθεση αλλά το “κόλλημα” του ενός string δίπλα στο άλλο. Αυτή η διαδικασία
+											ονομάζεται concatenation. Δηλαδή σκεφτείτε ότι έχουμε μια μεταβλητή x1 =
+											“Michail” και
+											μια δεύτερη x2 = “Kassapoglou”. Η χρήση του συμβόλου ( + ) ανάμεσα στα δύο
+											strings (x1 + x2) θα δώσει ένα καινούργιο string που θα έχει τιμή
+											“MichailKassapoglou”. Αν
+											θέλετε να έχετε κενό ανάμεσα στις δύο λέξεις στο τελικό αποτέλεσμα, τότε θα
+											πρέπει να
+											ορίσετε ένα κενό ανάμεσα στο τελευταίο χαρακτήρα του string και του quote
+											π.χ “Michail ”.</p>
+
+										<p><strong>MyScript.js</strong></p>
+										<pre class="prettyprint"><xmp>
+
+var firstName = "Michail ";
+var lastname = "Kassapoglou";
+var firstLast = firstLast + lastname;
+document.writeln(firstLast);
+</xmp></pre>
+
+										<p><strong>output</strong></p>
+										<pre class="prettyprint">
+<xmp>
+Michail Kassapoglou 
+</xmp></pre>
+
+										<p>Αυτός ο διπλός ρόλος του συν ( + ) τελεστή είναι η ρίζα πολλών προβλημάτων σε
+											κώδικα γραμμένο σε JavaScript. Για αυτό καλό θα ήταν να κάνετε έναν έλεγχο
+											πρώτα
+											αν όλες οι τιμές που προσπαθείτε να προσθέσετε είναι όλες αριθμοί ή όλες
+											string για
+											να αποφύγετε απρόσμενα αποτελέσματα.</p>
+
+										<p>Ο λόγος που προτείνουμε τον παραπάνω έλεγχο είναι επειδή όταν η JavaScript
+											δει ένα
+											string που μοιάζει με αριθμό, όπως π.χ “1” (όχι όμως γραμμένο με χαρακτήρες
+											όπως “one”) τότε
+											το string “1” μετατρέπεται αυτόματα στον αριθμό 1 για όλες τις αριθμητικές
+											πράξεις
+											εκτός από την πρόσθεση (λόγω του διπλού ρόλου που έχει). Ένας γρήγορος
+											τρόπος (αν και όχι τόσο προτεινόμενος) για γρήγορη μετατροπή μιας string
+											τιμής σε
+											πραγματικό αριθμό είναι ο πολλαπλασιασμός της τιμής string με τον αριθμό 1.
+											Η
+											αντίστροφη διαδικασία (δηλαδή μετατροπή ενός αριθμού σε string) γίνεται αν
+											προσθέσουμε
+											στον αριθμό ένα άδειο string – δηλαδή τα double quote χωρίς να περιέχουν
+											κάποια τιμή.</p>
+
+										<p><strong>MyScript.js</strong></p>
+										<pre class="prettyprint"><xmp>
+var s = "2"
+var k = 3;
+var x = s * k;
+document.writeln(x);
+document.writeln('</BR>')
+var i = "5" * 1;
+document.writeln(i);
+document.writeln('</BR>');
+var n = 1;
+n = "" + n;
+document.writeln(typeof n);
+</xmp></pre>
+
+										<p><strong>output</strong></p>
+										<pre class="prettyprint">
+<xmp>
+6
+5
+string 
+</xmp></pre>
+
+										<p>Αν πάμε στο <a
+												href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">
+												<font color="#0000CC">
+													https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+												</font>
+											</a>όπου
+											υπάρχει ένα υπέροχο documentation της JavaScript, θα δούμε έναν πίνακα που
+											περιέχει
+											strings με ειδικά σύμβολα που μπορούμε να ενσωματώσουμε στον κώδικα μας.</p>
+
+										<img src="javascript-unit5/javascript-unit5-1.jpg" width="1000" height="550"
+											alt="δωρεάν μαθήματα JavaScript" class="center">
+										<p></p>
+
+										<p>Πριν κλείσουμε αυτή την ενότητα, θα αναφερθούμε και σε ένα καινούργιο
+											χαρακτηριστικό που προστέθηκε με την ES6 και ονομάζεται template
+											literals. Τα template literals επιτρέπουν μεταβλητές και πράξεις να
+											ενσωματωθούν με το τελικό string output που προσπαθούμε να
+											δημιουργήσουμε. Πριν δείξουμε ένα παράδειγμα, πρέπει να αναφέρουμε το
+											γεγονός ότι τα template literals πρέπει να περικλείονται μέσα
+											σε back-ticks(` `) τα οποία βρίσκονται επάνω αριστερά στο πληκτρολόγιο
+											δίπλα από τον αριθμό 1. Τέλος, για να ενσωματώσουμε template literals
+											μέσα στον κώδικα μας, πρέπει να χρησιμοποιήσουμε το σύμβολο του δολαρίου
+											και άγκιστρα (${exression}).</p>
+
+										<p>Ας δούμε όμως ένα παράδειγμα, για να καταλάβουμε καλύτερα
+											την χρησιμότητα των template literals.</p>
 
 
 										<p><strong>MyScript.js</strong></p>
 										<pre class="prettyprint"><xmp>
-var a = 1;
-document.writeln(typeof a);
-document.writeln('</br>');
-a = 1234
-document.writeln(typeof a);
-</xmp></pre>
+var a = 10;
+var b = 10;
+document.writeln(`Sum is ${a+b} and Multiplication would be ${a*b}`);
+		</xmp></pre>
 
 										<p><strong>output</strong></p>
 										<pre class="prettyprint">
- <xmp>
-number 
-number 
-</xmp></pre>
+		<xmp>
+Sum is 20 and Multiplication would be 100 
+		</xmp></pre>
 
-										<p>Παρατηρήστε ότι την δεύτερη φορά που αναθέσαμε την τιμή 1234
-											στην μεταβλητή a δεν χρειάστηκε να χρησιμοποιήσουμε την λέξη
-											var μια και η μεταβλητή έχει ήδη οριστεί επίσημα μια φορά.</p>
-
-										<p>Φυσικά και οι αριθμοί εκτός από ακεραίους μπορεί να είναι και δεκαδικοί.</p>
-
-										<p><strong>MyScript.js</strong></p>
-										<pre class="prettyprint">
- <xmp>
-var a = 1;
-document.writeln(typeof a);
-document.writeln('</br>');
-a = 1234;
-document.writeln(typeof a);
-var b = 1.23;
-document.writeln('</br>');
-document.writeln(typeof b);
-</xmp></pre>
-
-										<p><strong>output</strong></p>
-										<pre class="prettyprint">
- <xmp>
-number 
-number 
-number 
-</xmp></pre>
-
-										<p>Αξίζει επίσης να σημειώσουμε το γεγονός ότι στην JavaScript
-											μπορούμε να ορίσουμε και Octal όπως και hexadecimals αριθμούς.
-											Όταν ο αριθμός ξεκινάει με μηδέν (π.χ. 0776) τότε αυτός θεωρείται
-											octal αριθμός ενώ όταν ξεκινάει με 0X τότε θεωρείται hexadecimal.
-											Το αποτέλεσμα όμως παραμένει number για τον typeof τελεστή.
-											Επίσης έχουμε και δυαδικούς αριθμούς που με την έκδοση ES6
-											της JavaScript μπορούμε να προσθέσουμε 0B μπροστά από τον
-											αριθμό (π.χ. 0B1111).</p>
-
-										<p>Υπάρχει μια ειδική τιμή που μπορεί να πάρει μια μεταβλητή και
-											ονομάζεται Infinity. Το Infinity αντιπροσωπεύει έναν αριθμό
-											που είναι πολύ μεγάλος σε μέγεθος και κατά συνέπεια αδυνατεί
-											η JavaScript να τον χειριστεί. Ένας αριθμός με περισσότερα από
-											309 μηδενικά (η ψηφία) θα μας επιστρέψει Infinity όταν προσπαθήσουμε
-											να το εκτυπώσουμε στην οθόνη μας ενώ στο typeof έλεγχο όπως δείχνει
-											και το πιο κάτω παράδειγμα θα πάρουμε number σαν αποτέλεσμα που είναι
-											σωστό γιατί το Infinity είναι κατά βάση αριθμός. Όπως επίσης θα πάρουμε
-											Infinity όταν διαιρέσουμε οποιονδήποτε αριθμό με το μηδέν.</p>
-
-
-										<p><strong>MyScript.js</strong></p>
-										<pre class="prettyprint">
- <xmp>
-var a = 1e309;
-document.writeln("More than 309 digits in a number give: ");
-document.writeln(a);
-document.writeln(" in the result");
-document.writeln('</br>');
-
-var b = 6 / 0;
-document.writeln('</br>');
-document.writeln("Dividing by zero gives us: ");
-document.writeln(b);
-</xmp></pre>
-
-										<p><strong>output</strong></p>
-										<pre class="prettyprint">
- <xmp>
-More than 309 digits in a number give: Infinity in the result 
-
-Dividing by zero gives us: Infinity 
-</xmp></pre>
-
-										<p>Για να ολοκληρώσουμε το πιο πάνω παράδειγμα,
-											θα πρέπει επίσης να πούμε ότι οποιαδήποτε πράξη με το
-											Infinity μας δίνει Infinity σαν αποτέλεσμα.</p>
-
-
-										<p><strong>MyScript.js</strong></p>
-										<pre class="prettyprint">
- <xmp>
-var a = 1e309;
-document.writeln("More than 309 digits in a number give: ");
-document.writeln(a);
-document.writeln(" in the result");
-document.writeln('</br>');
-
-var b = 6 / 0;
-document.writeln('</br>');
-document.writeln("Dividing by zero gives us: ");
-document.writeln(b);
-
-document.writeln('</br>');
-var c = Infinity * 20;
-document.writeln('</br>');
-document.writeln("In any arithmetic operation, if one operand is Infinity then the result is ");
-document.writeln(c);
-</xmp></pre>
-
-										<p><strong>output</strong></p>
-										<pre class="prettyprint">
- <xmp>
-More than 309 digits in a number give: Infinity in the result 
-
-Dividing by zero gives us: Infinity 
-
-In any arithmetic operation, if one operand is Infinity then the result is Infinity 
-</xmp></pre>
-
-										<p>Μέχρι τώρα έχουμε δει πως το Infinity είναι ένα είδος
-											αριθμού. Όμως υπάρχει και ένα άλλος αποτέλεσμα που υπάρχει
-											πιθανότητα να πάρουμε σαν αποτέλεσμα του typeof τελεστή και
-											αυτό είναι το<strong> NaN </strong>(Not a Number). Παίρνουμε NaN σαν
-											αποτέλεσμα
-											όταν προσπαθούμε να κάνουμε αριθμητικές πράξεις αλλά η διαδικασία
-											αποτυγχάνει όπως π.χ. όταν πολλαπλασιάζουμε τον αριθμό 10
-											με τον χαρακτήρα “a”.</p>
-
-										<p>Αν τώρα θέλουμε να γνωρίζουμε εξ αρχής ποια είναι η
-											κατάσταση της τιμής μια μεταβλητής, μπορούμε να
-											καλέσουμε την μέθοδο <strong> Number.isFinite( ) </strong>στην έκδοση
-											ES6 της JavaScript ενώ με την προηγούμενη έκδοση ήταν η μέθοδος
-											<strong>isFinite( )</strong>.
-											Η διαφορά μεταξύ τους είναι ότι η isFinite( ) προσπαθεί να αλλάξει
-											την τιμή της μεταβλητής που ελέγχει σε αριθμό (κάνει casting) πριν
-											την αξιολογήσει ενώ η Number.isFinite( ) δεν κάνει μετατροπή οπότε
-											είναι και πιο ακριβής στα αποτελέσματα που παράγει.</p>
-
-										<p><strong>MyScript.js</strong></p>
-										<pre class="prettyprint">
- <xmp>
-var a = 1e309;
-document.writeln("More than 309 digits in a number give: ");
-document.writeln(a);
-document.writeln(" in the result");
-document.writeln('</br>');
-document.writeln(Number.isFinite(a));
-
-var b = 6 / 0;
-document.writeln('</br>');
-document.writeln("Dividing by zero gives us: ");
-document.writeln(b);
-document.writeln('</br>');
-document.writeln(Number.isInteger(a));
-
-document.writeln('</br>');
-var c = 10 * 'a';
-document.writeln('</br>');
-document.writeln("The result is: ");
-document.writeln(c);
-</xmp></pre>
-
-										<p><strong>output</strong></p>
-										<pre class="prettyprint">
- <xmp>
-More than 309 digits in a number give: Infinity in the result 
-false 
-Dividing by zero gives us: Infinity 
-false 
-
-The result is: NaN 
-</xmp></pre>
-
-										<p>Πριν κλείσουμε την ενότητα ας αναφερθούμε και σε δύο ακόμα
-											μεθόδους που μας βοηθάνε να αξιολογήσουμε την τιμή μιας
-											μεταβλητής:<strong> Number.isNaN( )</strong> και
-											<strong>Number.isInteger.</strong></p>
-
-
-										<p><strong>Number.isNaN </strong>– αξιολογεί αν η τιμή μιας μεταβλητής
-											είναι αριθμός ή όχι χωρίς να χρειαστεί να κάνει casting πριν τον έλεγχο
-											όπως έκανε η πιο παλιά μέθοδο isNaN( ).</p>
-
-										<p><strong>Number.isInteger</strong> – επιστρέφει true εάν
-											ο αριθμός δεν είναι το άπειρο και δεν περιέχει δεκαδικά ψηφία δηλαδή
-											είναι καθαρά ακέραιος.</p>
-
-										<p>Ας δούμε ένα παράδειγμα που χρησιμοποιεί τις πιο πάνω μεθόδους</p>
-
-										<p><strong>MyScript.js</strong></p>
-										<pre class="prettyprint">
- <xmp>
-document.writeln(Number.isNaN('test'));
-document.writeln('</br>');
-document.writeln(Number.isNaN('123'));
-document.writeln('</br>');
-document.writeln(Number.isInteger('test'));
-document.writeln('</br>');
-document.writeln(Number.isInteger(123));
-document.writeln('</br>');
-</xmp></pre>
-
-										<p><strong>output</strong></p>
-										<pre class="prettyprint">
- <xmp>
-false 
-false 
-false 
-true 
-</xmp></pre>
-
-										<p>Για περισσότερες πληροφορίες και λεπτομέρειες γύρω
-											από αντικείμενο Number μπορείτε να βρείτε στο site
-											του Mozilla :<a
-												href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">
+										<p>Αν θέλετε να βρείτε περισσότερες πληροφορίες για τα template literals
+											μπορείτε
+											να πάτε
+											στο <a
+												href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals">
 												<font color="#0000CC">
-													https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
+													https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
 												</font>
-											</a> .</p>
+											</a> όπου
+											θα βρείτε αρκετά παραδείγματα.</p>
 
+										<img src="javascript-unit5/javascript-unit5-2.jpg" width="1000" height="550"
+											alt="δωρεάν μαθήματα JavaScript" class="center">
+										<p></p>
 
-										<p><a><img src="javascript-unit4/javascript-unit4-1.jpg"
-													alt="δωρεάν μαθήματα JavaScript" class="center"></a></p>
 										<!-- ########################################################################################################################################################################################### -->
 									</div>
 								</div>
