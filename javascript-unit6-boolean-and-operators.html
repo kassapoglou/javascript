@@ -69,6 +69,7 @@
 
 		gtag('config', 'UA-150900548-1');
 	</script>
+	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 </head>
 
 <body>
@@ -151,7 +152,9 @@
 														href="https://kassapoglou.github.io/main/index.html">Home</a> |
 													<a
 														href="https://kassapoglou.github.io/main/courses.html">Courses</a>
-													| JAVASCRIPT PROGRAMMING</span></strong></h2>
+													| <a
+														href="https://kassapoglou.github.io/javascript/javascript-programming.html">JAVASCRIPT
+														PROGRAMMING</a></span></strong></h2>
 									</div>
 								</div>
 							</div>
@@ -173,54 +176,239 @@
 									</div>
 									<div class="desc desc2">
 										<h3 align="center"><a
-												href="https://kassapoglou.github.io/java/java-programming.html">ΔΩΡΕΑΝ
-												ΜΑΘΗΜΑΤΑ JAVASCRIPT</a></h3>
-										<p>Εδώ θα βρείτε μια ολοκληρωμένη σειρά δωρεάν μαθημάτων στην
-											script γλώσσα web προγραμματισμού JavaScript. Κάθε μια ενότητα είναι
-											αυτόνομη
-											από τις άλλες και δεν απαιτείται να γνωρίζετε τις προηγούμενες
-											για να την παρακολουθήσετε. Επίσης σε κάθε ενότητα δημιουργούμε
-											ένα καινούργιο παράδειγμα JavaScript έτσι ώστε να είναι εντελώς
-											ξεκάθαρο το νόημα της ενότητας και η ουσία της θεωρίας που μελετάμε.</p>
+												href="https://kassapoglou.github.io/java/java-programming.html">
+											ΕΝΟΤΗΤΑ 6 JAVASCRIPT - Boolean and Operators</a></h3>
+<p>Στο σημερινό δωρεάν μάθημα JavaScript θα δούμε πως ορίζουμε Boolean μεταβλητές και πως
+	χρησιμοποιούμε τους διαφόρους operators που υπάρχουν στην JavaScript όπως logical και comparison.</p>
+
+<p>Στην JavaScript υπάρχουν μόνο δύο τιμές που μπορεί να έχει μια Boolean μεταβλητή – true ή false
+	και χρησιμοποιούνται χωρίς τα double quotes. Εάν κάνετε λάθος και χρησιμοποιήσετε double quotes
+	τότε δεν έχετε μια boolean τιμή αλλά ένα string.</p>
+
+										<p><strong>MyScript.js</strong></p>
+										<pre class="prettyprint"><xmp>
+var a = true;
+document.writeln("The type for variable a is: " + typeof a);
+document.writeln('</BR');
+var b = true;
+document.writeln("The type for variable b is: " + typeof b);
+document.writeln('</BR');
+var c = "true";
+document.writeln("The type for variable c is: " + typeof c);
+	</xmp></pre>
+
+										<p><strong>output</strong></p>
+										<pre class="prettyprint">
+	 <xmp>
+The type for variable a is: boolean
+The type for variable b is: boolean
+The type for variable c is: string
+	</xmp></pre>
+
+<p>Υπάρχουν τρεις operators (τελεστές) που ανήκουν στην κατηγορία των logical operators και
+	χρησιμοποιούνται σε συνδυασμό με Boolean
+	τιμές <a
+			href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators">
+		<font color="#0000CC">
+			(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators).
+		</font>
+	</a></p>
+										<img src="javascript-unit6/javascript-unit6-1.jpg" width="1000" height="200"
+											 alt="δωρεάν μαθήματα JavaScript" class="center">
+										<p></p>
+<p>Η απλή λογική λέει ότι κάτι που δεν είναι true, τότε θα πρέπει να είναι false. Αν θέλαμε
+	λοιπόν να αντιστρέψουμε την boolean τιμή μιας μεταβλητής, τότε θα πρέπει να χρησιμοποιήσουμε
+	τον Logical NOT ( ! ) operator. Αν τώρα καλέσουμε στον κώδικα μας τον ίδιο logical operator δύο
+	φορές στην ίδια μεταβλητή, τότε θα λάβουμε πίσω σαν απάντηση την αρχική τιμή της μεταβλητής.</p>
 
 
-										<p>Αν ξεκινάτε τώρα την καριέρα σας σαν Web προγραμματιστές τότε
-											να είσαστε σίγουροι ότι έχετε επιλέξει μια από τις πιο
-											διάσημες γλώσσες προγραμματισμού για το Web που οι οπαδοί της αυξάνονται
-											χρόνο με το χρόνο. Αυτό σημαίνει ότι θα μπορέσετε πολύ γρήγορα,
-											με τα σημερινά δεδομένα αγοράς εργασίας, να απορροφηθείτε άμεσα
-											σε κάποια εταιρεία πληροφορικής. </p>
+										<p><strong>MyScript.js</strong></p>
+										<pre class="prettyprint"><xmp>
+var a = true;
+var b = !a;
+document.writeln("The type for variable b is: " + b);
+document.writeln('</BR>');
+var c = !!b;
+document.writeln("The type for variable c is: " + c);
+	</xmp></pre>
 
-										<p>Αν γνωρίζετε JavaScript μπορείτε πολύ εύκολα να κάνετε το επόμενο βήμα
-											το οποίο είναι να γράφετε JavaScript Web εφαρμογές με την χρήση
-											frameworks όπως Angular και React. Επίσης μπορείτε να προχωρήσετε
-											στα δωρεάν μαθήματα Node.js Microservices όπου θα μπορείτε να
-											δημιουργήσετε από τα πιο απλά μέχρι τα πιο σύνθετα Web Services
-											και Microservices. Τέλος, ας μην ξεχνάμε, ότι η JavaScript
-											έχει πλέον επεκταθεί σε mobile και tablet πλατφόρμες.
-											Όποια και να είναι η κατεύθυνση σας είναι απαραίτητη
-											προϋπόθεση να γνωρίζετε JavaScript οπότε κάνατε την σωστή αρχή</p>
+										<p><strong>output</strong></p>
+										<pre class="prettyprint">
+	 <xmp>
+The type for variable b is: false
+The type for variable c is: false
+	</xmp></pre>
 
-										<h1 align="center">ΕΝΟΤΗΤΕΣ</h1>
 
-										<p>Ενότητα 1 - <a href="javascript-unit1-environment-installation.html">
-												<font color="#0000CC">JavaScript Environment Installation</font>
-											</a><br /></p>
-										<p>Ενότητα 2 - <a href="javascript-unit2-how-to-define-variables.html">
-												<font color="#0000CC">JavaScript Variable Definition</font>
-											</a><br /></p>
-										<p>Ενότητα 3 - <a href="javascript-unit3-operators.html">
-												<font color="#0000CC">JavaScript Operators</font>
-											</a><br /></p>
-										<p>Ενότητα 4 - <a href="javascript-unit4-primitive-data-types-numbers.html">
-												<font color="#0000CC">Javascript primitive data types - numbers</font>
-											</a><br /></p>
-										<p>Ενότητα 5 - <a href="javascript-unit5-strings.html">
-												<font color="#0000CC">Javascript string data types</font>
-											</a><br /></p>
-										<p>Ενότητα 6 - <a href="javascript-unit6-boolean-and-operators.html">
-											<font color="#0000CC">Boolean and Operators</font>
-										</a><br /></p>
+<p>Εάν χρησιμοποιήσουμε έναν logical operator σε μη Boolean τιμή, τότε η τιμή θα μετατραπεί
+	αυτόματα σε Boolean (default συμπεριφορά της JavaScript) για να ολοκληρωθεί η
+	πράξη. Στο πιο κάτω παράδειγμα, η string τιμή “michail” μετατρέπεται αυτόματα σε
+	true και μετά αντιστρέφεται σε false. Αν θέλουμε να πάρουμε true από οποιαδήποτε
+	τιμή απλά χρησιμοποιούμε διπλή άρνηση.</p>
+
+
+										<p><strong>MyScript.js</strong></p>
+										<pre class="prettyprint"><xmp>
+var a = "michail";
+var b = !a;
+document.writeln("The type for variable b is: " + b);
+document.writeln('</BR>');
+var c = "100";
+var d = !!c;
+document.writeln("The type for variable d is: " + d);
+	</xmp></pre>
+
+										<p><strong>output</strong></p>
+										<pre class="prettyprint">
+	 <xmp>
+The type for variable b is: false
+The type for variable d is: true
+	</xmp></pre>
+
+<p>Όπως μόλις είδαμε, μποορύμε να μετατρέψουμε οποιαδήποτε τιμή σε Boolean αν
+	χρησιμοποιήσουμε διπλή άρνηση. Υπάρχουν όμως έξι συνθήκες που επιστρέφουν false αντί
+	για true και πρέπει να είμαστε ενημερωμένοι για αυτές:</p>
+	<ul>
+		<li>empty string “ ”</li>
+		<li>null</li>
+		<li>undefined</li>
+		<li>the number 0</li>
+		<li>the number NaN</li>
+		<li>Boolean false</li>
+	</ul>
+
+<p>Ας δούμε όμως μερικά παραδείγματα πως μπορούμε να χρησιμοποιήσουμε τους
+	υπόλοιπους δύο logical operators που είναι ο AND(&&) και ο OR( || ). Ο γενικός
+	κανόνας είναι ότι το AND θα επιστρέψει true όταν όλοι οι όροι του είναι true, ενώ
+	το OR θα επιστρέψει true εφόσον υπάρχει έστω και ένα όρος που είναι true.</p>
+
+										<p><strong>MyScript.js</strong></p>
+										<pre class="prettyprint"><xmp>
+var a1 = true
+var a2 = true
+var b1 = false
+var b2 = false
+
+document.writeln(a1 || b1);
+document.writeln('</BR>');
+document.writeln(a1 && b1);
+	</xmp></pre>
+
+										<p><strong>output</strong></p>
+										<pre class="prettyprint">
+	 <xmp>
+true
+false
+	</xmp></pre>
+
+<p>Μπορείτε να βρείτε όλους τους συνδυασμούς για το AND και OR στο web site του
+	Mozilla <a
+			href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators">
+		<font color="#0000CC">
+			(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)..
+		</font>
+	</a></p>
+										<img src="javascript-unit6/javascript-unit6-2.jpg"
+											 alt="δωρεάν μαθήματα JavaScript" class="center">
+										<p></p>
+<p>Είναι συχνή προγραμματιστική συνήθεια ο συνδυασμός περισσοτέρων του ενός logical operators.</p>
+
+										<p><strong>MyScript.js</strong></p>
+										<pre class="prettyprint"><xmp>
+var a1 = true
+var a2 = true
+var b1 = false
+var b2 = false
+document.writeln(a1 || b1 && a1 && a2);
+	</xmp></pre>
+
+										<p><strong>output</strong></p>
+										<pre class="prettyprint">
+	 <xmp>
+true
+	</xmp></pre>
+
+<p>Γιατί όμως το παραπάνω παράδειγμα επιστρέφει true? Η απάντηση βρίσκεται στον παρακάτω
+	πίνακα <a
+			href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence">
+		<font color="#0000CC">
+			(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+		</font>
+	</a> ο
+	οποίος μας διευκρινίζει το γεγονός ότι υπάρχει μια σειρά προτεραιότητας στην εκτέλεση
+	των logical operators.</p>
+
+										<img src="javascript-unit6/javascript-unit6-3.jpg"
+											 alt="δωρεάν μαθήματα JavaScript" class="center">
+										<p></p>
+<p>Η παραπάνω εικόνα μας δείχνει πως το AND προηγείται σε εκτέλεση από το OR οπότε και θα
+	εκτελεστεί πρώτο. Αν τώρα υπάρχουν περισσότερα από ένα && τότε η εκτέλεση αρχίζει από τα
+	αριστερά προς τα δεξιά. Οπότε στο παράδειγμα μας, στην αρχή εκτελείται το b1 && a1 και το
+	αποτέλεσμα αυτής της σύγκρισης θα εκτελεστεί με το a2. Επειδή το b1 είναι false, η εκτέλεση
+	των && επιστρέφει false. Τώρα απομένει το a1 || (αποτέλεσμα από τα &&). Αν και το αποτέλεσμα
+	των && είναι false το OR επιστρέφει true γιατί τουλάχιστον ένας όρος του (το a1) είναι
+	true. Σας ακούγεται λίγο δύσκολο να το ακολουθήσετε? Τότε υπάρχει πιο εύκολος τρόπος: να
+	χρησιμοποιήσετε παρενθέσεις στις πράξεις που θέλετε εσείς να εκτελεστούν πρώτες ορίζοντας
+	έτσι την σειρά εκτέλεσης.  Οι παρενθέσεις έχουν υψηλότερη προτεραιότητα εκτέλεσης σε
+	σύγκριση με το AND και OR. Νομίζω με βάση τα όσα έχουμε πει, το παρακάτω παράδειγμα
+	είναι πιο ξεκάθαρο τώρα:</p>
+
+										<p><strong>MyScript.js</strong></p>
+										<pre class="prettyprint"><xmp>
+var a1 = true
+var a2 = true
+var b1 = false
+var b2 = false
+document.writeln((a1 || b1) || (a1 && a2));
+	</xmp></pre>
+
+										<p><strong>output</strong></p>
+										<pre class="prettyprint">
+	 <xmp>
+true
+	</xmp></pre>
+
+
+<p>Σαν φιλική συμβουλή, θα σας πρότεινα την χρήση των παρενθέσεων (όπου είναι εφικτό) έτσι
+	ώστε να είσαστε απολύτως σίγουροι για το κώδικα σας και το αποτέλεσμα του.</p>
+
+<p>Κάποια στιγμή μπορείτε να ακούσετε για την short-circuit συμπεριφορά της JavaScript
+	όσον αφορά τους logical operators. Τι σημαίνει αυτό? Είναι πάρα πολύ απλό – όταν έχετε
+	πολλαπλούς logical operators στην ίδια πράξη και είναι εμφανές το αποτέλεσμα από την αρχική
+	σύγκριση, τότε η JavaScript δεν θα εκτελέσει ολόκληρη την πράξη έτσι ώστε να μειώσει το
+	execution time. Δηλαδή? Ας πάρουμε το παράδειγμα </p>
+
+<p>true || false || true || false || true</p>
+<p>Αφού ο πρώτος όρος είναι true, τότε οποιονδήποτε συνδυασμό OR και να
+	προσπαθήσουμε μετά από αυτό θα πάρουμε true σαν απάντηση. Η JavaScript συγκρίνει τον
+	πρώτο συνδυασμό από τα αριστερά προς τα δεξιά (true || false) και αφού καταλαβαίνει ότι
+	και οι υπόλοιπες συγκρίσεις είναι OR τότε τις παραβλέπει.</p>
+
+<p>Πριν κλείσουμε το σημερινό δωρεάν μάθημα JavaScript, θα ήθελα να αναφερθώ σε
+	ένα ακόμα γκρουπ από operators που ονομάζονται comparison operators. Το αποτέλεσμα τους
+	είναι μια Boolean τιμή αφότου συγκρίνουν τις
+	τιμές <a
+			href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators">
+		<font color="#0000CC">
+			(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators).
+		</font>
+	</a> </p>
+
+										<img src="javascript-unit6/javascript-unit6-4.jpg" width="1000" height="600"
+											 alt="δωρεάν μαθήματα JavaScript" class="center">
+										<p></p>
+<p>Αν και αυτοί οι operators θα έχουν μεγάλη αξία για εμάς λίγο αργότερα (όταν
+	μάθουμε τις if/else συγκρίσεις) απλά για τώρα θα ήθελα να επισημάνω μια μεγάλη διαφορά
+	μεταξύ του == και του ===. Στο == operator, πρώτα οι δύο όροι μετατρέπονται αυτόματα από
+	την JavaScript στο ίδιο data type και μετά γίνεται η σύγκριση τους, ενώ το === συγκρίνει
+	άσχετα αν οι δύο όροι έχουν ίδια data types. Αυτή είναι μια μια από τις μικρές λεπτομέρειες
+	που πρέπει να προσέχουμε όταν μελετάμε πίνακες όπως ο παραπάνω.  </p>
+
+
+
+
+
+										<!-- ########################################################################################################################################################################################### -->
 									</div>
 								</div>
 							</div>
