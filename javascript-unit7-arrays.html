@@ -7,7 +7,7 @@
 	<title>Μαθαίνω Δωρεάν JavaScript</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description"
-		content="Μια ολοκληρωμένη σειρά δωρεάν μαθημάτων και on-line δωρεάν σεμιναρίων προγραμματισμού στην script γλώσσα JavaScript">
+		content="Μια ολοκληρωμένη σειρά δωρεάν μαθημάτων και on-line σεμιναρίων προγραμματισμού στην script γλώσσα JavaScript">
 	<meta name="robots" content="index, follow">
 	<meta name="keywords" content="JavaScript,TypeScript, ECMA, React, Angular, Web, front-end development,
               frontend development, front-end programmer, front-end programming,
@@ -69,6 +69,7 @@
 
 		gtag('config', 'UA-150900548-1');
 	</script>
+	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 </head>
 
 <body>
@@ -147,11 +148,14 @@
 								<div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
 									<div class="slider-text-inner text-center">
 										<h1><strong>ΜΑΘΑΙΝΩ ΔΩΡΕΑΝ JAVASCRIPT</strong></h1>
+										<h2><strong>ΕΝΟΤΗΤΑ 7 - Arrays</strong></h2>
 										<h2><strong><span><a
 														href="https://kassapoglou.github.io/main/index.html">Home</a> |
 													<a
 														href="https://kassapoglou.github.io/main/courses.html">Courses</a>
-													| JAVASCRIPT PROGRAMMING</span></strong></h2>
+													| <a
+														href="https://kassapoglou.github.io/javascript/javascript-programming.html">JAVASCRIPT
+														PROGRAMMING</a></span></strong></h2>
 									</div>
 								</div>
 							</div>
@@ -173,57 +177,218 @@
 									</div>
 									<div class="desc desc2">
 										<h3 align="center"><a
-												href="https://kassapoglou.github.io/java/java-programming.html">ΔΩΡΕΑΝ
-												ΜΑΘΗΜΑΤΑ JAVASCRIPT</a></h3>
-										<p>Εδώ θα βρείτε μια ολοκληρωμένη σειρά δωρεάν μαθημάτων στην
-											script γλώσσα web προγραμματισμού JavaScript. Κάθε μια ενότητα είναι
-											αυτόνομη
-											από τις άλλες και δεν απαιτείται να γνωρίζετε τις προηγούμενες
-											για να την παρακολουθήσετε. Επίσης σε κάθε ενότητα δημιουργούμε
-											ένα καινούργιο παράδειγμα JavaScript έτσι ώστε να είναι εντελώς
-											ξεκάθαρο το νόημα της ενότητας και η ουσία της θεωρίας που μελετάμε.</p>
+												href="https://kassapoglou.github.io/java/java-programming.html">
+											ΕΝΟΤΗΤΑ 7 JAVASCRIPT - Arrays</a></h3>
+<p>Στο σημερινό δωρεάν μάθημα JavaScript θα δούμε προχωρημένες μεθόδους διαχείρισης και
+	αποθήκευσης δεδομένων που ονομάζονται <strong>arrays</strong>.</p>
+
+<p>Τι είναι ένας array? Με απλά λόγια, είναι μια λίστα από τιμές. Αντί να χρησιμοποιούμε κάθε
+	φορά μια μεταβλητή για κάθε τιμή που πρέπει να αποθηκεύσουμε, μπορούμε να χρησιμοποιήσουμε
+	μια και μόνο μεταβλητή για να αποθηκεύσουμε πολλαπλές τιμές. Οι τιμές αυτές αποτελούν τα elements
+	του array όπως ονομάζονται. </p>
+
+<p>Για να ορίσουμε έναν array (που αρχικά δεν περιέχει καμία τιμή), αρκεί να ορίσουμε
+	μια μεταβλητή (όπως ήδη γνωρίζουμε) που να ισούται με κενά brackets σύμβολα:</p>
+<p><strong>var a = [ ];</strong></p>
+
+<p>Τώρα αν θέλουμε να ορίσουμε έναν array που περιέχει τρεις τιμές, δεν έχουμε παρά να
+	γράψουμε τις τιμές μέσα στα brackets. Με κόμμα χωρίζουμε την μια τιμή από την επόμενη.</p>
+<p><strong>var a = [1, 2, 3];</strong></p>
+
+<p>Τώρα αν θέλουμε να δούμε τις τιμές που περιέχει ο array, μπορούμε να καλέσουμε
+	το όνομα της μεταβλητής που τον ορίζει. Ας δούμε ένα παράδειγμα. </p>
+
+										<p><strong>MyScript.js</strong></p>
+										<pre class="prettyprint"><xmp>
+var a = [1, 3, 5];
+document.writeln(a);
+	</xmp></pre>
+
+										<p><strong>output</strong></p>
+										<pre class="prettyprint">
+	 <xmp>
+1,3,5
+	</xmp></pre>
+
+<p>Τώρα η ερώτηση είναι πως μπορούμε να αποκτήσουμε πρόσβαση σε κάθε μια από τις τιμές
+	ξεχωριστά που είναι αποθηκευμένες στον array? Κάθε array λοιπόν χαρακτηρίζεται από έναν
+	index αριθμό που ξεκινάει την αρίθμηση του από το μηδέν και μεγαλώνει όσο μεγαλώνει και
+	ο array. Κατά συνέπεια, και τα στοιχεία που περιέχονται μέσα στον array είναι αριθμημένα
+	από έναν index αριθμό. Στον array που μόλις δημιουργήσαμε στο προηγούμενο παράδειγμα, το
+	πρώτο στοιχείο έχει index 0, το δεύτερο στοιχείο έχει index 1 και το τρίτο στοιχείο έχει index 2. </p>
+
+										<img src="javascript-unit7/javascript-unit7-1.jpg"
+											 alt="δωρεάν μαθήματα JavaScript" class="center">
+										<p></p>
+
+<p>Ακόμα όμως δεν έχουμε απαντήσει την ερώτηση πως αποκτούμε πρόσβαση σε κάθε ένα από τα
+	στοιχεία του array. Τώρα που γνωρίζουμε τι είναι το index, για να αποκτήσουμε πρόσβαση σε
+	οποιοδήποτε στοιχείο του array δεν έχουμε παρά να καλέσουμε τον index αριθμό μέσα σε
+	brackets. Για παράδειγμα, αν θέλαμε να βρούμε πια είναι η τιμή που περιέχεται μέσα στο
+	index 0 δεν έχουμε παρά να καλέσουμε το όνομα του array με τον αριθμό του index μέσα σε brackets.</p>
+
+<p><strong>a[0];</strong></p>
+										<p><strong>MyScript.js</strong></p>
+										<pre class="prettyprint"><xmp>
+var a = [1, 3, 5];
+
+document.writeln("The value inside index 0 is: " + a[0]);
+document.writeln('</BR>');
+document.writeln("The value inside index 1 is: " + a[1]);
+document.writeln('</BR>');
+document.writeln("The value inside index 2 is: " + a[2]);
+	</xmp></pre>
+
+										<p><strong>output</strong></p>
+										<pre class="prettyprint">
+	 <xmp>
+The value inside index 0 is: 1
+The value inside index 1 is: 3
+The value inside index 2 is: 5
+	</xmp></pre>
 
 
-										<p>Αν ξεκινάτε τώρα την καριέρα σας σαν Web προγραμματιστές τότε
-											να είσαστε σίγουροι ότι έχετε επιλέξει μια από τις πιο
-											διάσημες γλώσσες προγραμματισμού για το Web που οι οπαδοί της αυξάνονται
-											χρόνο με το χρόνο. Αυτό σημαίνει ότι θα μπορέσετε πολύ γρήγορα,
-											με τα σημερινά δεδομένα αγοράς εργασίας, να απορροφηθείτε άμεσα
-											σε κάποια εταιρεία πληροφορικής. </p>
+<p>Με την χρήση του index, μπορούμε επίσης να ανανεώσουμε τις ήδη υπάρχουσες τιμές ή να
+	προσθέσουμε καινούργιες τιμές στον array. Για παράδειγμα, ας αλλάξουμε την τιμή του index [2] από
+	5 σε string data type με την τιμή “ten”. </p>
 
-										<p>Αν γνωρίζετε JavaScript μπορείτε πολύ εύκολα να κάνετε το επόμενο βήμα
-											το οποίο είναι να γράφετε JavaScript Web εφαρμογές με την χρήση
-											frameworks όπως Angular και React. Επίσης μπορείτε να προχωρήσετε
-											στα δωρεάν μαθήματα Node.js Microservices όπου θα μπορείτε να
-											δημιουργήσετε από τα πιο απλά μέχρι τα πιο σύνθετα Web Services
-											και Microservices. Τέλος, ας μην ξεχνάμε, ότι η JavaScript
-											έχει πλέον επεκταθεί σε mobile και tablet πλατφόρμες.
-											Όποια και να είναι η κατεύθυνση σας είναι απαραίτητη
-											προϋπόθεση να γνωρίζετε JavaScript οπότε κάνατε την σωστή αρχή</p>
+										<p><strong>MyScript.js</strong></p>
+										<pre class="prettyprint"><xmp>
+var a = [1, 3, 5];
+a[2] = "ten";
 
-										<h1 align="center">ΕΝΟΤΗΤΕΣ</h1>
+document.writeln("The value inside index 0 is: " + a[0]);
+document.writeln('</BR>');
+document.writeln("The value inside index 1 is: " + a[1]);
+document.writeln('</BR>');
+document.writeln("The value inside index 2 is: " + a[2]);
+	</xmp></pre>
 
-										<p>Ενότητα 1 - <a href="javascript-unit1-environment-installation.html">
-												<font color="#0000CC">JavaScript Environment Installation</font>
-											</a><br /></p>
-										<p>Ενότητα 2 - <a href="javascript-unit2-how-to-define-variables.html">
-												<font color="#0000CC">JavaScript Variable Definition</font>
-											</a><br /></p>
-										<p>Ενότητα 3 - <a href="javascript-unit3-operators.html">
-												<font color="#0000CC">JavaScript Operators</font>
-											</a><br /></p>
-										<p>Ενότητα 4 - <a href="javascript-unit4-primitive-data-types-numbers.html">
-												<font color="#0000CC">Javascript primitive data types - numbers</font>
-											</a><br /></p>
-										<p>Ενότητα 5 - <a href="javascript-unit5-strings.html">
-												<font color="#0000CC">Javascript string data types</font>
-											</a><br /></p>
-										<p>Ενότητα 6 - <a href="javascript-unit6-boolean-and-operators.html">
-											<font color="#0000CC">Boolean and Operators</font>
-										</a><br /></p>
-										<p>Ενότητα 7 - <a href="javascript-unit7-arrays.html">
-											<font color="#0000CC">Arrays</font>
-										</a><br /></p>
+										<p><strong>output</strong></p>
+										<pre class="prettyprint">
+	 <xmp>
+The value inside index 0 is: 1
+The value inside index 1 is: 3
+The value inside index 2 is: ten
+	</xmp></pre>
+
+<p>Μπορούμε επίσης να προσθέσουμε πιο περισσότερα elements  σε έναν index που δεν υπήρχε
+	προηγουμένως. Για παράδειγμα, θέλουμε να προσθέσουμε μια καινούργια τιμή στο index a[3]. </p>
+
+										<p><strong>MyScript.js</strong></p>
+										<pre class="prettyprint"><xmp>
+var a = [1, 3, 5];
+a[2] = "ten";
+a[3] = 200;
+
+document.writeln("The value inside index 0 is: " + a[0]);
+document.writeln('</BR>');
+document.writeln("The value inside index 1 is: " + a[1]);
+document.writeln('</BR>');
+document.writeln("The value inside index 2 is: " + a[2]);
+document.writeln('</BR>');
+document.writeln("The value inside index 3 is: " + a[3]);
+	</xmp></pre>
+
+										<p><strong>output</strong></p>
+										<pre class="prettyprint">
+	 <xmp>
+The value inside index 0 is: 1
+The value inside index 1 is: 3
+The value inside index 2 is: ten
+The value inside index 3 is: 200
+	</xmp></pre>
+
+<p>Μπορείτε να μαντέψετε πως να διαγράφετε στοιχεία από τον array? Μα φυσικά πάλι με
+	την χρήση του index αλλά με συνδυασμό με την εντολή delete. Προσοχή λιγάκι με την θεωρία
+	εδώ – μετά από την διαγραφή του στοιχείου, το μήκος του array δεν αλλάζει, δηλαδή δεν
+	μειώνεται. Στην ουσία έχουμε έναν array που θα έχει “undefined” σαν τιμή για ένα ή και
+	περισσότερα στοιχεία που έχουν διαγραφεί.
+</p>
+
+										<p><strong>MyScript.js</strong></p>
+										<pre class="prettyprint"><xmp>
+var a = [1, 3, 5];
+a[2] = "ten";
+a[3] = 200;
+delete a[2];
+
+document.writeln("The value inside index 0 is: " + a[0]);
+document.writeln('</BR>');
+document.writeln("The value inside index 1 is: " + a[1]);
+document.writeln('</BR>');
+document.writeln("The value inside index 2 is: " + a[2]);
+document.writeln('</BR>');
+document.writeln("The value inside index 3 is: " + a[3]);
+	</xmp></pre>
+
+										<p><strong>output</strong></p>
+										<pre class="prettyprint">
+	 <xmp>
+The value inside index 0 is: 1
+The value inside index 1 is: 3
+The value inside index 2 is: undefined
+The value inside index 3 is: 200
+	</xmp></pre>
+
+<p>Ένας array μπορεί να περιέχει όλων των ειδών τα στοιχεία συμπεριλαμβανόμενου και άλλου array. </p>
+										<p><strong>MyScript.js</strong></p>
+										<pre class="prettyprint"><xmp>
+var a = [1, 3, 5, 7, 9];
+a[5] = [10, 12, 12];
+
+document.writeln("The array a has the following elements: " + a);
+	</xmp></pre>
+
+										<p><strong>output</strong></p>
+										<pre class="prettyprint">
+	 <xmp>
+The array a has the following elements: 1,3,5,7,9,10,12,12
+	</xmp></pre>
+
+<p>Αν και νομίζω ότι έχετε ήδη καταλάβει πως ορίζεται ένας τέτοιου είδους array, ας δούμε
+	ένα ακόμα παράδειγμα όπου και τα δύο στοιχεία ενός array είναι array. </p>
+										<p><strong>MyScript.js</strong></p>
+										<pre class="prettyprint"><xmp>
+var a = [[1,2,3], [4,5,6]];
+
+document.writeln("The array a has the following elements: " + a);
+	</xmp></pre>
+
+										<p><strong>output</strong></p>
+										<pre class="prettyprint">
+	 <xmp>
+The array a has the following elements: 1,2,3,4,5,6
+	</xmp></pre>
+
+<p>Στο πιο πάνω παράδειγμα, το πρώτο element του array a είναι ο array με στοιχεία [1,2,3] ενώ το δεύτερο
+	element είναι ο array με στοιχεία [4,5,6]. Για να αποκτήσουμε πρόσβαση σε αυτό του είδους τα
+	array (που ονομάζονται nested arrays) χρησιμοποιούμε διπλά σετ από brackets. Για παράδειγμα,
+	για να πάρουμε την πρώτη τιμή από τον δεύτερο array (που είναι και το δεύτερο element του array a)
+	γράφουμε a[1][0]. Όπου [1] υποδηλώνει ότι θέλουμε να πάμε στο δεύτερο στοιχείο του array a, και
+	επειδή αυτό το στοιχείο είναι array θέλουμε το πρώτο του στοιχείο [0]. </p>
+
+										<p><strong>MyScript.js</strong></p>
+										<pre class="prettyprint"><xmp>
+var a = [[1,2,3], [4,5,6]];
+
+document.writeln("The array a has the following elements: " + a);
+document.writeln('</BR>');
+document.writeln("The element inside the index a[1][0] is: " + a[1][0]);
+	</xmp></pre>
+
+										<p><strong>output</strong></p>
+										<pre class="prettyprint">
+	 <xmp>
+The array a has the following elements: 1,2,3,4,5,6
+The element inside the index a[1][0] is: 4
+	</xmp></pre>
+
+<p>Υπάρχουν πολλά περισσότερα να μάθουμε για τους arrays αλλά θα περιμένουμε πρώτα μέχρι
+	να μιλήσουμε για αντικείμενα και μετά θα επισκεφτούμε τους array πάλι για να μιλήσουμε
+	για τις επιπλέον ιδιότητες που έχουν. </p>
+
+										<!-- ########################################################################################################################################################################################### -->
 									</div>
 								</div>
 							</div>
