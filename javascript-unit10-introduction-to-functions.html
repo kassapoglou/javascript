@@ -7,12 +7,12 @@
 	<title>Δωρεάν Μαθήματα JavaScript</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description"
-		content="Μια ολοκληρωμένη σειρά δωρεάν μαθημάτων και on-line δωρεάν σεμιναρίων προγραμματισμού στην script γλώσσα JavaScript">
+		content="Μια ολοκληρωμένη σειρά δωρεάν μαθημάτων και on-line σεμιναρίων προγραμματισμού στην script γλώσσα JavaScript">
 	<meta name="robots" content="index, follow">
 	<meta name="keywords" content="JavaScript,TypeScript, ECMA, React, Angular, Web, front-end development,
               frontend development, front-end programmer, front-end programming,
               web programming, JavaScript programming, Web design, Web programming, δωρεάν, 
-               προγραμματισμός, δωρεάν μαθήματα, δωρεάν σεμινάρια, μαθήματα, σεμινάρια" />
+               προγραμματισμός, δωρεάν μαθήματα JavaScript, δωρεάν σεμινάρια JavaScript, μαθήματα, σεμινάρια" />
 	<meta name="author" content="Michail Kassapoglou" />
 
 	<!-- Facebook and Twitter integration -->
@@ -69,6 +69,7 @@
 
 		gtag('config', 'UA-150900548-1');
 	</script>
+	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 </head>
 
 <body>
@@ -147,11 +148,14 @@
 								<div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
 									<div class="slider-text-inner text-center">
 										<h1><strong>ΜΑΘΑΙΝΩ ΔΩΡΕΑΝ JAVASCRIPT</strong></h1>
+										<h2><strong>ΕΝΟΤΗΤΑ 10 - Introduction to Functions</strong></h2>
 										<h2><strong><span><a
 														href="https://kassapoglou.github.io/main/index.html">Home</a> |
 													<a
 														href="https://kassapoglou.github.io/main/courses.html">Courses</a>
-													| JAVASCRIPT PROGRAMMING</span></strong></h2>
+													| <a
+														href="https://kassapoglou.github.io/javascript/javascript-programming.html">JAVASCRIPT
+														PROGRAMMING</a></span></strong></h2>
 									</div>
 								</div>
 							</div>
@@ -173,66 +177,200 @@
 									</div>
 									<div class="desc desc2">
 										<h3 align="center"><a
-												href="https://kassapoglou.github.io/java/java-programming.html">ΔΩΡΕΑΝ
-												ΜΑΘΗΜΑΤΑ JAVASCRIPT</a></h3>
-										<p>Εδώ θα βρείτε μια ολοκληρωμένη σειρά δωρεάν μαθημάτων στην
-											script γλώσσα web προγραμματισμού JavaScript. Κάθε μια ενότητα είναι
-											αυτόνομη
-											από τις άλλες και δεν απαιτείται να γνωρίζετε τις προηγούμενες
-											για να την παρακολουθήσετε. Επίσης σε κάθε ενότητα δημιουργούμε
-											ένα καινούργιο παράδειγμα JavaScript έτσι ώστε να είναι εντελώς
-											ξεκάθαρο το νόημα της ενότητας και η ουσία της θεωρίας που μελετάμε.</p>
+												href="https://kassapoglou.github.io/java/java-programming.html">
+											ΕΝΟΤΗΤΑ 10 JAVASCRIPT - Introduction to Functions</a></h3>
+<p>Στο σημερινό δωρεάν μάθημα JavaScript θα εξηγήσουμε τι είναι τα functions και 
+	πως τα δημιουργούμε όπως και θα αναλύσουμε τα πλεονεκτήματα που μας προσφέρουν 
+	όταν χρησιμοποιούμε τους rest και spread operators.</p>
+
+<p>Όπως συμβαίνει και με άλλες γλώσσες προγραμματισμού, έτσι και στην 
+	JavaScript, η χρήση των functions είναι απαραίτητη προϋπόθεση για να αναπτύξουμε 
+	επαγγελματικές εφαρμογές. </p>	
+
+<p>Στην JavaScript όμως, η ανάγκη εκμάθησης των functions γίνεται ακόμα πιο 
+	αναγκαία, αφού η JavaScript έχει πολλαπλές χρήσεις για τα functions και 
+	δια μέσω αυτών παρουσιάζει έναν ευέλικτο και ταυτόχρονα δυναμικό τρόπο 
+	ανάπτυξης Web εφαρμογών.</p>	
+
+<p>Ας τα πάρουμε όμως τα πράγματα από την αρχή και ας απαντήσουμε το βασικό 
+	ερώτημα που είναι: τι είναι ένα function.</p>	
+
+<p>Τα functions μας επιτρέπουν να ομαδοποιήσουμε πολλές γραμμές κώδικα κάτω 
+	από ένα όνομα. Για την εκτέλεση αυτής της ομάδας κώδικα, αρκεί να καλέσουμε 
+	μόνο το όνομα που της έχουμε ορίσει. Ας δούμε όμως ένα απλό παράδειγμα για 
+	να μπούμε σιγά σιγά στο πνεύμα και στην λογικής των functions. </p>
+
+<p>Ας θεωρήσουμε ότι έχουμε το εξής πρόβλημα: Θέλουμε να έχουμε την δυνατότητα 
+	να καλούμε ένα function στο οποίο περνώντας του 2 οποιουσδήποτε αριθμούς σαν 
+	παραμέτρους, να μας επιστρέφει πίσω το άθροισμα των δύο αριθμών. Η λύση 
+	αυτού του απλού προβλήματος είναι η ακόλουθη:</p>	
+
+											
+											<p><strong>MyScript.js</strong></p>
+											<pre class="prettyprint"><xmp>
+function sum(a, b){
+    var c = a + b;
+    return c;
+}
+
+var x = sum(3, 8);
+document.writeln('The sum of the two numbers is ' + x);
+		</xmp></pre>
+	
+											<p><strong>Output</strong></p>
+											<pre class="prettyprint">
+		 <xmp>
+The sum of the two numbers is 11
+		</xmp></pre>
 
 
-										<p>Αν ξεκινάτε τώρα την καριέρα σας σαν Web προγραμματιστές τότε
-											να είσαστε σίγουροι ότι έχετε επιλέξει μια από τις πιο
-											διάσημες γλώσσες προγραμματισμού για το Web που οι οπαδοί της αυξάνονται
-											χρόνο με το χρόνο. Αυτό σημαίνει ότι θα μπορέσετε πολύ γρήγορα,
-											με τα σημερινά δεδομένα αγοράς εργασίας, να απορροφηθείτε άμεσα
-											σε κάποια εταιρεία πληροφορικής. </p>
+<p>Για να ορίσουμε ένα function πρέπει πάνω από όλα να χρησιμοποιήσουμε την λέξη 
+	κλειδί <strong>function</strong>. Αμέσως μετά δίνουμε ένα όνομα στο 
+	function. Στο συγκεκριμένο παράδειγμα το όνομα του function είναι sum. Αμέσως 
+	μετά το όνομα ακολουθούν παρενθέσεις που, αν και εφόσον το απαιτεί η λογική 
+	του κώδικα μας, μπορούμε να ορίσουμε παραμέτρους (parameters). Δεν υπάρχει 
+	όριο στον αριθμό των παραμέτρων αρκεί να χωρίζονται μεταξύ τους με κόμμα. Αφού 
+	λοιπόν ορίσουμε ο όνομα και τις παραμέτρους, μέσα σε άγκιστρα γράφουμε τον 
+	κώδικα που θα εκτελεστεί εφόσον καλέσουμε την συγκεκριμένη function. Στο παράδειγμα 
+	μας, προσθέτουμε τις τιμές που θα λάβουν οι δύο παράμετροι και αναθέτουμε το 
+	αποτέλεσμα σε μια καινούργια μεταβλητή. Τέλος, κάθε function πάντα επιστρέφει 
+	πίσω στο πρόγραμμα μια τιμή. Στο δικό μας παράδειγμα θα είναι η τιμή της 
+	μεταβλητής c. Εάν η function δεν επιστρέφει κάποια τιμή τότε επιστρέφει undefined. </p>											
 
-										<p>Αν γνωρίζετε JavaScript μπορείτε πολύ εύκολα να κάνετε το επόμενο βήμα
-											το οποίο είναι να γράφετε JavaScript Web εφαρμογές με την χρήση
-											frameworks όπως Angular και React. Επίσης μπορείτε να προχωρήσετε
-											στα δωρεάν μαθήματα Node.js Microservices όπου θα μπορείτε να
-											δημιουργήσετε από τα πιο απλά μέχρι τα πιο σύνθετα Web Services
-											και Microservices. Τέλος, ας μην ξεχνάμε, ότι η JavaScript
-											έχει πλέον επεκταθεί σε mobile και tablet πλατφόρμες.
-											Όποια και να είναι η κατεύθυνση σας είναι απαραίτητη
-											προϋπόθεση να γνωρίζετε JavaScript οπότε κάνατε την σωστή αρχή</p>
+<p>Από τον πιο πάνω κώδικα θα παρατηρήσετε ότι το function επιστρέφει μια μόνο 
+	τιμή. Εάν χρειάζεται να έχουμε περισσότερες από μια τιμή να επιστρέφονται από 
+	το function τότε θα πρέπει, εσωτερικά μέσα στο κώδικα του function, να 
+	αποθηκεύσουμε όλες τις τιμές σε έναν array και να επιστρέψουμε στο τέλος 
+	τον array.</p>
 
-										<h1 align="center">ΕΝΟΤΗΤΕΣ</h1>
+<p>Όπως αναφέραμε στην αρχή της ενότητας, υπάρχουν πολλοί τρόποι να δημιουργήσουμε 
+	μια function γιατί κάθε ένας από αυτούς τους τρόπους εξυπηρετεί έναν 
+	συγκεκριμένο σκοπό. Τον τρόπο που μόλις είδαμε, είναι ο βασικός τρόπος 
+	ορισμού μιας function.</p>	
 
-										<p>Ενότητα 1 - <a href="javascript-unit1-environment-installation.html">
-												<font color="#0000CC">JavaScript Environment Installation</font>
-											</a><br /></p>
-										<p>Ενότητα 2 - <a href="javascript-unit2-how-to-define-variables.html">
-												<font color="#0000CC">JavaScript Variable Definition</font>
-											</a><br /></p>
-										<p>Ενότητα 3 - <a href="javascript-unit3-operators.html">
-												<font color="#0000CC">JavaScript Operators</font>
-											</a><br /></p>
-										<p>Ενότητα 4 - <a href="javascript-unit4-primitive-data-types-numbers.html">
-												<font color="#0000CC">Javascript primitive data types - numbers</font>
-											</a><br /></p>
-										<p>Ενότητα 5 - <a href="javascript-unit5-strings.html">
-												<font color="#0000CC">Javascript string data types</font>
-											</a><br /></p>
-										<p>Ενότητα 6 - <a href="javascript-unit6-boolean-and-operators.html">
-											<font color="#0000CC">Boolean and Operators</font>
-										</a><br /></p>
-										<p>Ενότητα 7 - <a href="javascript-unit7-arrays.html">
-											<font color="#0000CC">Arrays</font>
-										</a><br /></p>
-										<p>Ενότητα 8 - <a href="javascript-unit8-conditions-and-loops-part1.html">
-											<font color="#0000CC">Conditions and Loops (Part 1)</font>
-										</a><br /></p>
-										<p>Ενότητα 9 - <a href="javascript-unit9-conditions-and-loops-part2.html">
-											<font color="#0000CC">Conditions and Loops (Part 2)</font>
-										</a><br /></p>
-										<p>Ενότητα 10 - <a href="javascript-unit10-introduction-to-functions.html">
-											<font color="#0000CC">Introduction to Functions</font>
-										</a><br /></p>
+<p>Αφού λοιπόν ολοκληρώσουμε τον κώδικα του function είμαστε έτοιμοι να το 
+	καλέσουμε στο κώδικα μας. Για να εκτελέσουμε μια function αυτό που χρειάζεται 
+	μόνο να κάνουμε είναι να καλέσουμε το όνομα της function και μέσα στην 
+	παρένθεση να εισάγουμε τους αριθμούς ή γενικότερα τα στοιχεία που περιμένει. Στο 
+	κώδικα μας, καλούμε την function sum, που έχουμε ήδη ορίσει, περνώντας τους 
+	αριθμούς 3 και 8 αντίστοιχα σαν παραμέτρους. Το αποτέλεσμα της function το 
+	αποθηκεύουμε σε μια καινούργια μεταβλητή x της οποίας την τιμή την δείχνουμε 
+	και στο browser.</p>	
+
+<p>Όταν ορίζουμε μια function, μπορούμε να καθορίσουμε εξ αρχής ποιες 
+	παραμέτρους και πόσες θα περιμένει να δεχτεί για να εκτελέσει τον κώδικα 
+	της. Φυσικά, όπως ήδη έχουμε αναφέρει, ο ορισμός των παραμέτρων είναι 
+	προαιρετικός. Αν όμως υπάρχουν παράμετροι και εμείς δεν εισάγουμε τιμές 
+	για όλες τις παραμέτρους που έχουν οριστεί, τότε η JavaScript θα ορίσει 
+	σαν undefined τις παραμέτρους για τις οποίες δεν δώσαμε τιμή. Στο πιο 
+	κάτω παράδειγμα το αποτέλεσμα θα είναι NaN γιατί η function προσπαθεί να 
+	προσθέσει to 3 με το undefined.</p>	
+
+	<p><strong>MyScript.js</strong></p>
+	<pre class="prettyprint"><xmp>
+function sum(a, b){
+	    var c = a + b;
+	    return c;
+	}
+	
+	var x = sum(3);
+	document.writeln('The sum of the two numbers is ' + x);
+</xmp></pre>
+
+	<p><strong>Output</strong></p>
+	<pre class="prettyprint">
+<xmp>
+The sum of the two numbers is NaN 
+</xmp></pre>	
+
+<p>Αν τώρα, δώσουμε στην function περισσότερες τιμές από ότι περιμένει, τότε 
+	η JavaScript θα αγνοήσει τις έξτρα τιμές που περάσαμε. </p>
+
+	<p><strong>MyScript.js</strong></p>
+	<pre class="prettyprint"><xmp>
+function sum(a, b){
+	    var c = a + b;
+	    return c;
+	}
+	
+	var x = sum(3, 8, 15, 21, 12);
+	document.writeln('The sum of the two numbers is ' + x);
+</xmp></pre>
+
+	<p><strong>Output</strong></p>
+	<pre class="prettyprint">
+<xmp>
+The sum of the two numbers is 11  
+</xmp></pre>	
+
+<p>Μπορούμε επίσης να δημιουργούμε functions που να δέχονται άγνωστο 
+	αριθμό παραμέτρων. Αυτό είναι εφικτό με την χρήση μιας ειδικής μεταβλητής 
+	που ονομάζεται arguments και δημιουργείται αυτόματα μέσα σε κάθε function. Αν 
+	και η χρήση της μεταβλητής arguments δεν είναι προτεινόμενος 
+	προγραμματιστικά, ας δούμε για τώρα πως λειτουργεί σαν λογική και αργότερα 
+	θα το αντικαταστήσουμε με διαφορετικό κώδικα.</p>
+
+<p>Στο πιο κάτω παράδειγμα, δείχνουμε για αρχή πως λειτουργεί η μεταβλητή 
+	arguments. Δημιουργούμε λοιπόν μια function που απλά επιστρέφει όλες τις 
+	τιμές που περιέχει η arguments και αποθηκεύουμε αυτές τις τιμές σε μια 
+	μεταβλητή x.</p>	
+
+	<p><strong>MyScript.js</strong></p>
+	<pre class="prettyprint"><xmp>
+function testArguments(){
+	    return arguments;
+	}
+	
+	var x = testArguments(1, 'Michail', 4, 8, 'Kassapoglou');
+	document.writeln('The arguments variable contains the following values:');
+	document.writeln('</BR>');
+	document.writeln(x[0]+', '+x[1]+', '+x[2]+', '+x[3]+', '+x[4]);
+</xmp></pre>
+
+	<p><strong>Output</strong></p>
+	<pre class="prettyprint">
+<xmp>
+The arguments variable contains the following values: 
+1, Michail, 4, 8, Kassapoglou  
+</xmp></pre>	
+
+<p>Ας βελτιώσουμε τώρα το απλό παράδειγμα της πρόσθεσης των δύο αριθμών να 
+	χρησιμοποιεί οποιοδήποτε αριθμό παραμέτρων και αφού προσθέτει όλες τις 
+	τιμές να μας επιστρέφει το τελικό άθροισμα. </p>
+
+	<p><strong>MyScript.js</strong></p>
+	<pre class="prettyprint"><xmp>
+function sum(){
+	    var res = 0;
+	    var number_of_parameters = arguments.length;
+	
+	    for (var i = 0; i < number_of_parameters; i++){
+	       res += arguments[i];
+	    }
+	    return res;
+	}
+	
+	var x = sum(3, 8, 15, 21, 12, 43, 43, 50);
+	document.writeln('The sum of all numbers is ' + x);
+</xmp></pre>
+
+	<p><strong>Output</strong></p>
+	<pre class="prettyprint">
+<xmp>
+The sum of all numbers is 195  
+</xmp></pre>	
+
+<p>Για να μάθουμε τον ακριβή αριθμό των παραμέτρων που περάστηκαν στην 
+	function, καλούμε την length μέθοδο στο arguments. Μην σας ξεγελάει το 
+	length στο arguments. To arguments δεν είναι array αλλά αντικείμενο. Αλλά 
+	για αυτά είναι νωρίς ακόμα να μιλήσουμε. Στην επόμενη ενότητα θα δούμε 
+	πως μπορούμε να χρησιμοποιήσουμε αρκετά καινούργια χαρακτηριστικά της ES6 
+	όπως default values, rest parameters και destructuring και να αποφύγουμε 
+	το arguments. </p>
+
+	
+
+										<!-- ########################################################################################################################################################################################### -->
 									</div>
 								</div>
 							</div>
