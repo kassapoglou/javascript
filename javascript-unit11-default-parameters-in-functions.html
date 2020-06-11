@@ -7,12 +7,12 @@
 	<title>Δωρεάν Μαθήματα JavaScript</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description"
-		content="Μια ολοκληρωμένη σειρά δωρεάν μαθημάτων και on-line δωρεάν σεμιναρίων προγραμματισμού στην script γλώσσα JavaScript">
+		content="Μια ολοκληρωμένη σειρά δωρεάν μαθημάτων και on-line σεμιναρίων προγραμματισμού στην script γλώσσα JavaScript">
 	<meta name="robots" content="index, follow">
 	<meta name="keywords" content="JavaScript,TypeScript, ECMA, React, Angular, Web, front-end development,
               frontend development, front-end programmer, front-end programming,
               web programming, JavaScript programming, Web design, Web programming, δωρεάν, 
-               προγραμματισμός, δωρεάν μαθήματα, δωρεάν σεμινάρια, μαθήματα, σεμινάρια" />
+               προγραμματισμός, δωρεάν μαθήματα JavaScript, δωρεάν σεμινάρια JavaScript, μαθήματα, σεμινάρια" />
 	<meta name="author" content="Michail Kassapoglou" />
 
 	<!-- Facebook and Twitter integration -->
@@ -69,6 +69,7 @@
 
 		gtag('config', 'UA-150900548-1');
 	</script>
+	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=sunburst"></script>
 </head>
 
 <body>
@@ -147,11 +148,14 @@
 								<div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
 									<div class="slider-text-inner text-center">
 										<h1><strong>ΜΑΘΑΙΝΩ ΔΩΡΕΑΝ JAVASCRIPT</strong></h1>
+										<h2><strong>ΕΝΟΤΗΤΑ 11 - Default Parameters in Functions</strong></h2>
 										<h2><strong><span><a
 														href="https://kassapoglou.github.io/main/index.html">Home</a> |
 													<a
 														href="https://kassapoglou.github.io/main/courses.html">Courses</a>
-													| JAVASCRIPT PROGRAMMING</span></strong></h2>
+													| <a
+														href="https://kassapoglou.github.io/javascript/javascript-programming.html">JAVASCRIPT
+														PROGRAMMING</a></span></strong></h2>
 									</div>
 								</div>
 							</div>
@@ -173,69 +177,162 @@
 									</div>
 									<div class="desc desc2">
 										<h3 align="center"><a
-												href="https://kassapoglou.github.io/java/java-programming.html">ΔΩΡΕΑΝ
-												ΜΑΘΗΜΑΤΑ JAVASCRIPT</a></h3>
-										<p>Εδώ θα βρείτε μια ολοκληρωμένη σειρά δωρεάν μαθημάτων στην
-											script γλώσσα web προγραμματισμού JavaScript. Κάθε μια ενότητα είναι
-											αυτόνομη
-											από τις άλλες και δεν απαιτείται να γνωρίζετε τις προηγούμενες
-											για να την παρακολουθήσετε. Επίσης σε κάθε ενότητα δημιουργούμε
-											ένα καινούργιο παράδειγμα JavaScript έτσι ώστε να είναι εντελώς
-											ξεκάθαρο το νόημα της ενότητας και η ουσία της θεωρίας που μελετάμε.</p>
+												href="https://kassapoglou.github.io/java/java-programming.html">
+											ΕΝΟΤΗΤΑ 11 JAVASCRIPT- DEFAULT PARAMETERS IN FUNCTIONS</a></h3>
+
+<p>Στο σημερινό δωρεάν μάθημα JavaScript θα εξηγήσουμε τι είναι οι default parameters, πως χρησιμοποιούνται,
+και τι πρέπει να γνωρίζουμε για το εύρος δράσης τους (scope).</p>
+
+<p>Στην JavaScript, οι τιμές των παραμέτρων που ορίζουμε, εάν δεν αναθέσουμε εμείς κάποιες τιμές, θα έχουν
+	σαν default τιμή το undefined. Αυτή η προκαθορισμένη, από την JavaScript, συμπεριφορά συνήθως προκαλεί
+	δυσκολίες στο να βρεθούν λάθη στον κώδικα, για αυτό και σαν εναλλακτική μπορούμε να χρησιμοποιήσουμε default
+	parameters. Δηλαδή να ορίζουμε εμείς τις default τιμές που θα έχουν οι παράμετροι που ορίζουμε σε μια function
+	σε περίπτωση που δεν περάσουμε εμείς κάποια τιμή.</p>
+
+<p>Σαν πρώτο παράδειγμα, στο σημερινό δωρεάν μάθημα JavaScript, θα δούμε τι συμβαίνει όταν δεν ορίσουμε default
+	parameters και καλέσουμε μια function χωρίς να της περάσουμε όλες τις τιμές που περιμένει.</p>
+										<p><strong>MyScript.js</strong></p>
+										<pre class="prettyprint"><xmp>
+function multiply(a, b) {
+    return a * b
+}
+
+var x = multiply(5, 2)  // 10
+document.writeln(x);
+document.writeln('</BR>');
+var y = multiply(5)     // NaN !
+document.writeln(y);
+		</xmp></pre>
 
 
-										<p>Αν ξεκινάτε τώρα την καριέρα σας σαν Web προγραμματιστές τότε
-											να είσαστε σίγουροι ότι έχετε επιλέξει μια από τις πιο
-											διάσημες γλώσσες προγραμματισμού για το Web που οι οπαδοί της αυξάνονται
-											χρόνο με το χρόνο. Αυτό σημαίνει ότι θα μπορέσετε πολύ γρήγορα,
-											με τα σημερινά δεδομένα αγοράς εργασίας, να απορροφηθείτε άμεσα
-											σε κάποια εταιρεία πληροφορικής. </p>
+										<p><strong>Output</strong></p>
+										<pre class="prettyprint">
+		 <xmp>
+10
+NaN
+		</xmp></pre>
 
-										<p>Αν γνωρίζετε JavaScript μπορείτε πολύ εύκολα να κάνετε το επόμενο βήμα
-											το οποίο είναι να γράφετε JavaScript Web εφαρμογές με την χρήση
-											frameworks όπως Angular και React. Επίσης μπορείτε να προχωρήσετε
-											στα δωρεάν μαθήματα Node.js Microservices όπου θα μπορείτε να
-											δημιουργήσετε από τα πιο απλά μέχρι τα πιο σύνθετα Web Services
-											και Microservices. Τέλος, ας μην ξεχνάμε, ότι η JavaScript
-											έχει πλέον επεκταθεί σε mobile και tablet πλατφόρμες.
-											Όποια και να είναι η κατεύθυνση σας είναι απαραίτητη
-											προϋπόθεση να γνωρίζετε JavaScript οπότε κάνατε την σωστή αρχή</p>
+<p>Στο παραπάνω παράδειγμα, την δεύτερη φορά που δίνουμε τιμή μόνο για το a, η τιμή του b θα είναι
+	undefined. Πολλαπλασιάζοντας undefined με 5 θα μας επιστρέψει NaN γιατί η JavaScript δεν μπορεί να
+	ολοκληρώσει την πράξη.</p>
 
-										<h1 align="center">ΕΝΟΤΗΤΕΣ</h1>
+<p>Σε παλαιότερες εκδόσεις τις JavaScript, για να λύσουμε το πρόβλημα, εκτελούσαμε ελέγχους στις
+	μεταβλητές για να δούμε αν έχουν τιμή ή είναι undefined. Όμως μετά την υιοθέτηση του ES2015, μπορούμε να
+	ορίσουμε default τιμές στις παραμέτρους της function αποφεύγοντας λάθη στις πράξεις. Για να ορίσουμε
+	default τιμές στις παραμέτρους δεν έχουμε παρά να αναθέσουμε τιμές στις παραμέτρους που βρίσκονται μέσα
+	στην παρένθεση του function. Αν δώσουμε δικές μας τιμές στην function κατά την εκτέλεση του κώδικα μας, τότε
+	οι default τιμές θα αγνοηθούν. Για τις παραμέτρους που δεν δίνουμε εμείς τιμές, θα χρησιμοποιούν οι default
+	τιμές. Ας δούμε τώρα πως αλλάζει ο κώδικας, χρησιμοποιώντας default parameters.</p>
+										<p><strong>MyScript.js</strong></p>
+										<pre class="prettyprint"><xmp>
+ function multiply(a = 1, b=1) {
+    return a * b
+}
 
-										<p>Ενότητα 1 - <a href="javascript-unit1-environment-installation.html">
-												<font color="#0000CC">JavaScript Environment Installation</font>
-											</a><br /></p>
-										<p>Ενότητα 2 - <a href="javascript-unit2-how-to-define-variables.html">
-												<font color="#0000CC">JavaScript Variable Definition</font>
-											</a><br /></p>
-										<p>Ενότητα 3 - <a href="javascript-unit3-operators.html">
-												<font color="#0000CC">JavaScript Operators</font>
-											</a><br /></p>
-										<p>Ενότητα 4 - <a href="javascript-unit4-primitive-data-types-numbers.html">
-												<font color="#0000CC">Javascript primitive data types - numbers</font>
-											</a><br /></p>
-										<p>Ενότητα 5 - <a href="javascript-unit5-strings.html">
-												<font color="#0000CC">Javascript string data types</font>
-											</a><br /></p>
-										<p>Ενότητα 6 - <a href="javascript-unit6-boolean-and-operators.html">
-											<font color="#0000CC">Boolean and Operators</font>
-										</a><br /></p>
-										<p>Ενότητα 7 - <a href="javascript-unit7-arrays.html">
-											<font color="#0000CC">Arrays</font>
-										</a><br /></p>
-										<p>Ενότητα 8 - <a href="javascript-unit8-conditions-and-loops-part1.html">
-											<font color="#0000CC">Conditions and Loops (Part 1)</font>
-										</a><br /></p>
-										<p>Ενότητα 9 - <a href="javascript-unit9-conditions-and-loops-part2.html">
-											<font color="#0000CC">Conditions and Loops (Part 2)</font>
-										</a><br /></p>
-										<p>Ενότητα 10 - <a href="javascript-unit10-introduction-to-functions.html">
-											<font color="#0000CC">Introduction to Functions</font>
-										</a><br /></p>
-										<p>Ενότητα 10 - <a href="javascript-unit11-default-parameters-in-functions.html">
-											<font color="#0000CC">Default Parameters in Functions</font>
-										</a><br /></p>
+var x = multiply(5, 2)  // 10
+document.writeln(x);
+document.writeln('</BR>');
+var y = multiply(5)     // 5
+document.writeln(y);
+document.writeln('</BR>');
+var k = multiply(5, undefined);     // 5
+document.writeln(k);
+		</xmp></pre>
+
+
+										<p><strong>Output</strong></p>
+										<pre class="prettyprint">
+		 <xmp>
+10
+5
+5
+		</xmp></pre>
+
+<p>Πρέπει να προσέχουμε λίγο όμως με την χρήση των default parameters και να καταλάβουμε πότε ακριβώς
+	αξιολογούνται. Στην JavaScript, αντίθετα με άλλες γλώσσες προγραμματισμού όπως η Python για παράδειγμα, αξιολογεί
+	τις default parameters μόνο την στιγμή που καλούμε την function στην οποία ανήκουν δημιουργώντας ένα
+	καινούργιο αντικείμενο κάθε φορά. Αυτό σημαίνει ότι η function δεν “θυμάται” προηγούμενες καταστάσεις
+	των μεταβλητών της αφού κάθε κάλεσμα της function είναι ένα καινούργιο αντικείμενο.</p>
+
+										<p><strong>MyScript.js</strong></p>
+										<pre class="prettyprint"><xmp>
+function append(value, array = []) {
+    array.push(value)
+    return array
+}
+
+var x = append(1)  // [1]
+document.writeln(x);
+document.writeln('</BR>');
+var y = append(2)  // [2], not [1, 2]
+document.writeln(y);
+		</xmp></pre>
+
+
+										<p><strong>Output</strong></p>
+										<pre class="prettyprint">
+		 <xmp>
+1
+2
+		</xmp></pre>
+
+<p>Οι default parameters που ορίζονται στην αρχή της παρένθεσης της function είναι διαθέσιμες στις default
+	parameters που ορίζονται στην ίδια παρένθεση αργότερα. Ας δούμε ένα απλό παράδειγμα που εξηγεί καλύτερα
+	αυτή την ιδιότητα τους.</p>
+
+										<p><strong>MyScript.js</strong></p>
+										<pre class="prettyprint"><xmp>
+function greet(name, greeting, message = greeting + ' ' + name) {
+    return [name, greeting, message]
+}
+
+var x = greet('David', 'Hi');  // ["David", "Hi", "Hi David"]
+document.writeln(x);
+document.writeln('</BR>');
+var y = greet('David', 'Hi', 'Happy Birthday!')  // ["David", "Hi", "Happy Birthday!"]
+document.writeln(y);
+		</xmp></pre>
+
+
+										<p><strong>Output</strong></p>
+										<pre class="prettyprint">
+		 <xmp>
+David,Hi,Hi David
+David,Hi,Happy Birthday!
+		</xmp></pre>
+
+<p>Πριν κλείσουμε το σημερινό δωρεάν μάθημα JavaScript, θα ήθελα να αναφερθώ στο εύρος δράσης των default
+	parameters. Πιο συγκεκριμένα πρέπει να γνωρίζετε το γεγονός ότι οι default parameters έχουν το δικό
+	τους scope που τα όρια του δεν είναι ακριβώς ούτε μέσα στην function αλλά ούτε και έξω από την
+	function. Αν μπορείτε να το φανταστείτε, θεωρητικά βρίσκεται κάπου ανάμεσα. Τι ακριβώς σημαίνει
+	αυτό? Στην ουσία επηρεάζει την τιμή που θέλουμε να δείξουμε σαν τελικό αποτέλεσμα. Ας δούμε ένα
+	παράδειγμα, και θα εξηγήσουμε επάνω σε αυτό τι ακριβώς συμβαίνει.</p>
+
+										<p><strong>MyScript.js</strong></p>
+										<pre class="prettyprint"><xmp>
+var scope="outer_scope";
+
+function scoper(val=scope){
+    var scope="inner_scope";
+    document.writeln(val); //outer_scope
+}
+scoper();
+		</xmp></pre>
+
+
+										<p><strong>Output</strong></p>
+										<pre class="prettyprint">
+		 <xmp>
+outer_scope
+		</xmp></pre>
+
+<p>Στην παράμετρο val αναθέτουμε μια default τιμή που είναι εκείνη της μεταβλητής scope. Οπότε η val
+	είναι μια default parameter. Μέσα στην function, ορίζουμε τοπικά μια μεταβλητή ξανά με το όνομα scope. Κάτω
+	από άλλες συνθήκες θα περιμέναμε ότι η δεύτερη μεταβλητή θα επισκίαζε την πρώτη, όμως επειδή η default
+	parameter έχει το δικό της scope όπως ήδη αναφέραμε, δεν επηρεάζεται καθόλου από την scope μεταβλητή που
+	δημιουργήθηκε σε inner scope μέσα στην function.</p>
+
+										<!-- ########################################################################################################################################################################################### -->
 									</div>
 								</div>
 							</div>
