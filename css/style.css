@@ -5,6 +5,18 @@
   font-weight: normal;
   font-style: normal; }
 
+
+li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 {
+  list-style-type: decimal;
+}
+
+  .prettyprint {
+    font-size: 18px;
+  }
+
+  ol.linenums {
+    padding-left: 25px;
+  }
 /* =======================================================
 *
 * 	Template Style 
