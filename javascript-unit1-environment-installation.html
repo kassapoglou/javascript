@@ -1,61 +1,34 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-
 <head>
+	<!-- set the encoding of your site -->
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Δωρεάν Μαθήματα JavaScript</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- set the viewport width and initial-scale on mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- set the HandheldFriendly -->
+	<meta name="HandheldFriendly" content="True">
+	<!-- set the description -->
 	<meta name="description"
-		content="Μια ολοκληρωμένη σειρά δωρεάν μαθημάτων και on-line δωρεάν σεμιναρίων προγραμματισμού JavaScript">
+	content="Μια ολοκληρωμένη σειρά δωρεάν μαθημάτων και on-line σεμιναρίων στην WEB γλώσσα προγραμματισμού JavaScript">
+	<!-- set the Keyword -->
 	<meta name="robots" content="index, follow">
-	<meta name="keywords" content="JavaScript, Web programming, programming, δωρεάν, 
+	<meta name="keywords" content="JavaScript, Web programming, programming, δωρεάν, web, 
                προγραμματισμός, μαθήματα, σεμινάρια" />
 	<meta name="author" content="Michail Kassapoglou" />
-
-	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content="" />
-	<meta property="og:image" content="" />
-	<meta property="og:url" content="" />
-	<meta property="og:site_name" content="" />
-	<meta property="og:description" content="" />
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
-
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
-
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
+	<!-- set the page title -->
+	<title>Δωρεάν Μαθήματα JavaScript</title>
+	<!-- include google roboto font cdn link -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i%7COpen+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+	<!-- include the site bootstrap stylesheet -->
 	<link rel="stylesheet" href="css/bootstrap.css">
-
-	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
-
-	<!-- Flexslider  -->
-	<link rel="stylesheet" href="css/flexslider.css">
-
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-	<!-- Flaticons  -->
-	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
-
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="css/plugins.css">
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="css/colors.css">
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="style.css">
+	<!-- include the site responsive stylesheet -->
+	<link rel="stylesheet" href="css/responsive.css">
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150900548-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
@@ -68,584 +41,705 @@
 		gtag('config', 'UA-150900548-1');
 	</script>
 </head>
-
 <body>
-
-	<div class="colorlib-loader"></div>
-
-	<div id="page">
-		<nav class="colorlib-nav" role="navigation">
-			<div class="upper-menu">
+	<!-- main container of all the page elements -->
+	<div id="wrapper">
+		<!-- header of the page -->
+		<header id="page-header">
+			<!-- top bar -->
+			<div class="top-bar bg-dark text-gray">
 				<div class="container">
-					<div class="row">
-						<div class="col-xs-4">
-							<p>Welcome to Kassapoglou</p>
-						</div>
-						<div class="col-xs-6 col-md-push-2 text-right">
-							<p>
-								<ul class="colorlib-social-icons">
-									<!--<li><a href="#"><i class="icon-twitter"></i></a></li>-->
-									<li><a href="https://www.facebook.com/kassapoglou/?ref=bookmarks"><i
-												class="icon-facebook"></i></a></li>
-									<li><a href="https://www.linkedin.com/groups/4390739/"><i
-												class="icon-linkedin"></i></a></li>
-									<!--<li><a href="#"><i class="icon-dribbble"></i></a></li>-->
-								</ul>
-							</p>
-							<!--<p class="btn-apply"><a href="#">Apply Now</a></p>-->
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="top-menu">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-2">
-							<div id="colorlib-logo"><a
-									href="https://kassapoglou.github.io/main/index.html">Kassapoglou</a></div>
-						</div>
-						<div class="col-md-10 text-right menu-1">
-							<ul>
-								<li><a href="https://kassapoglou.github.io/main/index.html">Home</a></li>
-								<li class="has-dropdown active">
-									<a href="https://kassapoglou.github.io/main/courses.html">Courses</a>
-									<ul class="dropdown">
-										<li><a href="https://kassapoglou.github.io/java/java-programming.html">Java</a>
-										</li>
-										<li><a
-												href="https://kassapoglou.github.io/python/python-programming.html">Python</a>
-										</li>
-										<li><a href="https://kassapoglou.github.io/go/go-programming.html">GO</a></li>
-										<li><a
-												href="https://kassapoglou.github.io/javascript/javascript-programming.html">JavaScript</a>
-										</li>
-										<li><a href="https://kassapoglou.github.io/maven/learning-maven.html">Apache
-												Maven</a></li>
-										<li><a href="https://kassapoglou.github.io/camel/apache-camel-programming.html">Apache
-												Camel</a></li>
-									</ul>
+					<div class="row top-bar-holder">
+						<div class="col-xs-9 col">
+							<!-- bar links -->
+							<ul class="font-lato list-unstyled bar-links">
+								<li>
+									<a href="tel:+30 6976434707">
+										<strong class="dt element-block text-capitalize hd-phone">Phone :</strong>
+										<strong class="dd element-block hd-phone">+(30) 6976434707 </strong>
+										<i class="fas fa-phone-square hd-up-phone hidden-sm hidden-md hidden-lg"><span class="sr-only">phone</span></i>
+									</a>
 								</li>
-								<!--<li><a href="about.html">About</a></li>-->
-								<!--	<li><a href="event.html">Events</a></li>
-								<li><a href="news.html">News</a></li> -->
-								<li><a href="https://kassapoglou.github.io/main/contact.html">Contact</a></li>
+								<li>
+									<a href="mailto:michail.kassapoglou@gmail.com">
+										<strong class="dt element-block text-capitalize hd-phone">Email :</strong>
+										<strong class="dd element-block hd-phone">michail.kassapoglou@gmail.com</strong>
+										<i class="fas fa-envelope-square hd-up-phone hidden-sm hidden-md hidden-lg"><span class="sr-only">email</span></i>
+									</a>
+								</li>
 							</ul>
 						</div>
-					</div>
-				</div>
-			</div>
-		</nav>
-		<aside id="colorlib-hero">
-			<div class="flexslider">
-				<ul class="slides">
-					<li style="background-image: url(images/A_Javascript.jpg);">
-						<div class="overlay"></div>
-						<div class="container-fluid">
-							<div class="row">
-								<div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
-									<div class="slider-text-inner text-center">
-										<h1><strong>ΜΑΘΑΙΝΩ ΔΩΡΕΑΝ JAVASCRIPT</strong></h1>
-										<h2><strong>ΕΝΟΤΗΤΑ 1 - Environment Installation</strong></h2>
-										<h2><strong><span><a
-														href="https://kassapoglou.github.io/main/index.html">Home</a> |
-													<a
-														href="https://kassapoglou.github.io/main/courses.html">Courses</a>
-													| <a
-														href="https://kassapoglou.github.io/javascript/javascript-programming.html">JAVASCRIPT
-														PROGRAMMING</a></span></strong></h2>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</aside>
-
-		<div class="colorlib-classes">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 col-lg-12">
-						<div class="row row-pb-lg">
-							<div class="col-md-12 animate-box">
-								<div class="classes class-single">
-									<div class="classes-img" style="background-image: url(images/A_Javascript2.jpg);">
-										<span class="price text-center"><small>FREE</small></span>
-									</div>
-									<div class="desc desc2">
-										<h3 align="center"><a
-												href="https://kassapoglou.github.io/java/java-programming.html">ΕΝΟΤΗΤΑ
-												1 JAVASCRIPT - Environment Installation</a></h3>
-										<p>Στο σημερινό δωρεάν μάθημα JavaScript θα εγκαταστήσουμε όλα τα
-											απαραίτητα εργαλεία που χρειαζόμαστε για να αναπτύξουμε
-											JavaScript εφαρμογές.
-										</p>
-										<p>Από τις πρώτες κιόλας ημέρες ύπαρξης του διαδικτύου,
-											έγινε αμέσως ορατή η ανάγκη οι ιστοσελίδες, και γενικότερα τα 
-											sites, να έχουν μια πιο δυναμική και διαδραστική συμπεριφορά
-											και να δραπετεύσουν όσο το δυνατόν γρηγορότερα από το
-											στατικό περιβάλλον του HTML.  </p>
-
-										<p>Αν και με την παρουσία του CSS μπορέσαμε να δώσουμε ένα
-											πιο όμορφο παρουσιαστικό στα κείμενα μας,
-											με την προσθήκη του JavaScript κώδικα
-											μπορέσαμε να προσθέσουμε περισσότερες
-											δυνατότητες όπως email, ημερολόγια, τραπεζικές
-											συναλλαγές, online αγορές, παιγνίδια και
-											επεξεργασία κειμένου. </p>
-
-										<p>Αν κοιτάξουμε στο παρελθόν, ο τρόπος με τον οποίο
-											καταχωρίσαμε και κατηγοριοποιήσαμε τις τεχνολογίες
-											που κατά καιρούς εμφανίστηκαν, θα δούμε ότι τεχνολογίες
-											όπως η HTML (και όλα τα παρακλάδια της) δημιουργήθηκαν
-											με σκοπό να μας προσφέρουν την ικανότητα να
-											παρουσιάσουμε ένα κείμενο στο διαδίκτυο, τεχνολογίες
-											παρόμοιες με εκείνη της CSS δημιουργήθηκαν για να
-											δώσουμε μια πιο ελκυστική παρουσίαση στο κείμενο μας,
-											και τέλος η JavaScript για να δώσει λειτουργικότητα
-											και να προσφέρει εφαρμογές στον χρήστη του Web. </p>
-
-										<p>Τα προγράμματα JavaScript εκτελούνται τοπικά στον
-											υπολογιστή μας. Το περιβάλλον του Web browser είναι
-											η πιο κοινή πλατφόρμα εκτέλεσης JavaScript εφαρμογών
-											αλλά δεν είναι το μόνο. Σήμερα η JavaScript μπορεί
-											να εκτελεστεί σε πολλαπλές πλατφόρμες όπως εκείνων
-											των mobile phones, και των servers. </p>
-
-										<p>Η JavaScript είναι το αποτέλεσμα της European Computer
-											Manufactures Association (ECMA) επιτροπής που δημιούργησε
-											το στάνταρ ECMA-262 το οποίο περιγράφει τους βασικούς κανόνες
-											της JavaScript γλώσσας χωρίς καμία αναφορά σε κάποιον συγκεκριμένο
-											 web browser. Αυτό σημαίνει ότι όποια πλατφόρμα (κυρίως
-											 web browsers) θέλει να είναι συμβατή με την τελευταία
-											έκδοση της JavaScript πρέπει να ακολουθήσει το ECMA στάνταρ. </p>
-
-										<p>Το ECMAScript 10 είναι το πιο πρόσφατο στάνταρ και σιγά σιγά όλοι οι
-											γνωστοί web browsers προσπαθούν να το ενσωματώσουν στην
-											πλατφόρμα τους. Η τελευταία έκδοση της JavaScript έρχεται
-											σε εμάς με μια σωρεία από καινούργια χαρακτηριστικά όπως 
-											classes, promises και generators. Μην ανησυχείτε για αυτά
-											τώρα, θα τα αναλύσουμε όλα αργότερα. Τέλος, μην σας μπερδεύουν
-											τα ονόματα ECMAScript 10, ES10, ή ECMAScript 2019 όλα αναφέρονται
-											στο ίδιο πράγμα. </p>
-
-										<p>Εάν δεν είσαστε σίγουροι αν ο browser σας υποστηρίζει ES9 ή ES10
-											 ή κάποια άλλη προηγούμενη έκδοση, τότε μπορείτε να επισκεφτείτε
-											την πιο κάτω ιστοσελίδα <a
-												href="http://kangax.github.io/compat-table/es2016plus/ ">
-												<font color="#0000CC">http://kangax.github.io/compat-table/es2016plus/
-												</font>
-											</a>.
-										</p>
-
-										<img src="javascript-unit1/javascript-unit1-1.JPG" alt="" class="center">
-										<p></p>
-
-										<p>Το ευχάριστο νέο είναι ότι υπάρχουν transpilers 
-											οι οποίοι είναι μεταφραστές των πιο πρόσφατων εκδόσεων
-											της ES σε ES5. Ο transpiler μας επιτρέπει να γράφουμε σε 
-											ES7,8, 9, 10 ή οποιαδήποτε άλλη μελλοντική έκδοση της ES 
-											και εκείνος μετατρέπει την σύνταξη αυτόματα σε ES5 επιτρέποντας
-											σε όλους τους browsers να τρέξουν τον κώδικα μας αφού όλοι οι
-											γνωστοί browsers υποστηρίζουν ES5.</p>
-
-										<p>Ο πιο γνωστός transpiler τον οποίο και θα χρησιμοποιήσουμε
-											στα παραδείγματα που θα παρουσιάσουμε είναι ο Babel <a
-												href="https://babeljs.io/ ">
-												<font color="#0000CC">(https://babeljs.io/) </font>
-											</a>.
-											 Θα δείξουμε αργότερα πως να ενεργοποιήσουμε αυτή την επιλογή,
-											όταν θα δημιουργήσουμε και τρέξουμε το πρώτο μας JavaScript παράδειγμα. </p>
-
-										<p>Τέλος, κάθε Web εφαρμογή χρειάζεται έναν Web Server για να μπορεί
-											να τρέξει και είναι διαθέσιμη. Αν και έχουμε πολλές επιλογές,
-											θα επιλέξουμε την εγκατάσταση του Node.js <a href="https://nodejs.org/en/">
-												<font color="#0000CC">(https://nodejs.org/en/) </font>
-											</a>. 
-											Κατεβάστε το πρόγραμμα και προχωρήστε με την εγκατάσταση του. Αν
-											είσαστε σε περιβάλλον Windows, απλά ακολουθήστε τις default επιλογές. </p>
-
-										<p>Τώρα χρειαζόμαστε ένα περιβάλλον ανάπτυξης Web εφαρμογών.
-											Και εδώ οι επιλογές μας είναι αρκετές αλλά θα επιλέξουμε το 
-											Visual Studio Code <a href="https://code.visualstudio.com/">
-												<font color="#0000CC">(https://code.visualstudio.com/) </font>
-											</a>. Κατεβάστε
-											την πιο τελευταία έκδοση και προχωρήστε με την εγκατάσταση του. </p>
-
-										<p>Σχεδόν έχουμε τελειώσει με το setup του περιβάλλοντος μας.
-											Δημιουργήστε ένα φάκελλο στον σκληρό σας δίσκο και ονομάστε το
-											 JavaScriptTutorial. Τώρα, ανοίξτε ένα terminal παράθυρο
-											(στα Windows δίνουμε την εντολή CMD) και αλλάξτε το path
-											 να δείχνει στο φάκελλο που μόλις δημιουργήσατε. Για να
-											εγκαταστήσουμε τον http-server τρέχουμε την εξής npm εντολή: </p>
-
-										<p><strong>npm install http-server -g </strong></p>
-
-										<img src="javascript-unit1/javascript-unit1-2.JPG"
-											alt="δωρεάν μαθήματα JavaScript" class="center">
-										<p></p>
-
-										<p> Όταν τελειώσει η εγκατάσταση, μπορούμε να ξεκινήσουμε τον
-											 http-server γράφοντας απλά: <strong>http-server</strong> στο 
-											cmd αφού έχουμε πρώτα μεταφερθεί στο συγκεκριμένο φάκελο.</p>
-
-
-										<img src="javascript-unit1/javascript-unit1-3.JPG"
-											alt="δωρεάν μαθήματα JavaScript" class="center">
-										<p></p>
-
-										<p>Πάμε τώρα να δοκιμάσουμε να τρέξουμε ένα απλό παράδειγμα 
-											JavaScript για να επιβεβαιώσουμε ότι μπορούμε να τρέξουμε
-											στον http-server που μόλις ενεργοποιήσαμε. Αφού ξεκινήσουμε
-											το <strong>Visual Studio Code</strong>, ανοίγουμε το File και μετά Open
-											Folder.
-											 Βρίσκουμε τον φάκελλο τον οποίο δημιουργήσαμε σε προηγούμενο
-											βήμα και πατάμε Select Folder.</p>
-
-										<img src="javascript-unit1/javascript-unit1-4.JPG"
-											alt="δωρεάν μαθήματα JavaScript" class="center">
-										<p></p>
-										<img src="javascript-unit1/javascript-unit1-5.JPG"
-											alt="δωρεάν μαθήματα JavaScript" class="center">
-										<p></p>
-
-										<p>Στο project που δημιουργήσαμε με βάση τον φάκελο που
-											επιλέξαμε, θέλουμε τώρα να δημιουργήσουμε ένα απλό
-											αρχείο html. Πατάμε επάνω στο κουμπί new file και
-											δημιουργούμε ένα αρχείο index.html. </p>
-
-										<img src="javascript-unit1/javascript-unit1-6.JPG"
-											alt="δωρεάν μαθήματα JavaScript" class="center">
-										<p></p>
-										<img src="javascript-unit1/javascript-unit1-7.JPG"
-											alt="δωρεάν μαθήματα JavaScript" class="center">
-										<p></p>
-
-										<p>Ας γράψουμε ένα απλό κώδικα html μέσα στο αρχείο για να δούμε
-											αν μπορούμε να το τρέξουμε. Γράψτε τον πιο κάτω κώδικα
-											και μετά πατήστε Save.
-										</p>
-
-
-										<img src="javascript-unit1/javascript-unit1-8.JPG"
-											alt="δωρεάν μαθήματα JavaScript" class="center">
-										<p></p>
-
-
-										<p>Αν το έχετε κλείσει το windows terminal, ανοίξτε το πάλι, και πηγαίνετε
-											στο path όπου είναι ο φάκελος με τον αρχείο index.html.
-											Ξεκινήστε τον http-server. Αν ανοίξετε τον browser της
-											επιλογής σας και γράψετε
-											<strong> http://localhost:8081/index.html </strong>λογικά
-											θα πρέπει να δείτε κάτι αντίστοιχο με την πιο κάτω εικόνα: </p>
-
-
-										<img src="javascript-unit1/javascript-unit1-9.JPG"
-											alt="δωρεάν μαθήματα JavaScript" class="center">
-										<p></p>
-
-										<p><strong>Σημείωση:</strong> σε εσάς μπορεί η πόρτα του http-server να είναι
-											8080 και όχι 8081 όπως στο δικό μου παράδειγμα.</p>
-
-										<p>Τώρα θέλουμε να εμφανίσουμε το ίδιο μήνυμα αλλά με JavaScript κώδικα.
-											Επίσης, θέλουμε να ενεργοποιήσουμε τον Babel
-											transpiler. Για αρχή, δημιουργούμε ένα ακόμα αρχείο στο 
-											project μας με το όνομα MyScript.js (το όνομα είναι εντελώς τυχαίο).
-											Μέσα στο αρχείο γράφουμε τον εξής κώδικα:
-											<strong>document.write(“Introduction to JavaScript”);</strong></p>
-
-										<img src="javascript-unit1/javascript-unit1-10.JPG"
-											alt="δωρεάν μαθήματα JavaScript" class="center">
-										<p></p>
-
-										<p>Σαν τελευταίο βήμα, πρέπει να μπορέσουμε να καλέσουμε
-											το JavaScript αρχείο μέσα από την ιστοσελίδα μας και
-											να ενεργοποιήσουμε τον Babel transpiler. Αλλάξτε τον
-											κώδικα του html αρχείο στον πιο κάτω κώδικα: </p>
-
-										<img src="javascript-unit1/javascript-unit1-11.JPG"
-											alt="δωρεάν μαθήματα JavaScript" class="center">
-										<p></p>
-
-
-										<p>Αν κάνουμε refresh το URL θα πρέπει να δούμε το ίδιο μήνυμα όπως και πριν.
-											Μόνο που αυτή την φορά το output προέρχεται από το JavaScript αρχείο. 
-											Στο html αρχείο καλούμε το JavaScript αρχείο για να τρέξει τον κώδικα που
-											περιέχει. Η babel εντολή απλά πηγαίνει στο site της babel και
-											κάνει transpile 
-											τον κώδικα μας πριν τον εμφανίσει. Εννοείται ότι αυτός ο τρόπος δεν είναι
-											ο σωστός για να τρέξουμε επαγγελματικές εφαρμογές γιατί θα είναι πολύ αργός
-											ο χρόνος ανταπόκρισης. Για τα δικά μας όμως τοπικά παραδείγματα που τρέχουμε
-											στον υπολογιστή μας είναι ικανοποιητικός.</p>
-
-										<p>Αυτό είναι το περιβάλλον που θα χρειαστούμε για να
-											τρέξουμε όλα τα παραδείγματα από τις μελλοντικές ενότητες
-											του JavaScript. Απλά θα αλλάζουμε τον κώδικα μέσα στο αρχείο
-											 MyScript.js και θα κάνουμε refresh στην ιστοσελίδα για να
-											δούμε το αποτέλεσμα.</p>
-
-										<!-- ########################################################################################################################################################################################### -->
-									</div>
-								</div>
-							</div>
-
-							<!--<div class="row row-pb-lg animate-box">
-							<div class="col-md-12">
-								<h2 class="colorlib-heading-2">23 Comments</h2>
-								<div class="review">
-						   		<div class="user-img" style="background-image: url(images/person1.jpg)"></div>
-						   		<div class="desc">
-						   			<h4>
-						   				<span class="text-left">Jacob Webb</span>
-						   				<span class="text-right">24 March 2018</span>
-						   			</h4>
-						   			<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrov</p>
-						   			<p class="star">
-					   					<span class="text-left"><a href="#" class="reply"><i class="icon-reply"></i></a></span>
-						   			</p>
-						   		</div>
-						   	</div>
-						   	<div class="review">
-						   		<div class="user-img" style="background-image: url(images/person2.jpg)"></div>
-						   		<div class="desc">
-						   			<h4>
-						   				<span class="text-left">Jacob Webb</span>
-						   				<span class="text-right">24 March 2018</span>
-						   			</h4>
-						   			<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrov</p>
-						   			<p class="star">
-					   					<span class="text-left"><a href="#" class="reply"><i class="icon-reply"></i></a></span>
-						   			</p>
-						   		</div>
-						   	</div>
-						   	<div class="review">
-						   		<div class="user-img" style="background-image: url(images/person3.jpg)"></div>
-						   		<div class="desc">
-						   			<h4>
-						   				<span class="text-left">Jacob Webb</span>
-						   				<span class="text-right">24 March 2018</span>
-						   			</h4>
-						   			<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrov</p>
-						   			<p class="star">
-					   					<span class="text-left"><a href="#" class="reply"><i class="icon-reply"></i></a></span>
-						   			</p>
-						   		</div>
-						   	</div>
-							</div>
-						</div>-->
-
-							<!--<div class="row animate-box">
-							<div class="col-md-12">
-								<h2 class="colorlib-heading-2">Say something</h2>
-								<form action="#">
-									<div class="row form-group">
-										<div class="col-md-6">
-											<!-- <label for="fname">First Name</label> -->
-							<!--		<input type="text" id="fname" class="form-control" placeholder="Your firstname">
-										</div>
-										<div class="col-md-6">
-											<!-- <label for="lname">Last Name</label> -->
-							<!--<input type="text" id="lname" class="form-control" placeholder="Your lastname">
-										</div>
-									</div>
-
-									<div class="row form-group">
-										<div class="col-md-12">
-											<!-- <label for="email">Email</label> -->
-							<!--<input type="text" id="email" class="form-control" placeholder="Your email address">
-										</div>
-									</div>
-
-									<div class="row form-group">
-										<div class="col-md-12">
-											<!-- <label for="subject">Subject</label> -->
-							<!--<input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
-										</div>
-									</div>
-
-									<div class="row form-group">
-										<div class="col-md-12">
-											<!-- <label for="message">Message</label> -->
-							<!--	<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
-										</div>
-									</div>
-									<div class="form-group">
-										<input type="submit" value="Post Comment" class="btn btn-primary">
-									</div>
-								</form>	
-							</div>
-						</div> -->
+						<div class="col-xs-3 col justify-end">
+							<!-- user links -->
+							<!--<ul class="list-unstyled user-links fw-bold font-lato">-->
+							<!--	<li><a href="#popup1" class="lightbox">Login</a> <span class="sep">|</span> <a href="#popup2" class="lightbox">Register</a></li>-->
+							<!--</ul>-->
 						</div>
 					</div>
 				</div>
 			</div>
-
-			<!--<div id="colorlib-subscribe" class="subs-img" style="background-image: url(images/img_bg_2.jpg);" data-stellar-background-ratio="0.5">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
-						<h2>Subscribe Newsletter</h2>
-						<p>Subscribe our newsletter and get latest update</p>
-					</div>
-				</div>
-				<div class="row animate-box">
-					<div class="col-md-6 col-md-offset-3">
-						<div class="row">
-							<div class="col-md-12">
-							<form class="form-inline qbstp-header-subscribe">
-								<div class="col-three-forth">
-									<div class="form-group">
-										<input type="text" class="form-control" id="email" placeholder="Enter your email">
-									</div>
-								</div>
-								<div class="col-one-third">
-									<div class="form-group">
-										<button type="submit" class="btn btn-primary">Subscribe Now</button>
-									</div>
-								</div>
-							</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>-->
-			<footer id="colorlib-footer">
+			<!-- header holder -->
+			<div class="header-holder">
 				<div class="container">
-					<div class="row row-pb-md">
-						<div class="col-md-3 colorlib-widget">
-							<h4>PURPOSE</h4>
-							<p>Ο πρωταρχικός λόγος που με ώθησε στο να δημιουργήσω αυτή την
-								ιστοσελίδα και να προσφέρω δωρεάν μαθήματα είναι γιατί πιστεύω ότι
-								η γνώση, σε οποιοδήποτε επίπεδο, πρέπει να μεταδίδεται για να έχει αξία.</p>
-							<p>
-								<ul class="colorlib-social-icons">
-									<!--<li><a href="#"><i class="icon-twitter"></i></a></li>-->
-									<li><a href="https://www.facebook.com/kassapoglou/?ref=bookmarks"><i
-												class="icon-facebook"></i></a></li>
-									<li><a href="https://www.linkedin.com/groups/4390739/"><i
-												class="icon-linkedin"></i></a></li>
-									<!--<li><a href="#"><i class="icon-dribbble"></i></a></li>-->
-								</ul>
-							</p>
-						</div>
-						<div class="col-md-3 colorlib-widget">
-							<h4>Quick Links</h4>
-							<p>
-								<ul class="colorlib-footer-links">
-									<!--<li><a href="#"><i class="icon-check"></i> About</a></li>-->
-									<!--<li><a href="#"><i class="icon-check"></i> Testimonials</a></li>-->
-									<li><a href="https://kassapoglou.github.io/main/"><i class="icon-check"></i>
-											Home</a></li>
-									<li><a href="https://kassapoglou.github.io/javascript/javascript-programming.html"><i
-												class="icon-check"></i> JAVASCRIPT Programming</a></li>
-									<li><a href="https://kassapoglou.github.io/main/courses.html"><i
-												class="icon-check"></i> Courses</a></li>
-									<!--<li><a href="#"><i class="icon-check"></i> Event</a></li>
-								<li><a href="#"><i class="icon-check"></i> News</a></li>-->
-									<li><a href="https://kassapoglou.github.io/main/contact.html"><i
-												class="icon-check"></i> Contact</a></li>
-								</ul>
-							</p>
-						</div>
-
-						<!--<div class="col-md-3 colorlib-widget">
-						<h4>Recent Post</h4>
-						<div class="f-blog">
-							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-1.jpg);">
-							</a>
-							<div class="desc">
-								<h2><a href="blog.html">Creating Mobile Apps</a></h2>
-								<p class="admin"><span>18 April 2018</span></p>
+					<div class="row">
+						<div class="col-xs-6 col-sm-3">
+							<!-- logo -->
+							<div class="logo">
+								<a href="index.html">
+									<img src="images/logo.png" alt="KASSAPOGLOU">
+								</a>
 							</div>
 						</div>
-						<div class="f-blog">
-							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-2.jpg);">
-							</a>
-							<div class="desc">
-								<h2><a href="blog.html">Creating Mobile Apps</a></h2>
-								<p class="admin"><span>18 April 2018</span></p>
-							</div>
-						</div>
-						<div class="f-blog">
-							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-3.jpg);">
-							</a>
-							<div class="desc">
-								<h2><a href="blog.html">Creating Mobile Apps</a></h2>
-								<p class="admin"><span>18 April 2018</span></p>
-							</div>
-						</div>
-					</div> -->
-
-						<div class="col-md-3 colorlib-widget">
-							<h4>Contact Info</h4>
-							<ul class="colorlib-footer-links">
-
-								<li><a href="tel://6976434707"><i class="icon-phone"></i> 6976434707</a></li>
-								<li><a href="mailto:michail.kassapoglou@gmail.com"><i class="icon-envelope"></i>
-										michail.kassapoglou@gmail.com</a></li>
-								<li><a href="kassapoglou.github.io/main"><i class="icon-location4"></i>
-										kassapoglou.github.io/main</a></li>
-								<li><a href="https://www.facebook.com/kassapoglou/?ref=bookmarks"><i
-											class="icon-facebook2"></i> Facebook</a></li>
-								<li><a href="https://www.linkedin.com/groups/4390739/"><i class="icon-linkedin"></i>
-										Linkedin</a></li>
-							</ul>
-						</div>
+						<div class="col-xs-6 col-sm-9 static-block">
+							<!-- nav -->
+							<nav id="nav" class="navbar navbar-default">
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+								<!-- navbar collapse -->
+								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+									<!-- main navigation -->
+									<ul class="nav navbar-nav navbar-right main-navigation text-uppercase font-lato">
+										<li class="dropdown">
+											<a href="https://kassapoglou.github.io/main/">ΑΡΧΙΚΗ</a>
+											<!-- <ul class="dropdown-menu"> -->
+												<!--<li><a href="home.html">Home</a></li>-->
+											<!--	<li><a href="home2.html">Home 2</a></li>
+												<li><a href="home3.html">Home 3</a></li>-->
+											<!--</ul> -->
+										</li>
+										<li class="dropdown">
+											<a href="https://kassapoglou.github.io/main/training-events.html" >ΠΡΟΓΡΑΜΜΑ</a>
+											<!--<ul class="dropdown-menu"> -->
+												<!--<li><a href="courses-list.html">Course List</a></li>-->
+												<!--<li><a href="course-single.html">Course Single</a></li>-->
+										<!--	</ul> -->
+										</li>
+										<ul class="nav navbar-nav navbar-right main-navigation text-uppercase font-lato">
+											<li class="dropdown">
+												<a href="https://kassapoglou.github.io/main/course-list-all.html">ΜΑΘΗΜΑΤΑ</a>
+												<!-- <ul class="dropdown-menu"> -->
+													<!--<li><a href="home.html">Home</a></li>-->
+												<!--	<li><a href="home2.html">Home 2</a></li>
+													<li><a href="home3.html">Home 3</a></li>-->
+												<!--</ul> -->
+											</li>
+											<li class="dropdown">
+												<a href="#" >ΧΟΡΗΓΟΙ</a>
+												<!--<ul class="dropdown-menu"> -->
+													<!--<li><a href="courses-list.html">Course List</a></li>-->
+													<!--<li><a href="course-single.html">Course Single</a></li>-->
+											<!--	</ul> -->
+											</li>
+										<li class="dropdown">
+											<!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ΠΡΟΓΡΑΜΜΑ</a>-->
+											<!--<ul class="dropdown-menu">-->
+												<!--<li><a href="events-list.html">Event List</a></li>-->
+												<!--<li><a href="event-sigle.html">Event Single</a></li>-->
+											<!--</ul>-->
+										</li> 
+										<li class="dropdown">
+											<a href="#" >ΤΕΧΝΟΛΟΓΙΑ</a>
+										<!--	<ul class="dropdown-menu">-->
+											<!--	<li><a href="404.html">404 Page</a></li>
+												<li><a href="about-us.html">About us</a></li>
+												<li><a href="forum.html">Forum Page</a></li>
+												<li><a href="forum-single.html">Forum Single</a></li>
+												<li><a href="instructors-list.html">Instructors List</a></li>
+												<li><a href="instructor-single.html">Instructors Single</a></li>
+												<li><a href="login-register.html">Login &amp; Register</a></li> -->
+										<!--	</ul>-->
+										</li>
+										<li class="dropdown">
+											<a href="https://kassapoglou.github.io/main/contact.html" >ΕΠΙΚΟΙΝΩΝΙΑ</a>
+										<!--	<ul class="dropdown-menu">
+												<li><a href="blog.html">Blog List</a></li>
+												<li><a href="blog-single.html">Blog Single</a></li>
+											</ul> -->
+										</li>
+									<!--	<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop</a>
+											<ul class="dropdown-menu">
+												<li><a href="shop.html">Shop List</a></li>
+												<li><a href="single-product.html">Shop Single</a></li>
+												<li><a href="cartage.html">Cart Page</a></li>
+												<li><a href="checkout.html">Checkout</a></li>
+											</ul>
+										</li>-->
+										
+									</ul>
+								</div>
 					</div>
 				</div>
-				<div class="copy">
-					<div class="container">
+			</div>
+		</header>
+		<!-- contain main informative part of the site -->
+		<main id="main">
+			<!-- heading banner -->
+			<header class="heading-banner text-white bgCover" style="background-image: url(images/javascript-banner.png);">
+				<div class="container holder">
+					<div class="align">
+						<h1>JavaScript</h1>
+					</div>
+				</div>
+			</header>
+			<!-- breadcrumb nav -->
+			<nav class="breadcrumb-nav">
+				<div class="container">
+					<!-- breadcrumb -->
+					<ol class="breadcrumb">
+						<li><a href="https://kassapoglou.github.io/main/">ΑΡΧΙΚΗ</a></li>
+						<li><a href="https://kassapoglou.github.io/main/course-list-all.html">ΜΑΘΗΜΑΤΑ</a></li>
+						<li><a href="https://kassapoglou.github.io/javascript/javascript-programming.html">JAVASCRIPT</li>
+					</ol>
+				</div>
+			</nav>
+			<!-- two columns -->
+			<div id="two-columns" class="container">
+				<div class="row">
+					<!-- content -->
+					<article id="content" class="col-xs-12 col-md-9">
+						<!-- content h1 -->
+						<h1 class="content-h1 fw-semi">ΕΝΟΤΗΤΑ 1 - Environment Installation</h1>
+						<!-- view header -->
+						<header class="view-header row">
+							<div class="col-xs-12 col-sm-9 d-flex">
+								<div class="d-col">
+									<!-- post author -->
+									<div class="post-author">
+										<div class="alignleft no-shrink rounded-circle">
+											<a href="#"><img src="michail.jpg" class="rounded-circle" alt="image description"></a>
+										</div>
+										<div class="description-wrap">
+											<h2 class="author-heading"><a href="#">Εισηγητής</a></h2>
+											<h3 class="author-heading-subtitle text-uppercase">ΜΙΧΑΛΗΣ ΚΑΣΑΠΟΓΛΟΥ</h3>
+										</div>
+									</div>
+								</div>
+								<div class="d-col">
+									<!-- post author -->
+									<div class="post-author">
+										<div class="alignleft no-shrink icn-wrap">
+											<i class="far fa-bookmark"></i>
+										</div>
+										<div class="description-wrap">
+											<h2 class="author-heading"><a href="#">Κατηγορία</a></h2>
+											<h3 class="author-heading-subtitle text-uppercase">PROGRAMMING</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--<div class="col-xs-12 col-sm-3">
+								<div class="rating-holder">
+									<ul class="star-rating list-unstyled justify-end">
+										<li><span class="fas fa-star"><span class="sr-only">star</span></span></li>
+										<li><span class="fas fa-star"><span class="sr-only">star</span></span></li>
+										<li><span class="fas fa-star"><span class="sr-only">star</span></span></li>
+										<li><span class="fas fa-star"><span class="sr-only">star</span></span></li>
+										<li><span class="fas fa-star"><span class="sr-only">star</span></span></li>
+									</ul>
+									<strong class="element-block text-right subtitle fw-normal">(2 Reviews)</strong>
+								</div>
+							</div>-->
+						</header>
+						<div class="aligncenter content-aligncenter">
+							<img src="images/javascript.jpeg" alt="image description">
+						</div>
+<!--################################################################################################-->
+<p>Στο σημερινό δωρεάν μάθημα JavaScript θα εγκαταστήσουμε όλα τα απαραίτητα εργαλεία που 
+	χρειάζονται για την ανάπτυξη web εφαρμογών χρησιμοποιώντας JavaScript. Επίσης θα δοκιμάσουμε 
+	το περιβάλλον μας δημιουργώντας μια απλή html σελίδα η οποία εκτελεί ένα εξωτερικό αρχείο JavaScript και 
+	εμφανίζει το αποτέλεσμα στον browser.</p>
+
+<p>Από τις πρώτες κιόλας ημέρες ύπαρξης του διαδικτύου, έγινε αμέσως ορατή η ανάγκη να έχουν οι 
+	ιστοσελίδες, και γενικότερα τα  sites, μια πιο δυναμική και διαδραστική συμπεριφορά και να 
+	δραπετεύσουν όσο το δυνατόν γρηγορότερα από το στατικό περιβάλλον του HTML. </p>
+
+
+<p>Αν και με την παρουσία του CSS μπορέσαμε να δώσουμε ένα πιο όμορφο παρουσιαστικό στα κείμενα μας, με 
+	την προσθήκη της JavaScript μπορέσαμε να προσθέσουμε περισσότερες δυνατότητες όπως email, ημερολόγια, 
+	τραπεζικές συναλλαγές, online αγορές, παιγνίδια και επεξεργασία κειμένου. </p>
+
+<p>Αν κοιτάξουμε στο παρελθόν, τον τρόπο με τον οποίο καταχωρίσαμε και κατηγοριοποιήσαμε τις τεχνολογίες 
+	που κατά καιρούς εμφανίστηκαν, θα δούμε ότι τεχνολογίες όπως η HTML (και όλα τα παρακλάδια της) δημιουργήθηκαν 
+	με σκοπό να μας προσφέρουν την ικανότητα να παρουσιάσουμε ένα κείμενο στο διαδίκτυο, τεχνολογίες παρόμοιες 
+	με εκείνη της CSS δημιουργήθηκαν για να δώσουμε μια πιο ελκυστική παρουσίαση στο κείμενο μας, και 
+	τέλος η JavaScript για να δώσει λειτουργικότητα και να προσφέρει εφαρμογές στον χρήστη του Web. </p>
+
+<p>Τα προγράμματα JavaScript εκτελούνται τοπικά στον υπολογιστή μας. Το περιβάλλον του Web browser είναι η 
+	πιο κοινή πλατφόρμα εκτέλεσης JavaScript εφαρμογών αλλά δεν είναι το μόνο. Σήμερα η JavaScript μπορεί 
+	να εκτελεστεί σε πολλαπλές πλατφόρμες όπως εκείνων των mobile phones, και των servers. </p>
+
+<p>Η JavaScript είναι το αποτέλεσμα της European Computer Manufactures Association (ECMA) επιτροπής 
+	που δημιούργησε το στάνταρ ECMA-262 το οποίο περιγράφει τους βασικούς κανόνες της JavaScript γλώσσας 
+	χωρίς καμία αναφορά σε κάποιον συγκεκριμένο  web browser. Αυτό σημαίνει ότι όποια 
+	πλατφόρμα (κυρίως  web browsers) θέλει να είναι συμβατή με την τελευταία έκδοση της JavaScript 
+	πρέπει να ακολουθήσει το ECMA στάνταρ. </p>
+
+<p>Το ECMAScript 11 είναι το πιο πρόσφατο στάνταρ και σιγά σιγά όλοι οι γνωστοί web browsers προσπαθούν 
+	να το ενσωματώσουν στην πλατφόρμα τους. Η τελευταία έκδοση της JavaScript έρχεται σε εμάς με μια 
+	σωρεία από καινούργια χαρακτηριστικά όπως  nullish coalescing operator και globalThis 
+	αντικείμενο. Μην ανησυχείτε για αυτά τώρα, θα τα αναλύσουμε όλα αργότερα. Τέλος, μην σας μπερδεύουν 
+	τα ονόματα ECMAScript 11, ES11, ή ECMAScript 2020 όλα αναφέρονται στο ίδιο πράγμα. </p>
+
+<p>Εάν δεν είσαστε σίγουροι αν ο browser σας υποστηρίζει ES10 ή ES11  ή κάποια άλλη 
+	έκδοση, τότε μπορείτε να επισκεφτείτε την πιο κάτω 
+	ιστοσελίδα <a href="http://kangax.github.io/compat-table/es2016plus/ ">
+	<font color="#0000CC">http://kangax.github.io/compat-table/es2016plus/
+	</font>
+</a>. </p>
+
+<img src="javascript-unit1/javascript-unit1-1.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+										<p></p>
+
+
+<p>Ας δούμε όμως τώρα πως δημιουργούμε ένα περιβάλλον ανάπτυξης JavaScript κώδικα έτσι 
+	ώστε να είμαστε έτοιμοι να τρέξουμε τα παραδείγματα που θα αναλύσουμε 
+	ξεκινώντας από την επόμενη ενότητα.</p>
+
+<p>Για αρχή χρειαζόμαστε ένα περιβάλλον ανάπτυξης Web εφαρμογών. Αν και έχουμε πολλές επιλογές, 
+	θα προτιμήσουμε την διασημότερη που είναι το 
+	Visual Studio Code <a href="https://code.visualstudio.com/">
+		<font color="#0000CC">(https://code.visualstudio.com/)
+		</font>
+	</a>. </p>
+
+	<img src="javascript-unit1/javascript-unit1-2.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+<p>Κατεβάστε την τελευταία έκδοση και προχωρήστε στην εγκατάσταση του. Δεν χρειάζεται να το ξεκινήσετε ακόμα.</p>
+
+<p>Τώρα πρέπει να δημιουργήσουμε ένα φάκελλο στον υπολογιστή μας μέσα στον οποίο θα 
+	αποθηκεύσουμε τα αρχεία με τον JavaScript κώδικα που πρόκειται να γράψουμε. Μπορείτε 
+	να ονομάσετε τον φάκελλο όπως επιθυμείτε. Στο δικό μου παράδειγμα τον ονομάζω <strong>JavaScriptLessons</strong>.</p>
+
+	<img src="javascript-unit1/javascript-unit1-3.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+<p>Τώρα ξεκινάμε το Visual Studio Code. Πατήστε το εικονίδιο <strong>Explorer</strong>. Από εδώ μπορούμε να 
+	επιλέξουμε και να ανοίξουμε τον φάκελλο JavaScriptLessons που έχουμε ήδη δημιουργήσει. Μπορείτε να 
+	επιλέξετε τον φάκελο είτε πατώντας επάνω στο κουμπί <strong>Open Folder</strong> ή μπορείτε να πάτε 
+	στο κεντρικό μενού και να επιλέξετε <strong>File → Open Folder</strong>. </p>
+
+	<img src="javascript-unit1/javascript-unit1-4.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+
+	<img src="javascript-unit1/javascript-unit1-5.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+<p>Για να μπορέσουμε να εκτελέσουμε και να δούμε τον κώδικα μας να τρέχει στον Web Browser, 
+	χρειάζεται να εγκαταστήσουμε και έναν Web Server. Μην ανησυχείτε όμως για αυτή την διαδικασία 
+	γιατί είναι πολύ απλή. Αυτό που έχουμε να κάνουμε είναι να πατήσουμε επάνω στην επιλογή 
+	<strong>Extensions</strong> και να ψάξουμε για το Live Server. Όταν το βρείτε και εμφανιστεί στην λίστα, 
+	απλά πατήστε το κουμπί <strong>install</strong> για να εγκατασταθεί αυτόματα.</p>
+
+	<img src="javascript-unit1/javascript-unit1-6.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+<p>Τώρα μπορείτε να πατήσετε πάλι το εικονίδιο Explorer για να γυρίσετε 
+	πίσω στον φάκελλο που αντιπροσωπεύει το project μας.</p>
+
+	<img src="javascript-unit1/javascript-unit1-7.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+<p>Στο project που δημιουργήσαμε, με βάση τον φάκελο που επιλέξαμε, θέλουμε τώρα να δημιουργήσουμε 
+	ένα απλό αρχείο html. Πατάμε επάνω στο κουμπί <strong>new file</strong> και δημιουργούμε ένα αρχείο 
+	<strong>index.html</strong>. Όταν δημιουργείτε αρχεία βεβαιωθείτε ότι γράφετε όχι μόνο 
+	το όνομα αλλά και την κατάληξη του αρχείου π.χ. html. Το Visual Studio Code ενεργοποιεί τα 
+	modules που περιέχει για να υποστηρίξει το project μας βασιζόμενο στις καταλήξεις των αρχείων.</p>
+
+	<img src="javascript-unit1/javascript-unit1-8.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+<p>Ένα απλό html αρχείο χρειάζεται κάποιο βασικό κώδικα για να μπορεί να τρέξει σωστά στον 
+	browser. Δεν χρειάζεται όμως να δημιουργείτε αυτόν τον βασικό κώδικα από την αρχή κάθε 
+	φορά. Το Visual Studio Code θα σας βοηθήσει να το δημιουργήσετε αυτόματα.</p>
+
+<p>Γράψουμε μέσα στο index.html αρχείο την λέξη <strong>doc</strong>. Η επιλογή που μας εμφανίζεται, μας 
+	προτείνει την δημιουργία ενός βασικού κορμού μιας html σελίδας. Πατήστε επάνω στην επιλογή doc που 
+	εμφανίζεται και θα δείτε αμέσως όλο τον κώδικα html να γράφεται αυτόματα.</p>
+
+	<img src="javascript-unit1/javascript-unit1-9.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+
+	<img src="javascript-unit1/javascript-unit1-10.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+<p>Πριν προσθέσουμε JavaScript κώδικα σε αυτή την απλή html σελίδα, ας εξοικειωθούμε λίγο με την 
+	διαδικασία εκτέλεσης ενός html αρχείου μέσα από το Visual Studio Code. Για αρχή ας προσθέσουμε 
+	ένα απλό μήνυμα μέσα στο body tag έτσι ώστε να δούμε κάτι στον browser όταν αυτή η σελίδα τρέξει 
+	στον Live Server. Προσθέτουμε λοιπόν το εξής μήνυμα:</p>
+
+	<img src="javascript-unit1/javascript-unit1-11.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+<p>Τώρα πηγαίνουμε κάτω δεξιά στην οθόνη και πατάμε το εικονίδιο <strong>Go Live</strong>. Αυτόματα θα ξεκινήσει 
+	ο Live Server, θα φορτώσει την συγκεκριμένη html σελίδα και θα μας την δείξει στον browser. Αν δεν 
+	σας εμφανίζεται, απλά κλείστε το Visual Studio Code και ξεκινήστε το πάλι για να αναγνωρίσει την 
+	εγκατάσταση του συγκεκριμένου extension.</p>
+
+	<img src="javascript-unit1/javascript-unit1-12.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+	<img src="javascript-unit1/javascript-unit1-13.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+<p>Τώρα πατήστε πάλι επάνω στο εικονίδιο Go Live για να σταματήσει ο Live Server. Όταν προσθέσουμε και 
+	τoν JavaScript κώδικα τότε θα τον ενεργοποιήσουμε πάλι.</p>
+
+<p>Για προσθέσουμε JavaScript κώδικα στην html σελίδα μας, υπάρχουν δύο τρόποι – ο πρώτος είναι να τον 
+	προσθέσουμε μέσα στον html κώδικα (<strong>inline</strong>) ή σε εξωτερικό 
+	αρχείο (<strong>external</strong>). Ο καλύτερος τρόπος είναι να έχουμε τον JavaScript κώδικα σε 
+	εξωτερικό αρχείο γιατί είναι πιο γρήγορη η εκτέλεση του. Θα μιλήσουμε εκτενέστερα και για τις 
+	δύο αυτές επιλογές στην επόμενη ενότητα. Για τώρα ας δούμε που γράφουμε τον JavaScript κώδικα 
+	και πως μπορούμε να δούμε το αποτέλεσμα στον browser.</p>
+
+<p>Δημιουργούμε λοιπόν ένα δεύτερο αρχείο μέσα στο φάκελλο μας με το όνομα myscript.js. Η 
+	κατάληξη .js δηλώνει ότι το συγκεκριμένο αρχείο θα περιέχει JavaScript κώδικα. Γράφουμε λοιπόν την 
+	εξής γραμμή κώδικα που θα μας δείξει ένα μήνυμα στην κονσόλα του browser.</p>
+
+	<img src="javascript-unit1/javascript-unit1-14.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+<p>Τώρα πρέπει να ενημερώσουμε το html αρχείο ότι θέλουμε να εκτελεστεί ο JavaScript κώδικας 
+	όταν φορτώνεται η σελίδα μας στον browser. Για να ενσωματώσουμε ένα εξωτερικό αρχείο JavaScript 
+	σε μια html εφαρμογή γράφουμε την εξής εντολή:</p>
+
+	<img src="javascript-unit1/javascript-unit1-15.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+<p>Για να δούμε το αποτέλεσμα στον browser, πατάμε πάλι στο Go Live εικονίδιο για να 
+	εμφανιστεί η σελίδα μας στον Browser. Για να δούμε το αποτέλεσμα του JavaScript κώδικα που 
+	εκτελέστηκε, πατάμε <strong>F12</strong> για να ανοίξει η κονσόλα στον browser.</p>
+
+	<img src="javascript-unit1/javascript-unit1-16.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+<p>Τα περισσότερα μας JavaScript βασικά παραδείγματα θα τα εκτελούμε μέσα από την κονσόλα του 
+	Browser. Θα ακολουθήσουμε αυτή τη μέθοδο για λίγο μέχρι να εξοικειωθούμε με τις JavaScript 
+	εντολές και μετά θα δημιουργήσουμε web εφαρμογές.</p>
+
+<p>Αυτό λοιπόν είναι το περιβάλλον που θα χρειαστούμε για να τρέξουμε όλα τα παραδείγματα από 
+	τις μελλοντικές ενότητες των δωρεάν μαθημάτων JavaScript. Απλά θα αλλάζουμε τον κώδικα μέσα 
+	στο αρχείο myscript.js και θα κάνουμε refresh στην ιστοσελίδα για να δούμε το αποτέλεσμα. </p>
+
+
+<!--#########################################################################################################-->						
+						<!-- sectionRow -->
+					
+						<!-- bookmarkFoot -->
+						<div class="bookmarkFoot">
+							<div class="bookmarkCol">
+								<ul class="socail-networks list-unstyled">
+									<li><a href="#" class="facebook"><span class="fab fa-facebook-f"></span></a></li>
+									<li><a href="#" class="linkedin"><span class="fab fa-linkedin"></span></a></li>
+									
+								</ul>
+							</div>
+							<div class="bookmarkCol text-right">
+								<a href="#" class="btn btn-theme btn-warning text-uppercase fw-bold">Bookmark this course</a>
+							</div>
+						</div>
+						<h2>ΕΙΣΗΓΗΤΗΣ</h2>
+						<!-- instructorInfoBox -->
+						<div class="instructorInfoBox">
+							<div class="alignleft">
+								<a href="#"><img src="michail.jpg" alt="Merry Jhonson"></a>
+							</div>
+							<div class="description-wrap">
+								<h3 class="fw-normal"><a href="#"></a></h3>
+								<h4 class="fw-normal">Μιχάλης Κασάπογλου</h4>
+								<p>Ο Μιχάλης Κασάπογλου, είναι ένας από τους πιο έμπειρους τεχνικούς εκπαιδευτές στον χώρο του προγραμματισμού με πάνω από 20 χρόνια εμπειρία. Έχει εργαστεί σαν IT Operations Manager, Senior Programmer, και Training Team Leader ενώ κατέχει και αρκετές πιστοποιήσεις που καλύπτουν ένα μεγάλο φάσμα τεχνολογιών στο προγραμματισμό, σε βάσεις δεδομένων και cloud. Στον ελεύθερο του χρόνο διατηρεί ένα τεχνολογικό blog στο οποίο θα βρείτε αρκετά δωρεάν μαθήματα προγραμματισμού για αρχάριους.
+									</p>
+								<!--<a href="#" class="btn btn-default font-lato fw-semi text-uppercase">View Profile</a>-->
+							</div>
+						</div>
+					
+						<!-- reviewsList -->
+					
+						<!-- reviesSubmissionForm -->
+					
+					</article>
+					<!-- sidebar -->
+					<aside class="col-xs-12 col-md-3" id="sidebar">
+						<!-- widget course select -->
+						<section class="widget widget_box widget_course_select">
+							<header class="widgetHead text-center bg-theme">
+								<h3 class="text-uppercase">ΜΑΘΑΙΝΩ ΔΩΡΕΑΝ JAVASCRIPT</h3>
+							</header>
+							<strong class="price element-block font-lato" data-label="price:">FREE</strong>
+							<ul class="list-unstyled font-lato">
+								<!--<li><i class="far fa-user icn no-shrink"></i> 199 Students</li>-->
+								<!--<li><i class="far fa-clock icn no-shrink"></i> ΔΙΑΡΚΕΙΑ: 30 ΗΜΕΡΕΣ</li>-->
+								<!--<li><i class="fas fa-bullhorn icn no-shrink"></i> ΑΡΙΘΜΟΣ ΜΑΘΗΜΑΤΩΝ: 50</li>-->
+								<!--<li><i class="far fa-play-circle icn no-shrink"></i> Video: 12 hours</li>-->
+								<!--<li><i class="far fa-address-card icn no-shrink"></i> Certificate of Completion</li>-->
+							</ul>
+						</section>
+
+						<div class="one-third color-3 animate-box">
+							<span class="icon"><i class="icon-paypal"></i></span>
+							<div class="desc">
+								<h3>Γίνε Χορηγός στη Γνώση</h3>
+								<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick" />
+<input type="hidden" name="hosted_button_id" value="GQD77W6K672RA" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_GR/i/scr/pixel.gif" width="1" height="1" />
+</form></a></p>
+							</div>
+						</div>
+						<!-- widget categories -->
+						<section class="widget widget_categories">
+							<h3>ΚΑΤΗΓΟΡΙΕΣ ΜΑΘΗΜΑΤΩΝ</h3>
+							<ul class="list-unstyled text-capitalize font-lato">
+								<li class="cat-item cat-item-1"><a href="#">Programming</a></li>
+								<li class="cat-item active cat-item-2"><a href="#">DevOps</a></li>
+								<li class="cat-item cat-item-3"><a href="#">Web Design</a></li>
+								<li class="cat-item cat-item-4"><a href="#">Tools</a></li>
+								<li class="cat-item cat-item-5"><a href="#">Mobile</a></li>
+								<li class="cat-item cat-item-6"><a href="#">Databases</a></li>
+								<!--<li class="cat-item cat-item-7"><a href="#">IT &amp; Software</a></li>-->
+							</ul>
+						</section>
+						<!-- widget intro -->
+					<!--	<section class="widget widget_intro">
+							<h3>Course Intro</h3>
+							<div class="aligncenter overlay">
+								<a href="http://www.youtube.com/embed/9bZkp7q19f0?autoplay=1" class="btn-play far fa-play-circle lightbox fancybox.iframe"></a>
+								<img src="http://placehold.it/260x220" alt="image description">
+							</div>
+						</section>-->
+						<!-- widget popular posts -->
+						<section class="widget widget_popular_posts">
+							<h3>ΔΗΜΟΦΙΛΗ ΣΕΜΙΝΑΡΙΑ</h3>
+							<!-- widget cources list -->
+							<ul class="widget-cources-list list-unstyled">
+								<li>
+									<a href="https://kassapoglou.github.io/jakarta/jakartaee.html">
+										<div class="alignleft">
+											<img src="jakarta.png" alt="image description">
+										</div>
+										<div class="description-wrap">
+											<h4>Εισαγωγή στην Java EE (Jakarta Enterprise)</h4>
+											<strong class="price text-primary element-block font-lato text-uppercase">ΔΩΡΕΑΝ</strong>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="https://kassapoglou.github.io/javascript/javascript-programming.html">
+										<div class="alignleft">
+											<img src="javascript.png" alt="Δωρεάν μαθήματα JavaScript">
+										</div>
+										<div class="description-wrap">
+											<h4>Web προγραμματισμός με JavaScript</h4>
+											<strong class="price text-primary element-block font-lato text-uppercase">ΔΩΡΕΑΝ</strong>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="alignleft">
+											<img src="java.svg" alt="Δωρεάν μαθήματα Java">
+										</div>
+										<div class="description-wrap">
+											<h4>Βασικές αρχές προγραμματισμού με Java</h4>
+											<strong class="price text-primary element-block font-lato text-uppercase">ΔΩΡΕΑΝ</strong>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<div class="one-third color-3 animate-box">
+							<span class="icon"><i class="icon-paypal"></i></span>
+							<div class="desc">
+								<h3>Γίνε Χορηγός στη Γνώση</h3>
+								<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick" />
+<input type="hidden" name="hosted_button_id" value="GQD77W6K672RA" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_GR/i/scr/pixel.gif" width="1" height="1" />
+</form></a></p>
+							</div>
+						</div>
+						<!-- widget tags -->
+						<!--<nav class="widget widget_tags">
+							<h3>Tags</h3>-->
+							<!-- tag clouds -->
+							<!--<ul class="list-unstyled tag-clouds font-lato">
+								<li><a href="#">Future</a></li>
+								<li><a href="#">Science</a></li>
+								<li><a href="#">Coding</a></li>
+								<li><a href="#">Education</a></li>
+								<li><a href="#">Technology</a></li>
+							</ul>
+						</nav>-->
+					</aside>
+				</div>
+			</div>
+		</main>
+		<!-- footer area container -->
+				<!-- footer area container -->
+				<div class="footer-area bg-dark text-gray">
+					<!-- aside -->
+					<aside class="aside container">
 						<div class="row">
-							<div class="col-md-12 text-center">
+							<div class="col-xs-12 col-sm-6 col-md-3 col">
+								<div class="logo"><a href="home.html"><img src="images/logo.png" alt="studyLMS"></a></div>
+								<p>Ο πρωταρχικός λόγος που με ώθησε στο να δημιουργήσω αυτή την ιστοσελίδα και να προσφέρω δωρεάν μαθήματα είναι γιατί πιστεύω ότι η γνώση, σε οποιοδήποτε επίπεδο, πρέπει να μεταδίδεται για να έχει αξία.</p>
+								<a href="#" class="btn btn-default text-uppercase">ΞΕΚΙΝΗΣΤΕ ΤΑ ΜΑΘΗΜΑΤΑ</a>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-3 col hidden-xs">
+								<h3>ΔΗΜΟΦΙΛΗ ΜΑΘΗΜΑΤΑ</h3>
+								<!-- widget cources list -->
+								<ul class="widget-cources-list list-unstyled">
+									<li>
+										<a href="https://kassapoglou.github.io/python/python.html">
+											<div class="alignleft">
+												<img src="python.png" alt="Δωρεάν μαθήματα Python">
+											</div>
+											<div class="description-wrap">
+												<h4>Μαθαίνω Python Προγραμματισμό</h4>
+												<strong class="price text-primary element-block font-lato text-uppercase">ΔΩΡΕΑΝ</strong>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="https://kassapoglou.github.io/javascript/javascript-programming.html">
+											<div class="alignleft">
+												<img src="javascript.png" alt="Δωρεάν μαθήματα JavaScript">
+											</div>
+											<div class="description-wrap">
+												<h4>Μαθαίνω JavaScript προγραμματισμό</h4>
+												<strong class="price text-primary element-block font-lato text-uppercase">ΔΩΡΕΑΝ</strong>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="alignleft">
+												<img src="java.svg" alt="Δωρεάν μαθήματα Java">
+											</div>
+											<div class="description-wrap">
+												<h4>Μαθαίνω Java Προγραμματισμό</h4>
+												<strong class="price text-primary element-block font-lato text-uppercase">ΔΩΡΕΑΝ</strong>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<nav class="col-xs-12 col-sm-6 col-md-3 col">
+								<h3>ΣΥΝΔΕΣΜΟΙ</h3>
+								<!-- fooer navigation -->
+								<ul class="fooer-navigation list-unstyled">
+									<li><a href="https://kassapoglou.github.io/main/">ΑΡΧΙΚΗ</a></li>
+									<li><a href="https://kassapoglou.github.io/main/training-events.html">ΠΡΟΓΡΑΜΜΑ</a></li>
+									<li><a href="https://kassapoglou.github.io/main/course-list-all.html">ΜΑΘΗΜΑΤΑ</li>
+									<li><a href="#">ΧΟΡΗΓΟΙ</a></li>
+									<li><a href="#">ΤΕΧΝΟΛΟΓΙΑ</a></li>
+									<li><a href="https://kassapoglou.github.io/main/contact.html">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+									
+								</ul>
+							</nav>
+							<div class="col-xs-12 col-sm-6 col-md-3 col">
+								<h3>ΕΠΙΚΟΙΝΩΝΙΑ</h3>
+								<p>Μπορείτε να επικοινωνήσετε μαζί μου με τους εξής τρόπους:</p>
+								<!-- ft address -->
+								<address class="ft-address">
+									<dl>
+										<!--<dt><span class="fas fa-map-marker"><span class="sr-only">marker</span></span></dt>
+										<dd>Address: 9015 Sunset Boulevard United Kingdom</dd>-->
+										<dt><span class="fas fa-phone-square"><span class="sr-only">phone</span></span></dt>
+										<dd>Call: <a href="tel:+2156237532">+30 6976434707</a></dd>
+										<dt><span class="fas fa-envelope-square"><span class="sr-only">email</span></span></dt>
+										<dd>Email: <a href="mailto:michail.kassapoglou@gmail.com">michail.kassapoglou@gmail.com</a></dd>
+									</dl>
+								</address>
+							</div>
+						</div>
+					</aside>
+					<!-- page footer -->
+					<footer id="page-footer" class="font-lato">
+						<div class="container">
+							<div class="row holder">
+								<div class="col-xs-12 col-sm-push-6 col-sm-6">
+									<ul class="socail-networks list-unstyled">
+										<li><a href="#"><span class="fab fa-facebook"></span></a></li>
+										
+										<li><a href="#"><span class="fab fa-linkedin"></span></a></li>
+									</ul>
+								</div>
+								<div class="col-xs-12 col-sm-pull-6 col-sm-6">
+									<!--<p><a href="#">Studylms</a> | &copy; 2018 <a href="#">DesignFalls</a>, All rights reserved</p>-->
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+				<!-- back top of the page -->
+				<span id="back-top" class="text-center fa fa-caret-up"></span>
+				<!-- loader of the page -->
+				<div id="loader" class="loader-holder">
+					<div class="block"><img src="images/svg/hearts.svg" width="100" alt="loader"></div>
+				</div>
+			</div>
+			<div class="popup-holder">
+				<div id="popup1" class="lightbox-demo">
+					<form action="#" class="user-log-form">
+						<h2>Login Form</h2>
+						<div class="form-group">
+							<input type="text" class="form-control element-block" placeholder="Username or email address *">
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control element-block" placeholder="Password *">
+						</div>
+						<div class="btns-wrap">
+							<div class="wrap">
+								<label for="rem" class="custom-check-wrap fw-normal font-lato">
+									<input type="checkbox" id="rem" class="customFormReset">
+									<span class="fake-label element-block">Remember me</span>
+								</label>
+								<button type="submit" class="btn btn-theme btn-warning fw-bold font-lato text-uppercase">Login</button>
+							</div>
+							<div class="wrap text-right">
 								<p>
-									<small class="block">&copy;
-										<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-										Copyright &copy;<script>
-											document.write(new Date().getFullYear());
-										</script> All rights reserved | This template is made with <i class="icon-heart"
-											aria-hidden="true"></i> by <a href="https://colorlib.com"
-											target="_blank">Colorlib</a>
-										<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-									</small><br>
-									<small class="block">Demo Images: <a href="http://unsplash.co/"
-											target="_blank">Unsplash</a>, <a href="http://pexels.com/"
-											target="_blank">Pexels</a></small>
+									<a href="#" class="forget-link">Lost your Password?</a>
 								</p>
 							</div>
 						</div>
-					</div>
+					</form>
 				</div>
-			</footer>
-		</div>
-
-		<div class="gototop js-top">
-			<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
-		</div>
-
-		<!-- jQuery -->
-		<script src="js/jquery.min.js"></script>
-		<!-- jQuery Easing -->
-		<script src="js/jquery.easing.1.3.js"></script>
-		<!-- Bootstrap -->
-		<script src="js/bootstrap.min.js"></script>
-		<!-- Waypoints -->
-		<script src="js/jquery.waypoints.min.js"></script>
-		<!-- Stellar Parallax -->
-		<script src="js/jquery.stellar.min.js"></script>
-		<!-- Flexslider -->
-		<script src="js/jquery.flexslider-min.js"></script>
-		<!-- Owl carousel -->
-		<script src="js/owl.carousel.min.js"></script>
-		<!-- Magnific Popup -->
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<script src="js/magnific-popup-options.js"></script>
-		<!-- Counters -->
-		<script src="js/jquery.countTo.js"></script>
-		<!-- Main -->
-		<script src="js/main.js"></script>
-
-</body>
-
-</html>
+				<div id="popup2" class="lightbox-demo">
+					<form action="#" class="user-log-form">
+						<h2>Register Form</h2>
+						<div class="form-group">
+							<input type="email" class="form-control element-block" placeholder="Email address *">
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control element-block" placeholder="Password *">
+						</div>
+						<div class="btns-wrap">
+							<div class="wrap">
+								<button type="submit" class="btn btn-theme btn-warning fw-bold font-lato text-uppercase">Register</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- include jQuery -->
+			<script src="js/jquery.js"></script>
+			<!-- include jQuery -->
+			<script src="js/plugins.js"></script>
+			<!-- include jQuery -->
+			<script src="js/jquery.main.js"></script>
+			<!-- include jQuery -->
+			<script type="text/javascript" src="js/init.js"></script>
+		</body>
+		</html>
