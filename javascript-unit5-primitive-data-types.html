@@ -195,7 +195,7 @@
 					<ol class="breadcrumb">
 						<li><a href="https://kassapoglou.github.io/main/">ΑΡΧΙΚΗ</a></li>
 						<li><a href="https://kassapoglou.github.io/main/course-list-all.html">ΜΑΘΗΜΑΤΑ</a></li>
-						<li class="active">JAVASCRIPT</li>
+						<li><a href="https://kassapoglou.github.io/javascript/javascript-programming.html">JAVASCRIPT</li>
 					</ol>
 				</div>
 			</nav>
@@ -205,7 +205,7 @@
 					<!-- content -->
 					<article id="content" class="col-xs-12 col-md-9">
 						<!-- content h1 -->
-						<h1 class="content-h1 fw-semi">Εισαγωγή στον WEB προγραμματισμό με JavaScript</h1>
+						<h1 class="content-h1 fw-semi">ΕΝΟΤΗΤΑ 5 - Primitive Data Types</h1>
 						<!-- view header -->
 						<header class="view-header row">
 							<div class="col-xs-12 col-sm-9 d-flex">
@@ -250,160 +250,169 @@
 						<div class="aligncenter content-aligncenter">
 							<img src="images/javascript.jpeg" alt="image description">
 						</div>
-						<h3 class="content-h3">ΠΕΡΙΓΡΑΦΗ ΣΕΜΙΝΑΡΙΟΥ</h3>
-						<p>Εδώ θα βρείτε μια ολοκληρωμένη σειρά δωρεάν μαθημάτων στην
-							script γλώσσα web προγραμματισμού JavaScript. Κάθε μια ενότητα είναι
-							αυτόνομη
-							από τις άλλες και δεν απαιτείται να γνωρίζετε τις προηγούμενες
-							για να την παρακολουθήσετε. Επίσης σε κάθε ενότητα δημιουργούμε
-							ένα καινούργιο παράδειγμα JavaScript έτσι ώστε να είναι εντελώς
-							ξεκάθαρο το νόημα της ενότητας και η ουσία της θεωρίας που μελετάμε.</p>
+<!--################################################################################################-->
+<p>Στο σημερινό δωρεάν μάθημα JavaScript θα μιλήσουμε για τα primitive data types, πως τα 
+	ορίζουμε και ποια εντολή χρησιμοποιούμε για να αναγνωρίσουμε το data type μιας μεταβλητής.</p>
+
+<p>Για αρχή, θα πρέπει να δώσουμε έναν σύντομο ορισμό τι είναι ένα primitive data 
+	type. Μεταβλητές που ορίζονται σαν primitive data types δεν είναι αντικείμενα και δεν 
+	έχουν μεθόδους. Όταν αργότερα δημιουργήσουμε τα πρώτα μας αντικείμενα θα καταλάβετε καλύτερα 
+	αυτό τον ορισμό. Για τώρα απλά κρατάμε το γεγονός ότι ορίζουμε μεταβλητές για να μπορέσουμε 
+	να αποθηκεύσουμε τιμές. Αυτές οι τιμές μπορεί να είναι αριθμοί, χαρακτήρες, το κενό κτλ. Για 
+	να μπορέσουμε λοιπόν να γνωρίζουμε τι είδος τιμή έχει η κάθε μεταβλητή ορίσαμε τα primitive data 
+	types η JavaScript μας προσφέρει τον typeof operator. Ας δούμε όμως ένα προς ένα τα data 
+	types και πως ορίζονται.</p>
+
+<p><h3>Numbers</h3></p>
+
+<p>Στην JavaScript σαν Number ορίζουμε ένα αριθμητικό data type που είναι στην ουσία 
+	ένα double-precision 64-bit floating point αριθμός. Στην JavaScript δεν υπάρχουν 
+	διαφορετικά data types όπως υπάρχουν σε άλλες γλώσσες προγραμματισμού. Για παράδειγμα 
+	η Java ορίζει integers, floats, doubles, κτλ.</p>
+
+<p>Στο παρακάτω παράδειγμα αναθέτουμε μια integer (ακέραιη) αριθμητική τιμή στην μεταβλητή 
+	και μετά χρησιμοποιούμε τον typeof operator για να ελέγξουμε αν όντως η μεταβλητή είναι είδος Number.</p>
+
+	<img src="unit5/javascript-unit5-1.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+	<img src="unit5/javascript-unit5-2.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+<p>Με τον ίδιο ακριβώς τρόπο μπορούμε να ορίσουμε και μια δεκαδική τιμή αρκεί να ορίσουμε την 
+	τελεία και ένα τουλάχιστον ψηφίο μετά από την τελεία.</p>
+
+	<img src="unit5/javascript-unit5-3.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+	<img src="unit5/javascript-unit5-4.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
 
 
-						<p>Αν ξεκινάτε τώρα την καριέρα σας σαν Web προγραμματιστές τότε
-							να είσαστε σίγουροι ότι έχετε επιλέξει μια από τις πιο
-							διάσημες γλώσσες προγραμματισμού για το Web που οι οπαδοί της αυξάνονται
-							χρόνο με το χρόνο. Αυτό σημαίνει ότι θα μπορέσετε πολύ γρήγορα,
-							με τα σημερινά δεδομένα αγοράς εργασίας, να απορροφηθείτε άμεσα
-							σε κάποια εταιρεία πληροφορικής. </p>
+<p>Επειδή οι δεκαδικοί αριθμοί χρησιμοποιούν περισσότερη μνήμη από ότι οι ακέραιοι αριθμοί, η 
+	JavaScript προσπαθεί να μετατρέψει όταν μπορεί τους δεκαδικούς σε ακέραιους. Αυτό 
+	συμβαίνει όταν δεν υπάρχει ψηφίο μετά την τελεία ή χρησιμοποιείται το μηδέν.</p>
 
-						<p>Αν γνωρίζετε JavaScript μπορείτε πολύ εύκολα να κάνετε το επόμενο βήμα
-							το οποίο είναι να γράφετε JavaScript Web εφαρμογές με την χρήση
-							frameworks όπως Angular και React. Επίσης μπορείτε να προχωρήσετε
-							στα δωρεάν μαθήματα Node.js Microservices όπου θα μπορείτε να
-							δημιουργήσετε από τα πιο απλά μέχρι τα πιο σύνθετα Web Services
-							και Microservices. Τέλος, ας μην ξεχνάμε, ότι η JavaScript
-							έχει πλέον επεκταθεί σε mobile και tablet πλατφόρμες.
-							Όποια και να είναι η κατεύθυνση σας είναι απαραίτητη
-							προϋπόθεση να γνωρίζετε JavaScript οπότε κάνατε την σωστή αρχή!</p>
-						<!--<h3 class="content-h3">ΤΙ ΘΑ ΜΑΘΕΤΕ</h3>
-						<p>Στο πρώτο μέρος, των δωρεάν Python μαθημάτων, θα μάθετε όλες τις βασικές έννοιες που χρειάζεστε για να γράψετε τα πρώτα σας προγράμματα στην γλώσσα προγραμματισμού Python. Στην πραγματικότητα, η θεωρία που θα μάθετε, είναι σχεδόν η ίδια που θα μαθαίνατε σε οποιαδήποτε άλλη γλώσσα προγραμματισμού. </p>
-						<p>Θα αρχίσετε τα πρώτα σας βήματα στον προγραμματισμό με Python μαθαίνοντας τα διάφορα είδη data που υπάρχουν στην Python και πως μπορείτε να αποθηκεύσετε δεδομένα σε lists και dictionaries. Επίσης θα μάθετε πως να δημιουργήσετε ένα collection of data και πως μπορείτε να το χρησιμοποιήσετε με τον καλύτερο τρόπο στον κώδικα σας. Μετά θα προχωρήσουμε σε while loops και if statements έτσι ώστε να δώσουμε αυτόνομη λογική στα προγράμματα μας.</p>
-						<p>Θα συνεχίζετε να χτίζετε τις γνώσεις σας προχωρώντας  στην δημιουργία functions και να αλληλεπιδράτε με το πρόγραμμα σας όπως να ζητάτε από τον τελικό χρήστη να εισάγει δεδομένα κατά την εκτέλεση της εφαρμογής.</p>
-						<p>Κλάσεις και κληρονομικότητα θα σας απασχολήσουν για αρκετές ενότητες καλύπτοντας όλη την βασική θεωρία του αντικειμενοστραφή προγραμματισμού. Φυσικά κάθε κώδικας χρειάζεται να προστατευτεί από τυχόν λάθη στην εισαγωγή δεδομένων, όποτε θα μάθετε πως να διαχειρίζεστε τα ποιο κοινά λάθη που μπορεί να τύχουν καθώς η εφαρμογή σας εκτελείτε.</p>
-						<p>Στο δεύτερο μέρος των δωρεάν μαθημάτων θα μάθετε να γράφετε multi-threading και multi-processing κώδικα και να αναγνωρίζετε τις διάφορες τους. Επίσης θα εξοικειωθείτε με την έννοια του testing και ποιες βιβλιοθήκες να χρησιμοποιήσετε για να δοκιμάσετε τον κώδικα σας. Τέλος θα μάθετε κάποιες προχωρημένες έννοιες όπως Generators και Iterators, lambda expressions, και web scraping.</p>-->
-						<!--<ul class="listDefault list-unstyled">
-							<li>Thomas Edison may have been behind the invention.</li>
-							<li>Edison worked alongside partners, both financial and commercial, to get his best inventions off the ground,</li>
-							<li>Battling challenging cost targets and the need to build.</li>
-						</ul>
-						<p>Quasar the only home we've ever known extraordinary claims require extraordinary evidence billions billions Drake Eqa tion. Stirred by starlight! At the edge of forever. Rich in mystery Sea of Tranquility. Are creatures of the cosmos descend from astronomers. Trillion and billions upon billions upon billions upon billions upon billions. upon billions upon billions!</p>-->
-						<h2>ΕΝΟΤΗΤΕΣ</h2>
-				
-						<!-- sectionRow -->
-						<section class="sectionRow">
-							<h2 class="h6 text-uppercase fw-semi rowHeading">ΒΑΣΙΚΕΣ ΕΝΝΟΙΕΣ WEB ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΥ ΜΕ JAVASCRIPT</h2>
-							<!-- sectionRowPanelGroup -->
-							<div class="panel-group sectionRowPanelGroup" id="accordion" role="tablist" aria-multiselectable="true">
-								<!-- panel -->
-	<div class="panel panel-default">
-		<div class="panel-heading" role="tab" id="headingOne">
-			<h3 class="panel-title fw-normal">
-				<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-unit1-environment-installation.html" style="color:blue;">ΕΝΟΤΗΤΑ 1 - Environment Installation</a>
-					<span class="accOpenerCol">
-					
-					<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-					</span>
-					<!--<span class="accOpenerCol hd-phone">
-						<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-						<time datetime="2011-01-12" class="timeCount">17 Min</time>
-					</span>-->
-				</a>
-			</h3>
-			
-		</div>
+	<img src="unit5/javascript-unit5-5.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
 
-		
-		<!-- collapseOne -->
 	
-	</div>
-	
-	<div class="panel panel-default">
-	<div class="panel-heading" role="tab" id="headingOne">
-		<h3 class="panel-title fw-normal">
-			<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-unit2-inline-code-versus-external-files.html" style="color:blue;">ΕΝΟΤΗΤΑ 2 - Inline Code Versus External Files</a>
-				<span class="accOpenerCol">
-				
-				<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-				</span>
-				<!--<span class="accOpenerCol hd-phone">
-					<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-					<time datetime="2011-01-12" class="timeCount">17 Min</time>
-				</span>-->
-			</a>
-		</h3>
-		</div>
-	</div>
+	<img src="unit5/javascript-unit5-6.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
 
-	<div class="panel panel-default">
-		<div class="panel-heading" role="tab" id="headingOne">
-			<h3 class="panel-title fw-normal">
-				<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-unit3-how-to-define-variables.html" style="color:blue;">ΕΝΟΤΗΤΑ 3 - How To Define Variables</a>
-					<span class="accOpenerCol">
-					
-					<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-					</span>
-					<!--<span class="accOpenerCol hd-phone">
-						<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-						<time datetime="2011-01-12" class="timeCount">17 Min</time>
-					</span>-->
-				</a>
-			</h3>
-			</div>
-		</div>
+<p>Υπάρχει μια ειδική τιμή που ονομάζεται Infinity που αντιπροσωπεύει οποιονδήποτε μεγάλο αριθμό 
+	που δεν μπορεί να διαχειριστεί η JavaScript. Για παράδειγμα αν διαιρέσουμε έναν 
+	αριθμό με το μηδέν το αποτέλεσμα θα είναι infinity.</p>
 
-		<div class="panel panel-default">
-			<div class="panel-heading" role="tab" id="headingOne">
-				<h3 class="panel-title fw-normal">
-					<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-unit4-const-declarations.html" style="color:blue;">ΕΝΟΤΗΤΑ 4 - Const Declarations</a>
-						<span class="accOpenerCol">
-						
-						<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-						</span>
-						<!--<span class="accOpenerCol hd-phone">
-							<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-							<time datetime="2011-01-12" class="timeCount">17 Min</time>
-						</span>-->
-					</a>
-				</h3>
-				</div>
-			</div>
-	
-		<div class="panel panel-default">
-			<div class="panel-heading" role="tab" id="headingOne">
-				<h3 class="panel-title fw-normal">
-					<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-unit5-primitive-data-types.html" style="color:blue;">ΕΝΟΤΗΤΑ 5 - Primitive Data Types</a>
-						<span class="accOpenerCol">
-						
-						<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-						</span>
-						<!--<span class="accOpenerCol hd-phone">
-							<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-							<time datetime="2011-01-12" class="timeCount">17 Min</time>
-						</span>-->
-					</a>
-				</h3>
-				</div>
-			</div>
+	<img src="unit5/javascript-unit5-7.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
 
-																			
+	<img src="unit5/javascript-unit5-8.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+<p>Υπάρχει ακόμα μια ειδική αριθμητική τιμή που ονομάζεται NaN (Not a Number) που 
+	υποδεικνύει πότε μια πράξη επιστρέφει αριθμό σαν αποτέλεσμα ή έχει αποτύχει (αντί 
+	να μας δώσει λάθος). Το ποιο συχνό παράδειγμα είναι όταν προσπαθούμε να πραγματοποιήσουμε 
+	μια αριθμητική πράξη θεωρώντας ότι όλοι οι όροι είναι αριθμοί αλλά στην πραγματικότητα δεν είναι.</p>
+
+	<img src="unit5/javascript-unit5-9.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+	<img src="unit5/javascript-unit5-10.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+<p><h3>Strings</h3></p>
+
+<p>Το String data type αντιπροσωπεύει οποιαδήποτε αλληλουχία 16-bit Unicode 
+	χαρακτήρων. Για να αναθέσουμε μια τιμή String σε μια μεταβλητή μπορούμε να 
+	χρησιμοποιήσουμε είτε double quotes (“ “), είτε single quotes (‘ ‘), είτε backticks (` `).</p>
+
+	<img src="unit5/javascript-unit5-11.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+	<img src="unit5/javascript-unit5-12.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+<p><h3>BigInt</h3></p>
+
+<p>Το BigInt type είναι ο τρόπος να μπορεί η JavaScript να αντιπροσωπεύσει 
+	πολύ μεγάλους αριθμούς που είναι έξω από τα όρια του Number data type. Ο τρόπος με τον 
+	οποίο αναθέτουμε μεγάλους αριθμούς σε μεταβλητές είναι να βάζουμε το γράμμα n στο 
+	τέλος του αριθμούς.</p>
+
+	<img src="unit5/javascript-unit5-13.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+	<img src="unit5/javascript-unit5-14.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+<p><h3>Boolean</h3></p>
+
+<p>Υπάρχουν μόνο δύο τιμές που μπορούμε να αναθέσουμε σε μια μεταβλητή και 
+	να θεωρηθεί σαν Boolean data type και αυτές είναι: true και false χωρίς να χρησιμοποιήσουμε quotes.</p>
+
+	<img src="unit5/javascript-unit5-15.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+	<img src="unit5/javascript-unit5-16.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+<p><h3>Undefined</h3></p>
+
+<p>Undefined είναι η τιμή που λαμβάνουμε όταν έχουμε ορίσει το όνομα μιας 
+	μεταβλητής χωρίς να της δώσουμε αρχική τιμή. </p>
+
+	<img src="unit5/javascript-unit5-17.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>	
+
+	<img src="unit5/javascript-unit5-18.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>	
+
+<p><h3>Null</h3></p>
+
+<p>Το undefined το αναθέτει αυτόματα η JavaScript στην μεταβλητή που 
+	δεν έχει αρχική τιμή. Όταν όμως ο κώδικα μας επηρεάζει την μεταβλητή χωρίς όμως να 
+	έχει κάποια συγκεκριμένη τιμή να αναθέσει τότε έχουμε null σαν αποτέλεσμα.</p>
+
+	<img src="unit5/javascript-unit5-19.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>	
 
 
+	<img src="unit5/javascript-unit5-20.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>	
 
-								<!-- panel -->
-								
-								<!-- panel -->
-							
-								<!-- panel -->
-								
-								<!-- panel -->
-							
-							</div>
-							
-							
-						</section>
+<p><h3>Symbol</h3></p>
 
-						
+<p>Το Symbol είναι το τελευταίο primitive data type, αλλά και το ποιο 
+	πρόσφατο γιατί εμφανίστηκε με την έκδοση ES6. Δεν θα μπορέσετε να το καταλάβετε 
+	απόλυτα τώρα, γιατί η χρησιμότητα του συνδυάζεται με τα αντικείμενα. Σε γενικές 
+	γραμμές ένα Symbol εξασφαλίζει την μοναδικότητα των κλειδιών που χρησιμοποιούνται 
+	κυρίως σε αντικείμενα.</p>
+
+<p>Για να δημιουργήσουμε ένα Symbol χρησιμοποιούμε τον constructor Symbol( ).</p>
+
+<img src="unit5/javascript-unit5-21.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+<p></p>	
+
+<img src="unit5/javascript-unit5-22.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+<p></p>	
+
+<p>Πριν κλείσουμε το σημερινό δωρεάν μάθημα JavaScript πρέπει να αναφέρουμε το γεγονός 
+	ότι όλα τα primitives που μόλις περιγράψαμε είναι immutable – δηλαδή δεν μπορούμε να 
+	τροποποιήσουμε τις τιμές τους. Μην μπερδεύεται την λογική ότι αναθέτουμε καινούργια τιμή 
+	σε μια μεταβλητή, με την λογική ότι προσπαθούμε να επηρεάσουμε την τιμή που ήδη υπάρχει 
+	σε μια μεταβλητή. Στο παρακάτω παράδειγμα δημιουργούμε μια String μεταβλητή. Χρησιμοποιούμε 
+	την function toUpperCase( ) για να αλλάξουμε όλους χαρακτήρες σε κεφαλαία, όμως το String 
+	παρέμεινε ακριβώς όπως αρχικά το είχαμε γράψει.</p>
+
+	<img src="unit5/javascript-unit5-23.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>	
+
+	<img src="unit5/javascript-unit5-24.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>	
+
+
+<!--#########################################################################################################-->						
 						<!-- sectionRow -->
 					
 						<!-- bookmarkFoot -->
