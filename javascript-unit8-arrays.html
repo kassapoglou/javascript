@@ -195,7 +195,7 @@
 					<ol class="breadcrumb">
 						<li><a href="https://kassapoglou.github.io/main/">ΑΡΧΙΚΗ</a></li>
 						<li><a href="https://kassapoglou.github.io/main/course-list-all.html">ΜΑΘΗΜΑΤΑ</a></li>
-						<li class="active">JAVASCRIPT</li>
+						<li><a href="https://kassapoglou.github.io/javascript/javascript-programming.html">JAVASCRIPT</li>
 					</ol>
 				</div>
 			</nav>
@@ -205,7 +205,7 @@
 					<!-- content -->
 					<article id="content" class="col-xs-12 col-md-9">
 						<!-- content h1 -->
-						<h1 class="content-h1 fw-semi">Εισαγωγή στον WEB προγραμματισμό με JavaScript</h1>
+						<h1 class="content-h1 fw-semi">ΕΝΟΤΗΤΑ 8 - Arrays</h1>
 						<!-- view header -->
 						<header class="view-header row">
 							<div class="col-xs-12 col-sm-9 d-flex">
@@ -250,207 +250,177 @@
 						<div class="aligncenter content-aligncenter">
 							<img src="images/javascript.jpeg" alt="image description">
 						</div>
-						<h3 class="content-h3">ΠΕΡΙΓΡΑΦΗ ΣΕΜΙΝΑΡΙΟΥ</h3>
-						<p>Εδώ θα βρείτε μια ολοκληρωμένη σειρά δωρεάν μαθημάτων στην
-							script γλώσσα web προγραμματισμού JavaScript. Κάθε μια ενότητα είναι
-							αυτόνομη
-							από τις άλλες και δεν απαιτείται να γνωρίζετε τις προηγούμενες
-							για να την παρακολουθήσετε. Επίσης σε κάθε ενότητα δημιουργούμε
-							ένα καινούργιο παράδειγμα JavaScript έτσι ώστε να είναι εντελώς
-							ξεκάθαρο το νόημα της ενότητας και η ουσία της θεωρίας που μελετάμε.</p>
+<!--################################################################################################-->
+<p>Στο σημερινό δωρεάν μάθημα JavaScript θα εξηγήσουμε τι είναι ένας array, πως 
+	δημιουργούμε arrays, πως προσθέτουμε και αφαιρούμε στοιχεία από αυτούς και κάποιες έξτρα 
+	ιδιότητες τους που μπορούμε να χρησιμοποιήσουμε καλώντας τις μεθόδους που περιέχουν. Τι 
+	είναι όμως ένας array?</p>
+
+<p>Με απλά λόγια είναι μια λίστα από τιμές. Αντί να χρησιμοποιούμε κάθε φορά μια 
+	μεταβλητή για κάθε τιμή που πρέπει να αποθηκεύουμε, μπορούμε να χρησιμοποιήσουμε μια 
+	και μόνο μεταβλητή για να αποθηκεύσουμε πολλαπλές τιμές. Οι τιμές αυτές αποτελούν τα 
+	elements του array όπως ονομάζονται. Σκεφτείτε λοιπόν ότι έχετε 10 διαφορετικές τιμές να 
+	αποθηκεύσετε, ίσως να μην σας φανούν πολλές οπότε μπορεί να αποφασίσετε να δημιουργήσετε 10 
+	διαφορετικές μεταβλητές για να τις αποθηκεύσετε. Τι θα κάνετε όμως αν έχετε 100 διαφορετικές 
+	τιμές ή 1000 διαφορετικές τιμές? Εδώ είναι ακριβώς που χρειαζόμαστε τους array.</p>
+
+<p>Για να ορίσουμε αρχικά έναν array, αρκεί να ορίσουμε μια μεταβλητή που με ισούται με κενά 
+	brackets ( [ ] ). Αν ο array δεν περιέχει καμία τιμή το αποτέλεσμα θα δείχνει length 0.</p>
+
+	<img src="unit8/javascript-unit8-1.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
 
 
-						<p>Αν ξεκινάτε τώρα την καριέρα σας σαν Web προγραμματιστές τότε
-							να είσαστε σίγουροι ότι έχετε επιλέξει μια από τις πιο
-							διάσημες γλώσσες προγραμματισμού για το Web που οι οπαδοί της αυξάνονται
-							χρόνο με το χρόνο. Αυτό σημαίνει ότι θα μπορέσετε πολύ γρήγορα,
-							με τα σημερινά δεδομένα αγοράς εργασίας, να απορροφηθείτε άμεσα
-							σε κάποια εταιρεία πληροφορικής. </p>
+	<img src="unit8/javascript-unit8-2.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
 
-						<p>Αν γνωρίζετε JavaScript μπορείτε πολύ εύκολα να κάνετε το επόμενο βήμα
-							το οποίο είναι να γράφετε JavaScript Web εφαρμογές με την χρήση
-							frameworks όπως Angular και React. Επίσης μπορείτε να προχωρήσετε
-							στα δωρεάν μαθήματα Node.js Microservices όπου θα μπορείτε να
-							δημιουργήσετε από τα πιο απλά μέχρι τα πιο σύνθετα Web Services
-							και Microservices. Τέλος, ας μην ξεχνάμε, ότι η JavaScript
-							έχει πλέον επεκταθεί σε mobile και tablet πλατφόρμες.
-							Όποια και να είναι η κατεύθυνση σας είναι απαραίτητη
-							προϋπόθεση να γνωρίζετε JavaScript οπότε κάνατε την σωστή αρχή!</p>
-						<!--<h3 class="content-h3">ΤΙ ΘΑ ΜΑΘΕΤΕ</h3>
-						<p>Στο πρώτο μέρος, των δωρεάν Python μαθημάτων, θα μάθετε όλες τις βασικές έννοιες που χρειάζεστε για να γράψετε τα πρώτα σας προγράμματα στην γλώσσα προγραμματισμού Python. Στην πραγματικότητα, η θεωρία που θα μάθετε, είναι σχεδόν η ίδια που θα μαθαίνατε σε οποιαδήποτε άλλη γλώσσα προγραμματισμού. </p>
-						<p>Θα αρχίσετε τα πρώτα σας βήματα στον προγραμματισμό με Python μαθαίνοντας τα διάφορα είδη data που υπάρχουν στην Python και πως μπορείτε να αποθηκεύσετε δεδομένα σε lists και dictionaries. Επίσης θα μάθετε πως να δημιουργήσετε ένα collection of data και πως μπορείτε να το χρησιμοποιήσετε με τον καλύτερο τρόπο στον κώδικα σας. Μετά θα προχωρήσουμε σε while loops και if statements έτσι ώστε να δώσουμε αυτόνομη λογική στα προγράμματα μας.</p>
-						<p>Θα συνεχίζετε να χτίζετε τις γνώσεις σας προχωρώντας  στην δημιουργία functions και να αλληλεπιδράτε με το πρόγραμμα σας όπως να ζητάτε από τον τελικό χρήστη να εισάγει δεδομένα κατά την εκτέλεση της εφαρμογής.</p>
-						<p>Κλάσεις και κληρονομικότητα θα σας απασχολήσουν για αρκετές ενότητες καλύπτοντας όλη την βασική θεωρία του αντικειμενοστραφή προγραμματισμού. Φυσικά κάθε κώδικας χρειάζεται να προστατευτεί από τυχόν λάθη στην εισαγωγή δεδομένων, όποτε θα μάθετε πως να διαχειρίζεστε τα ποιο κοινά λάθη που μπορεί να τύχουν καθώς η εφαρμογή σας εκτελείτε.</p>
-						<p>Στο δεύτερο μέρος των δωρεάν μαθημάτων θα μάθετε να γράφετε multi-threading και multi-processing κώδικα και να αναγνωρίζετε τις διάφορες τους. Επίσης θα εξοικειωθείτε με την έννοια του testing και ποιες βιβλιοθήκες να χρησιμοποιήσετε για να δοκιμάσετε τον κώδικα σας. Τέλος θα μάθετε κάποιες προχωρημένες έννοιες όπως Generators και Iterators, lambda expressions, και web scraping.</p>-->
-						<!--<ul class="listDefault list-unstyled">
-							<li>Thomas Edison may have been behind the invention.</li>
-							<li>Edison worked alongside partners, both financial and commercial, to get his best inventions off the ground,</li>
-							<li>Battling challenging cost targets and the need to build.</li>
-						</ul>
-						<p>Quasar the only home we've ever known extraordinary claims require extraordinary evidence billions billions Drake Eqa tion. Stirred by starlight! At the edge of forever. Rich in mystery Sea of Tranquility. Are creatures of the cosmos descend from astronomers. Trillion and billions upon billions upon billions upon billions upon billions. upon billions upon billions!</p>-->
-						<h2>ΕΝΟΤΗΤΕΣ</h2>
-				
-						<!-- sectionRow -->
-						<section class="sectionRow">
-							<h2 class="h6 text-uppercase fw-semi rowHeading">ΒΑΣΙΚΕΣ ΕΝΝΟΙΕΣ WEB ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΥ ΜΕ JAVASCRIPT</h2>
-							<!-- sectionRowPanelGroup -->
-							<div class="panel-group sectionRowPanelGroup" id="accordion" role="tablist" aria-multiselectable="true">
-								<!-- panel -->
-	<div class="panel panel-default">
-		<div class="panel-heading" role="tab" id="headingOne">
-			<h3 class="panel-title fw-normal">
-				<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-unit1-environment-installation.html" style="color:blue;">ΕΝΟΤΗΤΑ 1 - Environment Installation</a>
-					<span class="accOpenerCol">
-					
-					<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-					</span>
-					<!--<span class="accOpenerCol hd-phone">
-						<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-						<time datetime="2011-01-12" class="timeCount">17 Min</time>
-					</span>-->
-				</a>
-			</h3>
-			
-		</div>
 
-		
-		<!-- collapseOne -->
-	
-	</div>
-	
-	<div class="panel panel-default">
-	<div class="panel-heading" role="tab" id="headingOne">
-		<h3 class="panel-title fw-normal">
-			<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-unit2-inline-code-versus-external-files.html" style="color:blue;">ΕΝΟΤΗΤΑ 2 - Inline Code Versus External Files</a>
-				<span class="accOpenerCol">
-				
-				<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-				</span>
-				<!--<span class="accOpenerCol hd-phone">
-					<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-					<time datetime="2011-01-12" class="timeCount">17 Min</time>
-				</span>-->
-			</a>
-		</h3>
-		</div>
-	</div>
+<p> Τώρα, αν θέλουμε να ορίσουμε έναν array που περιέχει τιμές, δεν έχουμε παρά να γράψουμε 
+	αυτές τις τιμές μέσα στα brackets. Χωρίζουμε την μια τιμή από την άλλη με κόμμα. Για να 
+	δούμε τις τιμές που περιέχει ο array μπορούμε να καλέσουμε το όνομα της μεταβλητής που τον ορίζει.</p>
 
-	<div class="panel panel-default">
-		<div class="panel-heading" role="tab" id="headingOne">
-			<h3 class="panel-title fw-normal">
-				<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-unit3-how-to-define-variables.html" style="color:blue;">ΕΝΟΤΗΤΑ 3 - How To Define Variables</a>
-					<span class="accOpenerCol">
-					
-					<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-					</span>
-					<!--<span class="accOpenerCol hd-phone">
-						<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-						<time datetime="2011-01-12" class="timeCount">17 Min</time>
-					</span>-->
-				</a>
-			</h3>
-			</div>
-		</div>
+	<img src="unit8/javascript-unit8-3.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
 
-		<div class="panel panel-default">
-			<div class="panel-heading" role="tab" id="headingOne">
-				<h3 class="panel-title fw-normal">
-					<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-unit4-const-declarations.html" style="color:blue;">ΕΝΟΤΗΤΑ 4 - Const Declarations</a>
-						<span class="accOpenerCol">
-						
-						<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-						</span>
-						<!--<span class="accOpenerCol hd-phone">
-							<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-							<time datetime="2011-01-12" class="timeCount">17 Min</time>
-						</span>-->
-					</a>
-				</h3>
-				</div>
-			</div>
-	
-		<div class="panel panel-default">
-			<div class="panel-heading" role="tab" id="headingOne">
-				<h3 class="panel-title fw-normal">
-					<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-unit5-primitive-data-types.html" style="color:blue;">ΕΝΟΤΗΤΑ 5 - Primitive Data Types</a>
-						<span class="accOpenerCol">
-						
-						<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-						</span>
-						<!--<span class="accOpenerCol hd-phone">
-							<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-							<time datetime="2011-01-12" class="timeCount">17 Min</time>
-						</span>-->
-					</a>
-				</h3>
-				</div>
-			</div>
+	<img src="unit8/javascript-unit8-4.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
 
-			<div class="panel panel-default">
-				<div class="panel-heading" role="tab" id="headingOne">
-					<h3 class="panel-title fw-normal">
-						<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-unit6-numbers-and-operators.html" style="color:blue;">ΕΝΟΤΗΤΑ 6 - Numbers and Operators</a>
-							<span class="accOpenerCol">
-							
-							<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-							</span>
-							<!--<span class="accOpenerCol hd-phone">
-								<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-								<time datetime="2011-01-12" class="timeCount">17 Min</time>
-							</span>-->
-						</a>
-					</h3>
-					</div>
-				</div>																
+<p>Στο παραπάνω παράδειγμα, όλα τα δεδομένα του array είναι string. Όμως σε έναν 
+	array μπορούμε να αποθηκεύσουμε πολλά διαφορετικά data types όπως numbers, objects κτλ 
+	όπως και συνδυασμούς τους. </p>
 
-				<div class="panel panel-default">
-					<div class="panel-heading" role="tab" id="headingOne">
-						<h3 class="panel-title fw-normal">
-							<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-unit7-strings-in-javascript.html" style="color:blue;">ΕΝΟΤΗΤΑ 7 - Strings in JavaScript</a>
-								<span class="accOpenerCol">
-								
-								<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-								</span>
-								<!--<span class="accOpenerCol hd-phone">
-									<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-									<time datetime="2011-01-12" class="timeCount">17 Min</time>
-								</span>-->
-							</a>
-						</h3>
-						</div>
-					</div>	
+	<img src="unit8/javascript-unit8-5.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
 
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingOne">
-							<h3 class="panel-title fw-normal">
-								<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-unit8-arrays.html" style="color:blue;">ΕΝΟΤΗΤΑ 8 - Arrays</a>
-									<span class="accOpenerCol">
-									
-									<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-									</span>
-									<!--<span class="accOpenerCol hd-phone">
-										<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-										<time datetime="2011-01-12" class="timeCount">17 Min</time>
-									</span>-->
-								</a>
-							</h3>
-							</div>
-						</div>
+	<img src="unit8/javascript-unit8-6.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
 
-								<!-- panel -->
-								
-								<!-- panel -->
-							
-								<!-- panel -->
-								
-								<!-- panel -->
-							
-							</div>
-							
-							
-						</section>
+<p>Η ερώτηση που σίγουρα θα έχετε τώρα στο μυαλό σας είναι η εξής: «Πως μπορώ να αποκτήσω 
+	πρόσβαση σε κάθε μια από τις τιμές ξεχωριστά?». Κάθε array λοιπόν χαρακτηρίζεται από έναν 
+	index αριθμό που ξεκινάει την αρίθμησή του από το μηδέν και μεγαλώνει κατά ένα όσο μεγαλώνει 
+	και ο array. Στο shopping array που δημιουργήσαμε στο προηγούμενο παράδειγμα, το πρώτο στοιχείο 
+	έχει index 0, το δεύτερο στοιχείο έχει index 1, το τρίτο στοιχείο έχει index 2 κτλ.</p>
 
-						
+<p>Ακόμα όμως δεν έχουμε απαντήσει στην ερώτηση πως αποκτούμε πρόσβαση σε κάθε ένα 
+	από τα στοιχεία του array. Τώρα που γνωρίζουμε τι είναι το index, για να αποκτήσουμε 
+	πρόσβαση σε οποιοδήποτε στοιχείο ενός array δεν έχουμε παρά να καλέσουμε τον index αριθμό 
+	μέσα σε brackets. Για παράδειγμα, αν θέλουμε να βρούμε ποια είναι η τιμή που περιέχεται 
+	μέσα στον index 0 δεν έχουμε παρά να καλέσουμε το όνομα του array με τον αριθμό του index 
+	μέσα σε brackets.</p>
+
+	<img src="unit8/javascript-unit8-7.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+	<img src="unit8/javascript-unit8-8.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+<p>Με την χρήση του index μπορούμε να αντικαταστήσουμε τιμές που ήδη υπάρχουν 
+	μέσα στον array ή και ακόμα να προσθέσουμε καινούργιες τιμές. </p>
+
+	<img src="unit8/javascript-unit8-9.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+	<img src="unit8/javascript-unit8-10.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>	
+
+<p>Όπως υπάρχει στα Strings, έτσι και στα arrays βρίσκουμε το property length που μας 
+	φανερώνει πόσα στοιχεία υπάρχουν μέσα στον array.</p>
+
+	<img src="unit8/javascript-unit8-11.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>	
+
+	<img src="unit8/javascript-unit8-12.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>	
+
+<p>Μπορείτε να μαντέψετε πως διαγράφουμε στοιχεία από τον array? Μα φυσικά και πάλι 
+	με την βοήθεια του index σε συνδυασμό με την εντολή delete. Προσοχή λιγάκι με την 
+	θεωρία εδώ – μετά από την διαγραφή του στοιχείου, το μήκος του array δεν αλλάζει, δηλαδή 
+	δεν μειώνεται. Στην ουσία έχουμε έναν array που θα έχει “undefined” σαν τιμή για ένα ή περισσότερα 
+	στοιχεία που έχουν διαγραφεί. </p>
+
+	<img src="unit8/javascript-unit8-13.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>	
+
+	<img src="unit8/javascript-unit8-14.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>	
+
+<p>Ένας array μπορεί να περιέχει όλων των ειδών τα στοιχεία συμπεριλαμβανομένου και άλλου array</p>
+
+<img src="unit8/javascript-unit8-15.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+<p></p>	
+
+<img src="unit8/javascript-unit8-16.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+<p></p>	
+
+<p>Αν και νομίζω ότι έχετε ήδη καταλάβει πως ορίζεται ένας τέτοιου είδους array, ας 
+	δούμε ένα ακόμα παράδειγμα όπου και τα δύο στοιχεία ενός array είναι array.</p>
+
+	<img src="unit8/javascript-unit8-17.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>	
+
+	<img src="unit8/javascript-unit8-18.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>	
+
+<p>Στο πιο πάνω παράδειγμα, το πρώτο element του array a είναι ο array με στοιχεία [1,2,3] ενώ το 
+	δεύτερο element είναι ο array με στοιχεία [4,5,6]. Για να αποκτήσουμε πρόσβαση σε αυτό του 
+	είδους τα array (που ονομάζονται nested arrays) χρησιμοποιούμε διπλά σετ από brackets. Για 
+	παράδειγμα, για να πάρουμε την πρώτη τιμή από τον δεύτερο array (που είναι και το δεύτερο 
+	element του array a) γράφουμε a[1][0]. Όπου [1] υποδηλώνει ότι θέλουμε να πάμε στο δεύτερο 
+	στοιχείο του array a, και επειδή αυτό το στοιχείο είναι array θέλουμε το πρώτο του στοιχείο [0].</p>
+
+	<img src="unit8/javascript-unit8-19.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+	<img src="unit8/javascript-unit8-20.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+<p>Ένας array περιέχει έναν μεγάλο αριθμό μεθόδων που μας βοηθάνε με την διαχείριση των 
+	δεδομένων του array. Μια όμως από αυτές τις μεθόδους ξεχωρίζει γιατί αν και ανήκει στα 
+	strings το αποτέλεσμα της είναι η δημιουργία ενός array από τα στοιχεία ενός string. Η μέθοδο 
+	ονομάζεται split( ) και μέσα στην παρένθεση αυτό που δέχεται είναι απλά ο χαρακτήρας ο οποίος 
+	θα χρησιμοποιηθεί για να σπάσει το string σε μεμονωμένα στοιχεία μέσα σε έναν array.</p>
+
+	<img src="unit8/javascript-unit8-21.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+	<img src="unit8/javascript-unit8-22.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+	<p>Μπορούμε επίσης να κάνουμε ακριβώς την αντίθετη διαδικασία, δηλαδή από 
+		έναν array να δημιουργήσουμε ένα string. Αυτό είναι εφικτό με την μέθοδο join( ).</p>
+
+		<img src="unit8/javascript-unit8-23.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+		<p></p>
+
+		<img src="unit8/javascript-unit8-24.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+		<p></p>
+
+<p>Ένας ακόμα τρόπος για να μετατρέψουμε έναν array σε string είναι να χρησιμοποιήσουμε 
+	την toString( ) μέθοδο. Αν και είναι λίγο πιο εύκολη στην μετατροπή ενός array σε string, γιατί 
+	δεν δέχεται παραμέτρους, από την άλλη όμως έχει περιορισμούς στις δυνατότητες της. Για 
+	παράδειγμα στην μετατροπή πάντα χρησιμοποιεί το κόμμα ( , ) και δεν μπορούμε να αλλάξουμε 
+	αυτή την συμπεριφορά.</p>
+
+	<img src="unit8/javascript-unit8-25.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+		<p></p>
+
+
+		<img src="unit8/javascript-unit8-26.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+		<p></p>	
+
+<p>Πριν κλείσουμε το σημερινό δωρεάν μάθημα JavaScript, θα αναφερθούμε και σε 
+	τέσσερις ακόμα μεθόδους: την push( ) που προσθέτει δεδομένα στο τέλος του 
+	array, την pop( ) που αφαιρεί στοιχεία από το τέλος του array, την unshift( ) που προσθέτει 
+	στοιχεία στην αρχή του array και την shift( ) που αφαιρεί στοιχεία από την αρχή του array.</p>
+
+	<img src="unit8/javascript-unit8-27.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>	
+
+	<img src="unit8/javascript-unit8-28.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>	
+
+
+<!--#########################################################################################################-->						
 						<!-- sectionRow -->
 					
 						<!-- bookmarkFoot -->
