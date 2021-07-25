@@ -195,7 +195,7 @@
 					<ol class="breadcrumb">
 						<li><a href="https://kassapoglou.github.io/main/">ΑΡΧΙΚΗ</a></li>
 						<li><a href="https://kassapoglou.github.io/main/course-list-all.html">ΜΑΘΗΜΑΤΑ</a></li>
-						<li class="active">JAVASCRIPT</li>
+						<li><a href="https://kassapoglou.github.io/javascript/javascript-programming.html">JAVASCRIPT</li>
 					</ol>
 				</div>
 			</nav>
@@ -205,7 +205,7 @@
 					<!-- content -->
 					<article id="content" class="col-xs-12 col-md-9">
 						<!-- content h1 -->
-						<h1 class="content-h1 fw-semi">Εισαγωγή στον WEB προγραμματισμό με JavaScript</h1>
+						<h1 class="content-h1 fw-semi">ΕΝΟΤΗΤΑ 9 - Conditions and Loops (Part 1)</h1>
 						<!-- view header -->
 						<header class="view-header row">
 							<div class="col-xs-12 col-sm-9 d-flex">
@@ -250,223 +250,146 @@
 						<div class="aligncenter content-aligncenter">
 							<img src="images/javascript.jpeg" alt="image description">
 						</div>
-						<h3 class="content-h3">ΠΕΡΙΓΡΑΦΗ ΣΕΜΙΝΑΡΙΟΥ</h3>
-						<p>Εδώ θα βρείτε μια ολοκληρωμένη σειρά δωρεάν μαθημάτων στην
-							script γλώσσα web προγραμματισμού JavaScript. Κάθε μια ενότητα είναι
-							αυτόνομη
-							από τις άλλες και δεν απαιτείται να γνωρίζετε τις προηγούμενες
-							για να την παρακολουθήσετε. Επίσης σε κάθε ενότητα δημιουργούμε
-							ένα καινούργιο παράδειγμα JavaScript έτσι ώστε να είναι εντελώς
-							ξεκάθαρο το νόημα της ενότητας και η ουσία της θεωρίας που μελετάμε.</p>
+<!--################################################################################################-->
+<p>Στο σημερινό δωρεάν μάθημα JavaScript θα δούμε τους διάφορους τρόπους να 
+	ελέγχουμε την ροή εκτέλεσης του κώδικα μας. Επειδή έχουμε αρκετή θεωρία να 
+	καλύψουμε, θα χωρίσουμε την θεωρία μας σε δύο ενότητες. Σε αυτό το δωρεάν μάθημα 
+	JavaScript θα καλύψουμε το πρώτο μέρος. </p>
+
+<p>Μέχρι τώρα, τα απλά παραδείγματα που έχουμε γράψει, δεν έχουν την ικανότητα να 
+	επαναλαμβάνουν κάποια πράξη χωρίς εμείς να χρειαστεί να γράψουμε ξανά τον ίδιο 
+	κώδικα, αλλά ούτε μπορούν και να πάρουν αποφάσεις με βάση τις τιμές που αναθέτουμε 
+	στις μεταβλητές.</p>
+
+<p>Αυτό πρόκειται να το αλλάξουμε καθώς θα δώσουμε την δυνατότητα στα προγράμματά μας 
+	να ελέγχουν τις εισερχόμενες τιμές (ή γενικότερα τις τιμές που παίρνουν οι 
+	μεταβλητές) και αντίστοιχα να παίρνουν κάποιες αποφάσεις. Πριν όμως προχωρήσουμε 
+	σε αυτή την νέα θεωρία, ας βεβαιωθούμε πως καταλαβαίνουμε την ευρύτερη έννοια 
+	του code block.</p>
+
+<p>Ένα block κώδικα θεωρείται εκείνο που μέσα σε άγκιστρα (curly brackets) περιέχει 
+	μια ή και περισσότερες γραμμές κώδικα. Για παράδειγμα, ένα πολύ απλό block 
+	κώδικα είναι το εξής:</p>
+
+	<img src="unit9/javascript-unit9-1.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
 
 
-						<p>Αν ξεκινάτε τώρα την καριέρα σας σαν Web προγραμματιστές τότε
-							να είσαστε σίγουροι ότι έχετε επιλέξει μια από τις πιο
-							διάσημες γλώσσες προγραμματισμού για το Web που οι οπαδοί της αυξάνονται
-							χρόνο με το χρόνο. Αυτό σημαίνει ότι θα μπορέσετε πολύ γρήγορα,
-							με τα σημερινά δεδομένα αγοράς εργασίας, να απορροφηθείτε άμεσα
-							σε κάποια εταιρεία πληροφορικής. </p>
+<p>Επίσης επιτρέπεται να έχουμε nested blocks δηλαδή blocks μέσα σε blocks.</p>
 
-						<p>Αν γνωρίζετε JavaScript μπορείτε πολύ εύκολα να κάνετε το επόμενο βήμα
-							το οποίο είναι να γράφετε JavaScript Web εφαρμογές με την χρήση
-							frameworks όπως Angular και React. Επίσης μπορείτε να προχωρήσετε
-							στα δωρεάν μαθήματα Node.js Microservices όπου θα μπορείτε να
-							δημιουργήσετε από τα πιο απλά μέχρι τα πιο σύνθετα Web Services
-							και Microservices. Τέλος, ας μην ξεχνάμε, ότι η JavaScript
-							έχει πλέον επεκταθεί σε mobile και tablet πλατφόρμες.
-							Όποια και να είναι η κατεύθυνση σας είναι απαραίτητη
-							προϋπόθεση να γνωρίζετε JavaScript οπότε κάνατε την σωστή αρχή!</p>
-						<!--<h3 class="content-h3">ΤΙ ΘΑ ΜΑΘΕΤΕ</h3>
-						<p>Στο πρώτο μέρος, των δωρεάν Python μαθημάτων, θα μάθετε όλες τις βασικές έννοιες που χρειάζεστε για να γράψετε τα πρώτα σας προγράμματα στην γλώσσα προγραμματισμού Python. Στην πραγματικότητα, η θεωρία που θα μάθετε, είναι σχεδόν η ίδια που θα μαθαίνατε σε οποιαδήποτε άλλη γλώσσα προγραμματισμού. </p>
-						<p>Θα αρχίσετε τα πρώτα σας βήματα στον προγραμματισμό με Python μαθαίνοντας τα διάφορα είδη data που υπάρχουν στην Python και πως μπορείτε να αποθηκεύσετε δεδομένα σε lists και dictionaries. Επίσης θα μάθετε πως να δημιουργήσετε ένα collection of data και πως μπορείτε να το χρησιμοποιήσετε με τον καλύτερο τρόπο στον κώδικα σας. Μετά θα προχωρήσουμε σε while loops και if statements έτσι ώστε να δώσουμε αυτόνομη λογική στα προγράμματα μας.</p>
-						<p>Θα συνεχίζετε να χτίζετε τις γνώσεις σας προχωρώντας  στην δημιουργία functions και να αλληλεπιδράτε με το πρόγραμμα σας όπως να ζητάτε από τον τελικό χρήστη να εισάγει δεδομένα κατά την εκτέλεση της εφαρμογής.</p>
-						<p>Κλάσεις και κληρονομικότητα θα σας απασχολήσουν για αρκετές ενότητες καλύπτοντας όλη την βασική θεωρία του αντικειμενοστραφή προγραμματισμού. Φυσικά κάθε κώδικας χρειάζεται να προστατευτεί από τυχόν λάθη στην εισαγωγή δεδομένων, όποτε θα μάθετε πως να διαχειρίζεστε τα ποιο κοινά λάθη που μπορεί να τύχουν καθώς η εφαρμογή σας εκτελείτε.</p>
-						<p>Στο δεύτερο μέρος των δωρεάν μαθημάτων θα μάθετε να γράφετε multi-threading και multi-processing κώδικα και να αναγνωρίζετε τις διάφορες τους. Επίσης θα εξοικειωθείτε με την έννοια του testing και ποιες βιβλιοθήκες να χρησιμοποιήσετε για να δοκιμάσετε τον κώδικα σας. Τέλος θα μάθετε κάποιες προχωρημένες έννοιες όπως Generators και Iterators, lambda expressions, και web scraping.</p>-->
-						<!--<ul class="listDefault list-unstyled">
-							<li>Thomas Edison may have been behind the invention.</li>
-							<li>Edison worked alongside partners, both financial and commercial, to get his best inventions off the ground,</li>
-							<li>Battling challenging cost targets and the need to build.</li>
-						</ul>
-						<p>Quasar the only home we've ever known extraordinary claims require extraordinary evidence billions billions Drake Eqa tion. Stirred by starlight! At the edge of forever. Rich in mystery Sea of Tranquility. Are creatures of the cosmos descend from astronomers. Trillion and billions upon billions upon billions upon billions upon billions. upon billions upon billions!</p>-->
-						<h2>ΕΝΟΤΗΤΕΣ</h2>
-				
-						<!-- sectionRow -->
-						<section class="sectionRow">
-							<h2 class="h6 text-uppercase fw-semi rowHeading">ΒΑΣΙΚΕΣ ΕΝΝΟΙΕΣ WEB ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΥ ΜΕ JAVASCRIPT</h2>
-							<!-- sectionRowPanelGroup -->
-							<div class="panel-group sectionRowPanelGroup" id="accordion" role="tablist" aria-multiselectable="true">
-								<!-- panel -->
-	<div class="panel panel-default">
-		<div class="panel-heading" role="tab" id="headingOne">
-			<h3 class="panel-title fw-normal">
-				<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-unit1-environment-installation.html" style="color:blue;">ΕΝΟΤΗΤΑ 1 - Environment Installation</a>
-					<span class="accOpenerCol">
-					
-					<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-					</span>
-					<!--<span class="accOpenerCol hd-phone">
-						<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-						<time datetime="2011-01-12" class="timeCount">17 Min</time>
-					</span>-->
-				</a>
-			</h3>
-			
-		</div>
+<img src="unit9/javascript-unit9-2.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+<p></p>
 
-		
-		<!-- collapseOne -->
-	
-	</div>
-	
-	<div class="panel panel-default">
-	<div class="panel-heading" role="tab" id="headingOne">
-		<h3 class="panel-title fw-normal">
-			<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-unit2-inline-code-versus-external-files.html" style="color:blue;">ΕΝΟΤΗΤΑ 2 - Inline Code Versus External Files</a>
-				<span class="accOpenerCol">
-				
-				<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-				</span>
-				<!--<span class="accOpenerCol hd-phone">
-					<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-					<time datetime="2011-01-12" class="timeCount">17 Min</time>
-				</span>-->
-			</a>
-		</h3>
-		</div>
-	</div>
+<p>Ο τρόπος να ελέγχουμε την ροή εκτέλεσης του κώδικα μας είναι να χρησιμοποιούμε το if, έτσι 
+	ώστε με βάση κάποια συνθήκη που θα ορίσουμε, να παίρνει και τις αντίστοιχες αποφάσεις. Η σύνταξη 
+	του if statement, όπως ονομάζεται, αποτελείται από τρία μέρη:</p>
+<ul>
+	<li>Το if με το οποίο ξεκινάει ο κώδικας</li>
+	<li>Αμέσως μετά και μέσα σε παρενθέσεις είναι η συνθήκη που χρησιμοποιείται για την σύγκριση</li>
+	<li>Και τέλος το block του κώδικα που θα εκτελεστεί εφόσον η συνθήκη είναι 
+		true (δηλαδή αληθεύει). Το block του κώδικα είναι μέσα σε curly brackets.</li>
+</ul>
 
-	<div class="panel panel-default">
-		<div class="panel-heading" role="tab" id="headingOne">
-			<h3 class="panel-title fw-normal">
-				<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-unit3-how-to-define-variables.html" style="color:blue;">ΕΝΟΤΗΤΑ 3 - How To Define Variables</a>
-					<span class="accOpenerCol">
-					
-					<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-					</span>
-					<!--<span class="accOpenerCol hd-phone">
-						<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-						<time datetime="2011-01-12" class="timeCount">17 Min</time>
-					</span>-->
-				</a>
-			</h3>
-			</div>
-		</div>
+<img src="unit9/javascript-unit9-3.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+<p></p>
 
-		<div class="panel panel-default">
-			<div class="panel-heading" role="tab" id="headingOne">
-				<h3 class="panel-title fw-normal">
-					<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-unit4-const-declarations.html" style="color:blue;">ΕΝΟΤΗΤΑ 4 - Const Declarations</a>
-						<span class="accOpenerCol">
-						
-						<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-						</span>
-						<!--<span class="accOpenerCol hd-phone">
-							<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-							<time datetime="2011-01-12" class="timeCount">17 Min</time>
-						</span>-->
-					</a>
-				</h3>
-				</div>
-			</div>
-	
-		<div class="panel panel-default">
-			<div class="panel-heading" role="tab" id="headingOne">
-				<h3 class="panel-title fw-normal">
-					<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-unit5-primitive-data-types.html" style="color:blue;">ΕΝΟΤΗΤΑ 5 - Primitive Data Types</a>
-						<span class="accOpenerCol">
-						
-						<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-						</span>
-						<!--<span class="accOpenerCol hd-phone">
-							<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-							<time datetime="2011-01-12" class="timeCount">17 Min</time>
-						</span>-->
-					</a>
-				</h3>
-				</div>
-			</div>
+<img src="unit9/javascript-unit9-4.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+<p></p>
 
-			<div class="panel panel-default">
-				<div class="panel-heading" role="tab" id="headingOne">
-					<h3 class="panel-title fw-normal">
-						<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-unit6-numbers-and-operators.html" style="color:blue;">ΕΝΟΤΗΤΑ 6 - Numbers and Operators</a>
-							<span class="accOpenerCol">
-							
-							<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-							</span>
-							<!--<span class="accOpenerCol hd-phone">
-								<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-								<time datetime="2011-01-12" class="timeCount">17 Min</time>
-							</span>-->
-						</a>
-					</h3>
-					</div>
-				</div>																
+<p>Η συνθήκη μέσα στην παρένθεση πάντα επιστρέφει Boolean τιμή και μπορεί να περιέχει τους παρακάτω τελεστές:</p>
+<ul>
+	<li>Local Operators: !, &&, ||</li>
+	<li>Comparison Operators: ===, !==, > κτλ.</li>
+	<li>Οποιαδήποτε τιμή ή μεταβλητή που μπορεί να μετατραπεί σε Boolean</li>
+	<li>Οποιονδήποτε συνδυασμό των παραπάνω</li>
+</ul>
 
-				<div class="panel panel-default">
-					<div class="panel-heading" role="tab" id="headingOne">
-						<h3 class="panel-title fw-normal">
-							<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-unit7-strings-in-javascript.html" style="color:blue;">ΕΝΟΤΗΤΑ 7 - Strings in JavaScript</a>
-								<span class="accOpenerCol">
-								
-								<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-								</span>
-								<!--<span class="accOpenerCol hd-phone">
-									<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-									<time datetime="2011-01-12" class="timeCount">17 Min</time>
-								</span>-->
-							</a>
-						</h3>
-						</div>
-					</div>	
+<p>Αν τώρα, θέλουμε να δώσουμε ακόμα περισσότερο έλεγχο και αρμοδιότητες στο if, και 
+	είτε σε true είτε σε false συνθήκες πάντα να εκτελείται ένα προκαθορισμένο αλλά 
+	διαφορετικό για κάθε περίπτωση block κώδικα, τότε δεν έχουμε παρά να προσθέσουμε 
+	το else σαν δεύτερη επιλογή. Με αυτό το τρόπο είμαστε απόλυτα σίγουροι ότι όποιο 
+	και αν είναι το αποτέλεσμα της συνθήκης, το πρόγραμμα μας θα ακολουθήσει μια από 
+	τις δύο επιλογές που έχουμε προκαθορίσει.</p>
 
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingOne">
-							<h3 class="panel-title fw-normal">
-								<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-unit8-arrays.html" style="color:blue;">ΕΝΟΤΗΤΑ 8 - Arrays</a>
-									<span class="accOpenerCol">
-									
-									<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-									</span>
-									<!--<span class="accOpenerCol hd-phone">
-										<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-										<time datetime="2011-01-12" class="timeCount">17 Min</time>
-									</span>-->
-								</a>
-							</h3>
-							</div>
-						</div>
-						<div class="panel panel-default">
-							<div class="panel-heading" role="tab" id="headingOne">
-								<h3 class="panel-title fw-normal">
-									<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-unit9-conditions-and-loops-part1.html" style="color:blue;">ΕΝΟΤΗΤΑ 9 - Conditions and Loops (Part 1)</a>
-										<span class="accOpenerCol">
-										
-										<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-										</span>
-										<!--<span class="accOpenerCol hd-phone">
-											<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-											<time datetime="2011-01-12" class="timeCount">17 Min</time>
-										</span>-->
-									</a>
-								</h3>
-								</div>
-							</div>
+	<img src="unit9/javascript-unit9-5.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
 
-								<!-- panel -->
-								
-								<!-- panel -->
-							
-								<!-- panel -->
-								
-								<!-- panel -->
-							
-							</div>
-							
-							
-						</section>
+	<img src="unit9/javascript-unit9-6.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
 
-						
+
+<p>Το μεγάλο πλεονέκτημα όμως του if/else συνδυασμού δεν είναι μόνο ο έλεγχος της ροής 
+	του κώδικα, αλλά και το γεγονός ότι μπορούμε να ελέγξουμε πολλαπλές συνθήκες (με την 
+	χρήση πολλαπλών συνδυασμών if/else) και όταν μια από αυτές επαληθευτεί να τρέξει ο κώδικας 
+	που ανήκει μόνο σε αυτή την συνθήκη. Τους υπόλοιπους συνδυασμούς if/else, από την στιγμή που 
+	επαληθεύτηκε ένας από αυτούς, τους παραλείπει η JavaScript και συνεχίζει με το υπόλοιπο 
+	πρόγραμμα. Πριν δούμε ένα παράδειγμα με πολλαπλά if/else ας αναφέρουμε το γεγονός ότι 
+	συνήθως κλείνουμε τους συνδυασμούς των if/else με ένα else το οποίο θα ενεργοποιηθεί 
+	αν κανένας από τους προηγούμενους συνδυασμούς δεν είναι true. Με αυτό τον τρόπο για 
+	ακόμη μια φορά έχουμε τον απόλυτο έλεγχο του αποτελέσματος.</p>	
+
+	<img src="unit9/javascript-unit9-7.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+	<img src="unit9/javascript-unit9-8.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+<p>Πριν συνεχίσουμε, θα ήθελα να επισημάνω το γεγονός ότι όταν χρησιμοποιούμε το σύμβολο 
+	της ισότητας για να συγκρίνουμε αν δύο τιμές είναι ίσες ή όχι σε μια συνθήκη, αυτό το 
+	σύμβολο στην JavaScript είναι το τριπλό σύμβολο ισότητας ( === ). </p>
+
+	<img src="unit9/javascript-unit9-9.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+	<img src="unit9/javascript-unit9-10.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+<p>Μπορούμε επίσης να έχουμε και if else conditions μέσα σε άλλο if else. Όταν αυτό 
+	συμβαίνει το ονομάζουμε nested conditions.</p>
+
+	<img src="unit9/javascript-unit9-11.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+	<img src="unit9/javascript-unit9-12.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+<p>Αν θέλουμε να δούμε ένα πιο πρακτικό παράδειγμα εφαρμόζοντας την θεωρία που έχουμε μάθει 
+	μέχρι τώρα, θα μπορούσε να είναι το εξής: θέλουμε κατά την διάρκεια εκτέλεσης της 
+	εφαρμογής μας να χρησιμοποιήσουμε μια μεταβλητή αφότου της έχει ανατεθεί κάποια τιμή 
+	πρώτα. Ειδάλλως, όπως ήδη έχουμε δει στις αρχικές ενότητες, μια μεταβλητή χωρίς τιμή 
+	θα επιστρέψει “undefined”. Το typeof πάντα επιστρέφει string και μπορούμε να συγκρίνουμε 
+	αυτό το string με την λέξη “undefined”.</p>
+
+	<img src="unit9/javascript-unit9-13.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+	<img src="unit9/javascript-unit9-14.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+<p>Πριν κλείσουμε το πρώτο μέρος αυτής της δωρεάν ενότητας JavaScript, ας δούμε και ένα 
+	εναλλακτικό τρόπο γραφής ενός απλού if/else που ονομάζεται ternary operator.</p>
+
+	<img src="unit9/javascript-unit9-15.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+	<img src="unit9/javascript-unit9-16.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+<p>Αν και είναι πολύ νωρίς για να δούμε web εφαρμογές, μπορείτε να δείτε στο 
+	παρακάτω παράδειγμα πως χρησιμοποιούμε το if/else statement σε ένα μενού επιλογών.</p>
+
+	<img src="unit9/javascript-unit9-17.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+	<img src="unit9/javascript-unit9-18.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+	<img src="unit9/javascript-unit9-19.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+
+	<img src="unit9/javascript-unit9-20.jpg" alt="δωρεάν μαθήματα JavaScript" class="center">
+	<p></p>
+<!--#########################################################################################################-->						
 						<!-- sectionRow -->
 					
 						<!-- bookmarkFoot -->
