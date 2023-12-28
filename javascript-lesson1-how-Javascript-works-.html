@@ -251,32 +251,110 @@
 						<div class="aligncenter content-aligncenter">
 							<img src="images/javascript.jpeg" alt="image description">
 						</div>
-						<h3 class="content-h3">ΠΕΡΙΓΡΑΦΗ ΣΕΜΙΝΑΡΙΟΥ</h3>
-						<p>Εδώ θα βρείτε μια ολοκληρωμένη σειρά δωρεάν μαθημάτων στην
-							script γλώσσα web προγραμματισμού <b>JavaScript</b>. Κάθε ενότητα είναι
-							αυτόνομη
-							από τις άλλες και δεν απαιτείται να γνωρίζετε τις προηγούμενες
-							για να την παρακολουθήσετε. Επίσης σε κάθε ενότητα δημιουργούμε
-							ένα καινούργιο παράδειγμα JavaScript έτσι ώστε να είναι εντελώς
-							ξεκάθαρο το νόημα της ενότητας και η ουσία της θεωρίας που μελετάμε.</p>
+						<h3 class="content-h3">ΕΝΟΤΗΤΑ 1 - HOW JAVASCRIPT WORKS</h3>
+						<h3 class="content-h3">INTRODUCTION</h3>
+						<p>Πριν ξεκινήσουμε να γράφουμε παραδείγματα και εφαρμογές σε JavaScript, θεωρώ σωστό να 
+							καταλάβουμε τι ακριβώς είναι η JavaScript και που μπορεί να χρησιμοποιηθεί. Οπότε σε 
+							αυτό το δωρεάν μάθημα JavaScript θα εξηγήσουμε πως εκτελείτε η JavaScript στους browsers, τι 
+							είναι το ECMA και πως μπορούμε να εκτελέσουμε JavaScript κώδικα εκτός browser.</p>
+
+							<h3 class="content-h3">DEFINING JAVASCRIPT</h3>	
+<p>Ένα από τα site που θα επισκεπτόμαστε, σχεδόν σε κάθε δωρεάν JavaScript μάθημα που θα 
+	δημιουργήσουμε στο Ground of Code, είναι το Mozilla MDN και πιο συγκεκριμένα η ενότητα 
+	JavaScript <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">(JavaScript | MDN (mozilla.org)).</a> Ο Mozilla οργανισμός έχει καταφέρει να δημιουργήσει 
+	ένα ολοκληρωμένο οδηγό στη γλώσσα JavaScript που περιλαμβάνει τόσο τη θεωρία όσο και μικρά 
+	ολοκληρωμένα παραδείγματα. Σε αυτή τη σελίδα λοιπόν θα βρείτε και τον επίσημο ορισμό της JavaScript.</p>
+
+<img src="./Lesson1/pic_1.png" alt="JavaScript Complete Course"/>
+<p></p>
+
+<p>Αν και ορισμός είναι μικρός μπορεί να μην είναι και τόσο κατανοητός. Πάμε 
+	λοιπόν να δούμε τι ακριβώς σημαίνουν όλοι αυτοί οι όροι όπως lightweight, interpreted, 
+	και just-in-time.</p>
+
+<p>Όταν χαρακτηρίζουμε την JavaScript σαν lightweight στην ουσία περιγράφουμε την 
+	ιδιότητα που έχει να καταναλώνει ελάχιστους πόρους από το σύστημα επάνω στο οποίο 
+	εκτελείται.  Αυτός είναι και ένας από τους λόγους που η JavaScript έχει γίνει διάσημη 
+	στο τεχνολογικό κόσμο του Web γιατί ενώ έχει άπειρες δυνατότητες και εφαρμογές οι 
+	απαιτήσεις της σε πόρους και υπολογιστική δύναμη είναι λιγοστές.</p>
+
+<p>Τώρα πάμε στον επόμενο ορισμό ο οποίος περιγράφει την JavaScript σαν interpreted 
+	programming language. Για να καταλάβουμε τι σημαίνει interpreted ας δούμε πρώτα πως 
+	χωρίζονται γενικότερα οι γλώσσες προγραμματισμού.</p>
+
+<p>Όλες οι γλώσσες προγραμματισμού ανήκουν σε μια από τις δύο κατηγορίες – compiled ή interpreted.</p>
+<img src="./Lesson1/pic_2.png" alt="JavaScript Complete Course"/>
+<p></p>
+<h3 class="content-h3">COMPILED PROGRAMMING LANGUAGES</h3>	
+<p>την κατηγορία των compiled languages ανήκουν εκείνες οι γλώσσες προγραμματισμού που 
+	σαν πρώτο βήμα έχουν την δημιουργία ενός καινούργιου αρχείου και σαν δεύτερο βήμα 
+	την εκτέλεση του. Το αρχείο δημιουργείται από τον compiler της εκάστοτε γλώσσας 
+	προγραμματισμού αφού πρώτα έχει ελεγχθεί ο κώδικας για τυχόν λάθη. Το αρχείο αυτό 
+	περιλαμβάνει τον κώδικα μας σε machine-code γλώσσα που καταλαβαίνει το CPU του 
+	υπολογιστή για να εκτελέσει σωστά την εφαρμογή. Η εκτέλεση του αρχείου είναι 
+	γρήγορη γιατί ο κώδικας έχει ήδη ελεγχθεί και μορφοποιηθεί στην γλώσσα που 
+	καταλαβαίνει ο υπολογιστής.</p>
+
+	<img src="./Lesson1/pic_3.png" alt="JavaScript Complete Course"/>
+	<p></p>
+	<h3 class="content-h3">INTERPRETED PROGRAMMING LANGUAGES</h3>
+<p>Στις interpreted γλώσσες προγραμματισμού, ο κώδικα διαβάζεται γραμμή προς 
+	γραμμή, ελέγχεται για τυχόν λάθη, μεταφράζεται σε low-code, και εκτελείται ταυτόχρονα.</p>	
+
+	<img src="./Lesson1/pic_4.png" alt="JavaScript Complete Course"/>
+	<p></p>
+
+<p>Τώρα όμως σίγουρα σας έχει δημιουργηθεί στο μυαλό η εξής ερώτηση: Στις compiled γλώσσες 
+	προγραμματισμού υπάρχει ο compiler (που περιέχεται μέσα στην εκάστοτε γλώσσα προγραμματισμού) 
+	που αναλαμβάνει την μετάφραση του κώδικα. Στις interpreted γλώσσες προγραμματισμού, όπως 
+	είναι η JavaScript, ποιος αναλαμβάνει να κάνει αυτή την διαδικασία? Στην περίπτωση της 
+	JavaScript την διαδικασία του compilation την αναλαμβάνει ο browser. Κάθε browser περιέχει 
+	ένα JavaScript ενσωματωμένου engine που μπορεί να αναγνωρίσει και να εκτελέσει JavaScript 
+	κώδικα. Browsers όπως ο Chrome ή ο Edge χρησιμοποιούν το V8 <a href="https://v8.dev/">(V8 JavaScript engine)</a> για να 
+	εκτελέσουν JavaScript εφαρμογές ενώ ο Mozilla χρησιμοποιεί 
+	το SpiderMonkey <a href="https://spidermonkey.dev/">(Home | SpiderMonkey JavaScript/WebAssembly Engine).</a> Ο λόγος που ο 
+	κάθε browser χρησιμοποιεί το δικό του JavaScript engine είναι για να μπορούν να το 
+	τροποποιήσουν με βάση τις ανάγκες τους και να βελτιώσουν το χρόνο εκτέλεσης του 
+	JavaScript κώδικα διαφημίζοντας ταυτόχρονα ότι ο δικός τους browser είναι καλύτερος, ασφαλέστερος 
+	και γρηγορότερος από εκείνους των ανταγωνιστών.</p>	
+
+<p>Οπότε έχουμε το JavaScript engine ενσωματωμένο σε κάθε browser ο οποίος παίζει το ρόλου του compiler. Με 
+	άλλα λόγια διαβάζει όλο τον JavaScript κώδικα, μετά το μεταφράζει σε machine code και τέλος τον εκτελεί.</p>
+
+	<h3 class="content-h3">ECMA STANDARDS AND SPECIFICATIONS</h3>
+
+<p>Πως όμως όλοι οι browsers, αν και χρησιμοποιούν διαφορετικά JavaScript engines, μπορούν να εκτελέσουν τον 
+	ίδιο JavaScript κώδικα? Για να υπάρχει συμβατότητα ανάμεσα στους browsers και στα engines που χρησιμοποιούν 
+	δημιουργήθηκε ο οργανισμός ECMAScript <a href="https://ecma-international.org/publications-and-standards/standards/ecma-262/">(ECMA-262 – Ecma International (ecma-international.org)</a> που σκοπός του 
+	είναι να ορίζει τους γενικούς κανόνες και τις προδιαγραφές που πρέπει να ακολουθούν όλα τα engines ασχέτως από 
+	τον τρόπο υλοποίησης τους για να εκτελούν σωστά τον ίδιο JavaScript κώδικα.</p>
+
+	<img src="./Lesson1/pic_5.png" alt="JavaScript Complete Course"/>
+	<p></p>
+
+<p>Σίγουρα θα έχετε ακούσει ότι η JavaScript μπορεί να χρησιμοποιηθεί για να γράψει και εφαρμογές για τους 
+	υπολογιστές (Desktop) ή ακόμα και εφαρμογές για microservices. Πως όμως δυνατόν να χρησιμοποιηθεί η JavaScript εκτός 
+	browser αφού μόνο ο browser έχει ενσωματωμένο το engine?</p>
+
+	<h3 class="content-h3">JAVASCRIPT OUTSIDE THE BROWSER</h3>
+
+<p>Αφού λοιπόν με το πέρασμα των χρόνων ωρίμασε αρκετά η JavaScript σαν Web γλώσσα προγραμματισμού, πήραν 
+	το V8 engine και το έκαναν αυτόνομο πρόγραμμα με το όνομα Node.js <a href="https://nodejs.org/en">(Node.js (nodejs.org)).</a> Οπότε από εκεί 
+	που η JavaScript ήταν μόνο client-side γλώσσα προγραμματισμού τώρα έγινε και server-side δίνοντας την 
+	ικανότητα στους προγραμματιστές να γράφουν JavaScript σε οποιαδήποτε πλατφόρμα χρησιμοποιώντας αποκλειστικά 
+	και μόνο μια γλώσσα</p>
+
+<p>Σήμερα έχουμε μια μεγάλη γκάμα από JavaScript frameworks που μας βοηθάνε να δημιουργήσουμε πολύ εύκολα εφαρμογές σε 
+	διάφορες πλατφόρμες. Για παράδειγμα, για Web εφαρμογές έχουμε το React, Angular και το Vue, για backend 
+	έχουμε το express.js, για mobile έχουμε το React Native ενώ για desktop εφαρμογές έχουμε το ionic. Φυσικά η 
+	λίστα είναι μεγάλη και εδώ μόνο παρουσιάζουμε μερικά από τα frameworks που χρησιμοποιούνται αλλά όλα 
+	στηρίζονται στην JavaScript.</p>
 
 
-						<p>Αν ξεκινάτε τώρα την καριέρα σας σαν Web προγραμματιστές τότε
-							να είσαστε σίγουροι ότι έχετε επιλέξει μια από τις πιο
-							διάσημες γλώσσες προγραμματισμού για το Web που οι οπαδοί της αυξάνονται
-							χρόνο με το χρόνο. Αυτό σημαίνει ότι θα μπορέσετε πολύ γρήγορα,
-							με τα σημερινά δεδομένα αγοράς εργασίας, να απορροφηθείτε άμεσα
-							σε κάποια εταιρεία πληροφορικής. </p>
 
-						<p>Αν γνωρίζετε JavaScript μπορείτε πολύ εύκολα να κάνετε το επόμενο βήμα
-							το οποίο είναι να γράφετε JavaScript Web εφαρμογές με την χρήση
-							frameworks όπως Angular και React. Επίσης μπορείτε να προχωρήσετε
-							στα δωρεάν μαθήματα Node.js όπου θα μπορείτε να
-							δημιουργήσετε από τα πιο απλά μέχρι τα πιο σύνθετα Web Services
-							και Microservices. Τέλος, ας μην ξεχνάμε, ότι η JavaScript
-							έχει πλέον επεκταθεί σε mobile και tablet πλατφόρμες.
-							Όποια και να είναι η κατεύθυνση σας είναι απαραίτητη
-							προϋπόθεση να γνωρίζετε JavaScript οπότε κάνατε την σωστή αρχή!</p>
+
+
+
 						<!--<h3 class="content-h3">ΤΙ ΘΑ ΜΑΘΕΤΕ</h3>
 						<p>Στο πρώτο μέρος, των δωρεάν Python μαθημάτων, θα μάθετε όλες τις βασικές έννοιες που χρειάζεστε για να γράψετε τα πρώτα σας προγράμματα στην γλώσσα προγραμματισμού Python. Στην πραγματικότητα, η θεωρία που θα μάθετε, είναι σχεδόν η ίδια που θα μαθαίνατε σε οποιαδήποτε άλλη γλώσσα προγραμματισμού. </p>
 						<p>Θα αρχίσετε τα πρώτα σας βήματα στον προγραμματισμό με Python μαθαίνοντας τα διάφορα είδη data που υπάρχουν στην Python και πως μπορείτε να αποθηκεύσετε δεδομένα σε lists και dictionaries. Επίσης θα μάθετε πως να δημιουργήσετε ένα collection of data και πως μπορείτε να το χρησιμοποιήσετε με τον καλύτερο τρόπο στον κώδικα σας. Μετά θα προχωρήσουμε σε while loops και if statements έτσι ώστε να δώσουμε αυτόνομη λογική στα προγράμματα μας.</p>
@@ -289,35 +367,35 @@
 							<li>Battling challenging cost targets and the need to build.</li>
 						</ul>
 						<p>Quasar the only home we've ever known extraordinary claims require extraordinary evidence billions billions Drake Eqa tion. Stirred by starlight! At the edge of forever. Rich in mystery Sea of Tranquility. Are creatures of the cosmos descend from astronomers. Trillion and billions upon billions upon billions upon billions upon billions. upon billions upon billions!</p>-->
-						<h2>ΕΝΟΤΗΤΕΣ</h2>
+						<!-- <h2>ΕΝΟΤΗΤΕΣ</h2> -->
 				
 						<!-- sectionRow -->
-						<section class="sectionRow">
-							<h2 class="h6 text-uppercase fw-semi rowHeading">ΕΝΟΤΗΤΕΣ ΤΟΥ JAVASCRIPT COMPLETE COURSE</h2>
+						<!-- <section class="sectionRow">
+							<h2 class="h6 text-uppercase fw-semi rowHeading">ΕΝΟΤΗΤΕΣ ΤΟΥ JAVASCRIPT COMPLETE COURSE</h2> -->
 							<!-- sectionRowPanelGroup -->
-							<div class="panel-group sectionRowPanelGroup" id="accordion" role="tablist" aria-multiselectable="true">
+							<!-- <div class="panel-group sectionRowPanelGroup" id="accordion" role="tablist" aria-multiselectable="true"> -->
 								<!-- panel -->
-	<div class="panel panel-default">
-		<div class="panel-heading" role="tab" id="headingOne">
-			<h3 class="panel-title fw-normal">
-				<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-lesson1-how-Javascript-works-.html" style="color:blue;">ΕΝΟΤΗΤΑ 1 - How JavaScript Works</a>
-					<span class="accOpenerCol">
+	<!-- <div class="panel panel-default"> -->
+		<!-- <div class="panel-heading" role="tab" id="headingOne"> -->
+			<!-- <h3 class="panel-title fw-normal"> -->
+				<!-- <a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-unit1-environment-installation.html" style="color:blue;">ΕΝΟΤΗΤΑ 1 - Environment Installation</a> -->
+					<!-- <span class="accOpenerCol"> -->
 					
 					<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-					</span>
+					<!-- </span> -->
 					<!--<span class="accOpenerCol hd-phone">
 						<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
 						<time datetime="2011-01-12" class="timeCount">17 Min</time>
 					</span>-->
-				</a>
+				<!-- </a>
 			</h3>
 			
-		</div>
+		</div> -->
 
 		
 		<!-- collapseOne -->
 	
-	</div>
+	<!-- </div> -->
 	
 	<!-- <div class="panel panel-default">
 	<div class="panel-heading" role="tab" id="headingOne">
@@ -500,10 +578,10 @@
 								
 								<!-- panel -->
 							
-							</div>
+							<!-- </div> -->
 							
 							
-						</section>
+						<!-- </section> -->
 
 						
 						<!-- sectionRow -->
