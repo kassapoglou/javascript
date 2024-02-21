@@ -40,6 +40,7 @@
 
 		gtag('config', 'UA-150900548-1');
 	</script>
+	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=sunburst"></script>
 </head>
 <body>
 	<!-- main container of all the page elements -->
@@ -251,32 +252,164 @@
 						<div class="aligncenter content-aligncenter">
 							<img src="images/javascript.jpeg" alt="image description">
 						</div>
-						<h3 class="content-h3">ΠΕΡΙΓΡΑΦΗ ΣΕΜΙΝΑΡΙΟΥ</h3>
-						<p>Εδώ θα βρείτε μια ολοκληρωμένη σειρά δωρεάν μαθημάτων στην
-							script γλώσσα web προγραμματισμού <b>JavaScript</b>. Κάθε ενότητα είναι
-							αυτόνομη
-							από τις άλλες και δεν απαιτείται να γνωρίζετε τις προηγούμενες
-							για να την παρακολουθήσετε. Επίσης σε κάθε ενότητα δημιουργούμε
-							ένα καινούργιο παράδειγμα JavaScript έτσι ώστε να είναι εντελώς
-							ξεκάθαρο το νόημα της ενότητας και η ουσία της θεωρίας που μελετάμε.</p>
+						<h3 class="content-h3">ΕΝΟΤΗΤΑ 4 - BROWSER CONSOLE AND HELPER METHODS</h3>
+						<h3 class="content-h3">INTRODUCTION</h3>
+						<p>Στο αυτό το δωρεάν μάθημα JavaScript, θα δούμε μερικές ακόμα επιλογές που αφορούν τον 
+							τρόπο με τον οποίο εκτελούμε εξωτερικά αρχεία JavaScript όπως και κάποια functions που μας προσφέρει 
+							η JavaScript για να δείχνουμε μηνύματα στο browser κυρίως για troubleshooting και διόρθωση κώδικα.</p>
+
+						<h3 class="content-h3">HELPER METHODS</h3>
+						<p>Είμαι σχεδόν σίγουρος ότι ο τρόπος που δείξαμε στο προηγούμενο δωρεάν μάθημα JavaScript για να εμφανίζουμε μηνύματα 
+							δεν χρησιμοποιείται από πολλούς προγραμματιστές, αλλά σίγουρα όμως χρειάζεται να γνωρίζουμε έναν ακόμα τουλάχιστον πιο εύκολο και 
+							εύχρηστο τρόπο για να μπορούμε να κάνουμε troubleshoot όταν η εφαρμογή μας δεν λειτουργεί σωστά.</p>
+
+						<p>Τον πρώτο, και ταυτόχρονα ενοχλητικό τρόπο, τον έχετε ήδη γνωρίσει χρησιμοποιώντας την alert( ) function. Γράφουμε 
+							μέσα στην alert( ) function το μήνυμα που θέλουμε και αυτό θα εμφανιστεί σε ένα ξεχωριστό παράθυρο στην οθόνη 
+							μας. Ας θυμηθούμε άλλη μια φορά τον κώδικα γράφοντας το παρακάτω παράδειγμα.</p>
+
+							<img src="./Lesson4/pic_1.png" alt="Δωρεάν Μαθήματα JavaScript"/>
+							<p><Strong>index.html</Strong></p>
+							<link href="https://cdn.rawgit.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2/raw/36c2eb3e0c44133880485a143717bda9d180f2c1/GistDarkCode.css" rel="stylesheet" type="text/css">
+							<script src="https://gist.github.com/kassapoglou/93e931ec3a66b3aa40ba3e1b649c98c2.js"></script>
+							<p><Strong>app.js</Strong></p>
+							<link href="https://cdn.rawgit.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2/raw/36c2eb3e0c44133880485a143717bda9d180f2c1/GistDarkCode.css" rel="stylesheet" type="text/css">
+							<script src="https://gist.github.com/kassapoglou/f6fddb39eb2aebd6094d7d27f374df95.js"></script>
+							
+							<p><Strong>Output</Strong></p>
+							<img src="./Lesson4/pic_1.png" alt="Δωρεάν Μαθήματα JavaScript"/>
+						<p></p>
+
+<p>Ο δεύτερος τρόπος που ίσως συναντήσετε είναι να δείχνετε το μήνυμα σας μέσα στην ίδια την html σελίδα. Αυτό 
+	μπορείτε να το πετύχετε με την μέθοδο write( ) του αντικειμένου document. Δεν απαιτείται να καταλάβετε από τόσο 
+	νωρίς τι σημαίνει αντικείμενο και γιατί η write( ) ανήκει σε αυτό. Απλά όταν τα χρησιμοποιείται μαζί και 
+	μέσα στην write( ) γράφουμε το μήνυμα μας, αυτό θα εμφανιστεί στην σελίδα μας. Το μόνο που έχετε να κάνετε 
+	είναι να αλλάξετε τον κώδικα στο αρχείο app.js. Νομίζω ότι τώρα μπορείτε να δείτε την αξία να χρησιμοποιείτε 
+	εξωτερικά αρχεία στη JavaScript.</p>
+
+	<p><Strong>app.js</Strong></p>
+	<link href="https://cdn.rawgit.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2/raw/36c2eb3e0c44133880485a143717bda9d180f2c1/GistDarkCode.css" rel="stylesheet" type="text/css">
+	<script src="https://gist.github.com/kassapoglou/0598cd311b0cb42f79d3cee9a725ba00.js"></script>
+	<p><Strong>Output</Strong></p>
+							<img src="./Lesson4/pic_2.png" alt="Δωρεάν Μαθήματα JavaScript"/>
+						<p></p>
+
+<p>Κανένας όμως από τους δύο προηγούμενους τρόπους δεν χρησιμοποιείται επαγγελματικά από τους 
+	προγραμματιστές για να ελέγξουν ανά πάσα στιγμή τις τιμές των μεταβλητών στην εφαρμογή τους ή για να κάνουνε 
+	σοβαρό troubleshooting. Ο λόγος που δεν χρησιμοποιούνται οι δύο πρώτοι τρόποι είναι γιατί υπάρχει ένας τρίτος 
+	τρόπος με τεράστιο αριθμό δυνατοτήτων που υποστηρίζεται από όλους τους μοντέρνους browser και ονομάζεται console.</p>
+
+<p>Βασικά σαν console αναφερόμαστε όχι σε κάποια ιδιότητα της JavaScript γλώσσας αλλά στην δυνατότητα 
+	του ίδιου του browser να μας προσφέρει ένα περιβάλλον με προγραμματιστικές δυνατότητες. Για να μπορέσουμε 
+	να δούμε το αποτέλεσμα μας στην κονσόλα του browser πρέπει να γράψουμε την εντολή console.log( ) στο 
+	JavaScript αρχείο και να περάσουμε το μήνυμα μας μέσα στο function log( ). Όταν εμφανιστεί η εφαρμογή 
+	μας στον browser, πατάμε F12 στο πληκτρολόγιο και από τις επιλογές που θα εμφανιστούν επιλέγουμε console. Τότε 
+	θα δείτε το μήνυμα του console.log() να εμφανίζεται στην κονσόλα του browser.</p>
+
+	<p><Strong>app.js</Strong></p>
+	<link href="https://cdn.rawgit.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2/raw/36c2eb3e0c44133880485a143717bda9d180f2c1/GistDarkCode.css" rel="stylesheet" type="text/css">
+	<script src="https://gist.github.com/kassapoglou/3048812c28d5605e87c0be1913b85f22.js"></script>
+	<p><Strong>Output</Strong></p>
+							<img src="./Lesson4/pic_3.png" alt="Δωρεάν Μαθήματα JavaScript"/>
+						<p></p>
+
+<p>Θα υιοθετήσουμε και εμείς αυτό το τρόπο εμφάνισης μηνυμάτων γιατί θα μας βοηθήσει πάρα πολύ 
+	αργότερα στο να κατανοήσουμε καλύτερα την θεωρία της JavaScript. Όμως πριν προχωρήσουμε 
+	στο επόμενο σημερινό θέμα μας που είναι το tag script, θα ήθελα να καταλάβετε γιατί το console 
+	είναι η πρώτη επιλογή για κάθε JavaScript προγραμματιστή.</p>
+
+<p>Όπως ήδη έχουμε αναφέρει οι δύο πρώτοι τρόποι δεν είναι και τόσο ενημερωτικοί όταν ζητάμε πληροφορίες για τον 
+	κώδικα μας. Ας υποθέσουμε λοιπόν ότι έχουμε ένα JavaScript αντικείμενο το οποίο περιέχει το property name 
+	με κάποια τιμή. Θέλουμε λοιπόν να δούμε τι ακριβώς περιέχει αυτό το αντικείμενο και σαν πρώτη επιλογή 
+	επιλέγουμε το document.write( ). To αποτέλεσμα που θα πάρετε δεν σας βοηθάει καθόλου να καταλάβετε τις 
+	πληροφορίες που έχει το αντικείμενο. Επαναλαμβάνω για ακόμη μια φορά, να μην ανησυχείτε για την έννοια 
+	του αντικειμένου. Θα τα μάθουμε όλα σε μελλοντικά δωρεάν μαθήματα JavaScript.</p>
+
+	<p><Strong>app.js</Strong></p>
+	<link href="https://cdn.rawgit.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2/raw/36c2eb3e0c44133880485a143717bda9d180f2c1/GistDarkCode.css" rel="stylesheet" type="text/css">
+	<script src="https://gist.github.com/kassapoglou/8f5ce47bafb85256103b987c0876b4a8.js"></script>
+	<p><Strong>Output</Strong></p>
+							<img src="./Lesson4/pic_4.png" alt="Δωρεάν Μαθήματα JavaScript"/>
+						<p></p>
 
 
-						<p>Αν ξεκινάτε τώρα την καριέρα σας σαν Web προγραμματιστές τότε
-							να είσαστε σίγουροι ότι έχετε επιλέξει μια από τις πιο
-							διάσημες γλώσσες προγραμματισμού για το Web που οι οπαδοί της αυξάνονται
-							χρόνο με το χρόνο. Αυτό σημαίνει ότι θα μπορέσετε πολύ γρήγορα,
-							με τα σημερινά δεδομένα αγοράς εργασίας, να απορροφηθείτε άμεσα
-							σε κάποια εταιρεία πληροφορικής. </p>
+<p>Αν τώρα χρησιμοποιήσετε την console.log( ) θα δείτε μια αναλυτική λίστα με τις πληροφορίες του αντικειμένου.</p>
+<p><Strong>app.js</Strong></p>
+<link href="https://cdn.rawgit.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2/raw/36c2eb3e0c44133880485a143717bda9d180f2c1/GistDarkCode.css" rel="stylesheet" type="text/css">
+<script src="https://gist.github.com/kassapoglou/a8764494f5d83c2c1ed57493d5d6043b.js"></script>
+<p><Strong>Output</Strong></p>
+						<img src="./Lesson4/pic_5.png" alt="Δωρεάν Μαθήματα JavaScript"/>
+					<p></p>
 
-						<p>Αν γνωρίζετε JavaScript μπορείτε πολύ εύκολα να κάνετε το επόμενο βήμα
-							το οποίο είναι να γράφετε JavaScript Web εφαρμογές με την χρήση
-							frameworks όπως Angular και React. Επίσης μπορείτε να προχωρήσετε
-							στα δωρεάν μαθήματα Node.js όπου θα μπορείτε να
-							δημιουργήσετε από τα πιο απλά μέχρι τα πιο σύνθετα Web Services
-							και Microservices. Τέλος, ας μην ξεχνάμε, ότι η JavaScript
-							έχει πλέον επεκταθεί σε mobile και tablet πλατφόρμες.
-							Όποια και να είναι η κατεύθυνση σας είναι απαραίτητη
-							προϋπόθεση να γνωρίζετε JavaScript οπότε κάνατε την σωστή αρχή!</p>
+					<h3 class="content-h3">AVOID ADDING JAVASCRIPT CODE INSIDE THE HEAD SECTION</h3>
+<p>Φαντάζομαι ότι έχετε προσέξει σε κάποια παραδείγματα που υπάρχουν ήδη στο web, ότι συνηθίζουν 
+	να βάζουν το script tag στο head section της σελίδας και όχι στο body, όπως δείχνει το παρακάτω παράδειγμα.</p>
+	<p><Strong>app.js</Strong></p>
+	<link href="https://cdn.rawgit.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2/raw/36c2eb3e0c44133880485a143717bda9d180f2c1/GistDarkCode.css" rel="stylesheet" type="text/css">
+	<script src="https://gist.github.com/kassapoglou/c5b25478b2b875808eae892b53671b6c.js"></script>
+	<p></p>
+
+<p>Ο κύριος λόγος για τον οποίο παλαιότερα ακολουθούσαμε αυτή την τακτική ήταν γιατί θέλαμε να έχουμε 
+	όλα τα αρχεία μαζί συγκεντρωμένα στο ίδιο μέρος – π.χ CSS, JavaScript, κτλ. Αυτό όμως απαιτεί ότι 
+	για να δούμε την συγκεκριμένη σελίδα όλα τα αρχεία που αναφέρονται στο head tag θα πρέπει να έχουν 
+	φορτωθεί και εκτελεστεί πριν ακόμα ο browser προσπαθήσει να φτάσει το body tag του html για να μας 
+	δείξει την κύρια σελίδα μας. Αν τα αρχεία έχουν μεγάλο μέγεθος ή εκτελούν κάποιες διεργασίες τότε 
+	θα υπάρχει μια αισθητή καθυστέρηση στην εμφάνιση της σελίδας και για αρκετά δευτερόλεπτα ο browser 
+	δεν θα δείχνει τίποτα. Η καλύτερη προσέγγιση είναι να βάλουμε το JavaScript κώδικα σε εξωτερικό 
+	αρχείο και να καλέσουμε το αρχείο μέσα από το script tag πριν κλείσει το body tag. Όπως ακριβώς 
+	έχουμε δείξει σε όλα μας τα παραδείγματα.</p>
+
+<p>Τώρα ας δημιουργήσουμε ένα ακόμα εξωτερικό JavaScript αρχείο και ας γράψουμε και σε αυτό ένα 
+	απλό console.log( ) μήνυμα. Στις παρακάτω εικόνες βλέπετε τι κώδικα περιέχουν τα JavaScript 
+	αρχεία και πως τα καλούμε και τα δύο μέσα από την html σελίδα μας.</p>
+	<img src="./Lesson4/pic_6.png" alt="Δωρεάν Μαθήματα JavaScript"/>
+	<p></p>
+
+	<p><Strong>index.html</Strong></p>
+	<link href="https://cdn.rawgit.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2/raw/36c2eb3e0c44133880485a143717bda9d180f2c1/GistDarkCode.css" rel="stylesheet" type="text/css">
+	<script src="https://gist.github.com/kassapoglou/3fb72e47486d771f49ee3b2aee72bfc1.js"></script>
+	<p><Strong>app1.js</Strong></p>
+	<link href="https://cdn.rawgit.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2/raw/36c2eb3e0c44133880485a143717bda9d180f2c1/GistDarkCode.css" rel="stylesheet" type="text/css">
+	<script src="https://gist.github.com/kassapoglou/a95c6697cea1aaf8ec73204949a2816c.js"></script>
+	<p><Strong>app2.js</Strong></p>
+	<link href="https://cdn.rawgit.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2/raw/36c2eb3e0c44133880485a143717bda9d180f2c1/GistDarkCode.css" rel="stylesheet" type="text/css">
+	<script src="https://gist.github.com/kassapoglou/00d3d96329effe3e33b5ef764495725b.js"></script>
+	<p><Strong>Output</Strong></p>
+							<img src="./Lesson4/pic_7.png" alt="Δωρεάν Μαθήματα JavaScript"/>
+						<p></p>
+
+<p>Ο τρόπος με τον οποίο καλέσαμε τα δύο JavaScript αρχεία μέσα από το html είναι ο σωστός και ο 
+	προτεινόμενος. Όμως το tag script περιέχει κάποια έξτρα attributes που μπορούμε να προσθέσουμε για να 
+	ελέγξουμε καλύτερα την σειρά εκτέλεσης του κώδικα. Πριν προχωρήσουμε όμως να δούμε μερικά από αυτά τα 
+	attributes καλό θα ήταν να εξοικειωθείτε με το documentation της JavaScript και της html όπως μας το προσφέρει 
+	με πολύ οργανωμένο τρόπο ο Mozilla οργανισμός. Σε αυτό το 
+	link <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script">(The Script element)</a> θα βρείτε την 
+	πλήρη ανάλυση του script tag με όλα τα attributes.</p>
+
+	<img src="./Lesson4/pic_8.png" alt="Δωρεάν Μαθήματα JavaScript"/>
+	<p></p>
+
+<p>Το script tag ορίζει ένα attribute με το όνομα defer. Ο λόγος που ίσως θέλουμε να το προσθέσουμε 
+	στο html είναι γιατί θέλουμε να βεβαιωθούμε ότι πρώτα έχει διαβαστεί και φορτωθεί στον browser ολόκληρος 
+	ο html κώδικας της σελίδας και μετά να ξεκινήσει η εκτέλεση των scripts. Με βάση το documentation 
+	του Mozilla, αφότου φορτωθεί όλος ο html κώδικας τα scripts θα εκτελεστούν με την σειρά που έχουν οριστεί.</p>
+	<p><Strong>index.html</Strong></p>
+	<link href="https://cdn.rawgit.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2/raw/36c2eb3e0c44133880485a143717bda9d180f2c1/GistDarkCode.css" rel="stylesheet" type="text/css">
+	<script src="https://gist.github.com/kassapoglou/d1d9c86a696f6997ca1b5fb4f45d240b.js"></script>
+
+<p>Επίσης υπάρχει και το async attribute το οποίο έχει την ίδια συμπεριφορά με το defer με τη διαφορά ότι 
+	δεν υπάρχει εγγύηση στη σειρά εκτέλεσης των scripts. Αυτό μερικές φορές είναι χρήσιμο γιατί δεν χρειάζεται 
+	το δεύτερο script (πχ. app2.js στο δικό μας παράδειγμα) να περιμένει την ολοκλήρωση εκτέλεσης του πρώτου 
+	script (πχ. app1.js) για να εκτελεστεί και το ίδιο.</p>	
+	<p><Strong>index.html</Strong></p>
+	<link href="https://cdn.rawgit.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2/raw/36c2eb3e0c44133880485a143717bda9d180f2c1/GistDarkCode.css" rel="stylesheet" type="text/css">
+	<script src="https://gist.github.com/kassapoglou/66b75ab984f114566f6165192ca9c8c6.js"></script>
+
+	<p>Γενικότερα στα δωρεάν μαθήματα JavaScript που θα ακολουθήσουν δεν θα χρειαστεί να προσθέσουμε 
+		κάποια από αυτά τα έξτρα attributes. Θεώρησα όμως χρήσιμο να γνωρίζετε ότι υπάρχουν σαν επιλογές 
+		και επίσης ότι πάντα μπορείτε να ανατρέξετε στο site του Mozilla για περεταίρω εξηγήσεις στην θεωρία 
+		της JavaScript αλλά και για παραδείγματα κώδικα.</p>
+		
+
 						<!--<h3 class="content-h3">ΤΙ ΘΑ ΜΑΘΕΤΕ</h3>
 						<p>Στο πρώτο μέρος, των δωρεάν Python μαθημάτων, θα μάθετε όλες τις βασικές έννοιες που χρειάζεστε για να γράψετε τα πρώτα σας προγράμματα στην γλώσσα προγραμματισμού Python. Στην πραγματικότητα, η θεωρία που θα μάθετε, είναι σχεδόν η ίδια που θα μαθαίνατε σε οποιαδήποτε άλλη γλώσσα προγραμματισμού. </p>
 						<p>Θα αρχίσετε τα πρώτα σας βήματα στον προγραμματισμό με Python μαθαίνοντας τα διάφορα είδη data που υπάρχουν στην Python και πως μπορείτε να αποθηκεύσετε δεδομένα σε lists και dictionaries. Επίσης θα μάθετε πως να δημιουργήσετε ένα collection of data και πως μπορείτε να το χρησιμοποιήσετε με τον καλύτερο τρόπο στον κώδικα σας. Μετά θα προχωρήσουμε σε while loops και if statements έτσι ώστε να δώσουμε αυτόνομη λογική στα προγράμματα μας.</p>
@@ -289,102 +422,35 @@
 							<li>Battling challenging cost targets and the need to build.</li>
 						</ul>
 						<p>Quasar the only home we've ever known extraordinary claims require extraordinary evidence billions billions Drake Eqa tion. Stirred by starlight! At the edge of forever. Rich in mystery Sea of Tranquility. Are creatures of the cosmos descend from astronomers. Trillion and billions upon billions upon billions upon billions upon billions. upon billions upon billions!</p>-->
-						<h2>ΕΝΟΤΗΤΕΣ</h2>
+						<!-- <h2>ΕΝΟΤΗΤΕΣ</h2> -->
 				
 						<!-- sectionRow -->
-						<section class="sectionRow">
-							<h2 class="h6 text-uppercase fw-semi rowHeading">ΕΝΟΤΗΤΕΣ ΤΟΥ JAVASCRIPT COMPLETE COURSE</h2>
+						<!-- <section class="sectionRow">
+							<h2 class="h6 text-uppercase fw-semi rowHeading">ΕΝΟΤΗΤΕΣ ΤΟΥ JAVASCRIPT COMPLETE COURSE</h2> -->
 							<!-- sectionRowPanelGroup -->
-							<div class="panel-group sectionRowPanelGroup" id="accordion" role="tablist" aria-multiselectable="true">
+							<!-- <div class="panel-group sectionRowPanelGroup" id="accordion" role="tablist" aria-multiselectable="true"> -->
 								<!-- panel -->
-	<div class="panel panel-default">
-		<div class="panel-heading" role="tab" id="headingOne">
-			<h3 class="panel-title fw-normal">
-				<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-lesson1-how-Javascript-works-.html" style="color:blue;">ΕΝΟΤΗΤΑ 1 - How JavaScript Works</a>
-					<span class="accOpenerCol">
+	<!-- <div class="panel panel-default"> -->
+		<!-- <div class="panel-heading" role="tab" id="headingOne"> -->
+			<!-- <h3 class="panel-title fw-normal"> -->
+				<!-- <a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-unit1-environment-installation.html" style="color:blue;">ΕΝΟΤΗΤΑ 1 - Environment Installation</a> -->
+					<!-- <span class="accOpenerCol"> -->
 					
 					<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-					</span>
+					<!-- </span> -->
 					<!--<span class="accOpenerCol hd-phone">
 						<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
 						<time datetime="2011-01-12" class="timeCount">17 Min</time>
 					</span>-->
-				</a>
+				<!-- </a>
 			</h3>
 			
-		</div>
+		</div> -->
 
 		
 		<!-- collapseOne -->
 	
-	</div>
-
-	<div class="panel panel-default">
-		<div class="panel-heading" role="tab" id="headingOne">
-			<h3 class="panel-title fw-normal">
-				<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-lesson2-javascript-environment-setup.html" style="color:blue;">ΕΝΟΤΗΤΑ 2 - JavaScript Environment Setup</a>
-					<span class="accOpenerCol">
-					
-					<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-					</span>
-					<!--<span class="accOpenerCol hd-phone">
-						<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-						<time datetime="2011-01-12" class="timeCount">17 Min</time>
-					</span>-->
-				</a>
-			</h3>
-			
-		</div>
-
-		
-		<!-- collapseOne -->
-	
-	</div>
-
-
-	<div class="panel panel-default">
-		<div class="panel-heading" role="tab" id="headingOne">
-			<h3 class="panel-title fw-normal">
-				<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-lesson3-adding-javascript-code-to-an-html-page.html" style="color:blue;">ΕΝΟΤΗΤΑ 3 - Adding JavaScript Code to your HTML page</a>
-					<span class="accOpenerCol">
-					
-					<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-					</span>
-					<!--<span class="accOpenerCol hd-phone">
-						<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-						<time datetime="2011-01-12" class="timeCount">17 Min</time>
-					</span>-->
-				</a>
-			</h3>
-			
-		</div>
-
-		
-		<!-- collapseOne -->
-	
-	</div>
-
-	<div class="panel panel-default">
-		<div class="panel-heading" role="tab" id="headingOne">
-			<h3 class="panel-title fw-normal">
-				<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-lesson4-browser-console-and-helper-methods.html" style="color:blue;">ΕΝΟΤΗΤΑ 4 - Browser Console and Helper Methods</a>
-					<span class="accOpenerCol">
-					
-					<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-					</span>
-					<!--<span class="accOpenerCol hd-phone">
-						<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-						<time datetime="2011-01-12" class="timeCount">17 Min</time>
-					</span>-->
-				</a>
-			</h3>
-			
-		</div>
-
-		
-		<!-- collapseOne -->
-	
-	</div>
+	<!-- </div> -->
 	
 	<!-- <div class="panel panel-default">
 	<div class="panel-heading" role="tab" id="headingOne">
@@ -567,10 +633,10 @@
 								
 								<!-- panel -->
 							
-							</div>
+							<!-- </div> -->
 							
 							
-						</section>
+						<!-- </section> -->
 
 						
 						<!-- sectionRow -->
