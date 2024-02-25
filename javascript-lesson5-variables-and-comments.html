@@ -40,6 +40,7 @@
 
 		gtag('config', 'UA-150900548-1');
 	</script>
+	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=sunburst"></script>
 </head>
 <body>
 	<!-- main container of all the page elements -->
@@ -251,32 +252,151 @@
 						<div class="aligncenter content-aligncenter">
 							<img src="images/javascript.jpeg" alt="image description">
 						</div>
-						<h3 class="content-h3">ΠΕΡΙΓΡΑΦΗ ΣΕΜΙΝΑΡΙΟΥ</h3>
-						<p>Εδώ θα βρείτε μια ολοκληρωμένη σειρά δωρεάν μαθημάτων στην
-							script γλώσσα web προγραμματισμού <b>JavaScript</b>. Κάθε ενότητα είναι
-							αυτόνομη
-							από τις άλλες και δεν απαιτείται να γνωρίζετε τις προηγούμενες
-							για να την παρακολουθήσετε. Επίσης σε κάθε ενότητα δημιουργούμε
-							ένα καινούργιο παράδειγμα JavaScript έτσι ώστε να είναι εντελώς
-							ξεκάθαρο το νόημα της ενότητας και η ουσία της θεωρίας που μελετάμε.</p>
+						<h3 class="content-h3">ΕΝΟΤΗΤΑ 5 - VARIABLES AND COMMENTS</h3>
+						<h3 class="content-h3">INTRODUCTION</h3>
+						<p>Στο σημερινό δωρεάν μάθημα JavaScript θα δούμε πως ορίζουμε μεταβλητές, ποιοι 
+							είναι οι κανόνες για να ονομάσουμε τις μεταβλητές, τι είναι το hoisting, ποιες 
+							είναι οι διαφορές ανάμεσα σε var, let και const και τέλος πως να προσθέτουμε 
+							σχόλια στον κώδικα μας.</p>
+							<h3 class="content-h3">JAVASCRIPT IS CASE-SENSITIVE</h3>
+					<p>Το πρώτο σημαντικό σημείο που θα πρέπει να θυμάστε όταν γράφετε κώδικα στην JavaScript 
+						είναι ότι η συγκεκριμένη γλώσσα είναι case-sensitive. Με την έννοια case-sensitive 
+						εννοούμε ότι αν π.χ. το όνομα μιας variable είναι taxes για να καλέσετε και να 
+						χρησιμοποιήσετε την συγκεκριμένη μεταβλητή στο πρόγραμμα σας, θα πρέπει να την 
+						γράψετε ακριβώς με τον ίδιο τρόπο. Στο συγκεκριμένο παράδειγμα, αυτό σημαίνει με 
+						όλους τους χαρακτήρες να είναι lower-case. Αν αλλάξετε έστω ένα χαρακτήρα (π.χ. Taxes) τότε 
+						αναφέρεστε σε μια εντελώς διαφορετική μεταβλητή.</P>
+					<h3 class="content-h3">HOW TO NAME YOUR VARIABLES</h3>
+				<p>Επίσης υπάρχουν μερικοί απλοί κανόνες όσο αφορά τα ονόματα που δίνουμε στις μεταβλητές μας. Αν και 
+					είναι εύκολοι να τους ακολουθήσετε, θα πρέπει να αναφερθούμε σε αυτούς για να 
+					αποφύγουμε τυχόν λάθη.</p>
 
+				<p>Ο χαρακτήρας με τον οποίο ξεκινάει το όνομα μιας μεταβλητής (δηλαδή ο πρώτος χαρακτήρας) θα 
+					πρέπει να είναι είτε γράμμα, είτε το underscore ( _ ), είτε το σύμβολο του δολαρίου ( $ ).</p>
 
-						<p>Αν ξεκινάτε τώρα την καριέρα σας σαν Web προγραμματιστές τότε
-							να είσαστε σίγουροι ότι έχετε επιλέξει μια από τις πιο
-							διάσημες γλώσσες προγραμματισμού για το Web που οι οπαδοί της αυξάνονται
-							χρόνο με το χρόνο. Αυτό σημαίνει ότι θα μπορέσετε πολύ γρήγορα,
-							με τα σημερινά δεδομένα αγοράς εργασίας, να απορροφηθείτε άμεσα
-							σε κάποια εταιρεία πληροφορικής. </p>
+				<p>Οι υπόλοιποι χαρακτήρες μπορούν να είναι γράμματα, αριθμοί, underscores, δολάριο ή αριθμοί.</p>
 
-						<p>Αν γνωρίζετε JavaScript μπορείτε πολύ εύκολα να κάνετε το επόμενο βήμα
-							το οποίο είναι να γράφετε JavaScript Web εφαρμογές με την χρήση
-							frameworks όπως Angular και React. Επίσης μπορείτε να προχωρήσετε
-							στα δωρεάν μαθήματα Node.js όπου θα μπορείτε να
-							δημιουργήσετε από τα πιο απλά μέχρι τα πιο σύνθετα Web Services
-							και Microservices. Τέλος, ας μην ξεχνάμε, ότι η JavaScript
-							έχει πλέον επεκταθεί σε mobile και tablet πλατφόρμες.
-							Όποια και να είναι η κατεύθυνση σας είναι απαραίτητη
-							προϋπόθεση να γνωρίζετε JavaScript οπότε κάνατε την σωστή αρχή!</p>
+				<p>Τέλος, αν το όνομα της μεταβλητής σας αποτελείται από δύο ή περισσότερες λέξεις, τότε ο 
+					προτεινόμενος τρόπος γραφής είναι το camelCase format, δηλαδή το πρώτο γράμμα της 
+					πρώτης λέξης πρέπει να είναι μικρό ενώ το πρώτο γράμμα από τη δεύτερη λέξη και 
+					μετά πρέπει να είναι κεφαλαίο. Για παράδειγμα incomeTaxes.</p>
+
+				<p>Όταν ονομάζουμε μεταβλητές θα πρέπει να αποφεύγουμε να χρησιμοποιούμε λέξεις που έχει ήδη 
+					δεσμεύσει η JavaScript για δική της χρήση. Αυτές οι λέξεις κλειδιά (keywords) δεν είναι 
+					πολλές και σε μικρό χρονικό διάστημα θα τις έχουμε χρησιμοποιήσει όλες οπότε δεν χρειάζεται 
+					να προσπαθήσετε να τις θυμάστε. Άλλωστε το Visual Studio Code θα παραπονεθεί κοκκινίζοντας 
+					την γραμμή όταν ονομάσουμε μια μεταβλητή με το όνομα ενός keyword. Οι keywords της JavaScript 
+					είναι οι εξής:</p>
+					<img src="./Lesson5/pic_1.png" alt="Δωρεάν Μαθήματα JavaScript"/>
+					<p></p>
+			<p>Μια variable (μεταβλητή) είναι ένα δεσμευμένο κομμάτι της μνήμης του υπολογιστή. Κάθε 
+				φορά που ορίζουμε μια μεταβλητή, στην πραγματικότητα αποθηκεύουμε προσωρινά στην μνήμη 
+				του υπολογιστή την τιμή με την οποία ισούται η μεταβλητή. Για να ανακτήσουμε πίσω την τιμή, δεν 
+				έχουμε παρά να καλέσουμε την μεταβλητή. Οπότε η μεταβλητή είναι ο εύκολος τρόπος να 
+				αλληλοεπιδρούμε με την μνήμη του υπολογιστή. Φυσικά αυτός ο τρόπος είναι προσωρινός γιατί 
+				αν κλείσουμε την εφαρμογή ή σβήσουμε τον υπολογιστή η τιμή της μεταβλητής χάνεται. Η παρακάτω 
+				εικόνα είναι από το τον ορισμό που δίνει το Mozilla MDN για τις μεταβλητές <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables" >(Storing the 
+					information you need — Variables).</a></p>
+
+					<img src="./Lesson5/pic_2.png" alt="Δωρεάν Μαθήματα JavaScript"/>
+					<p></p>	
+					<h3 class="content-h3">HOW TO DEFINE VAR VARIABLES</h3>
+		<p>Ο παλαιός τρόπος για να ορίσουμε μια μεταβλητή, πριν την έκδοση ES6, ήταν να χρησιμοποιήσουμε τη 
+			λέξη var και αμέσως μετά να ορίσουμε το όνομα της μεταβλητής. Επειδή ακόμα χρησιμοποιείται, θα 
+			αναφερθούμε σε αυτό το τρόπο ορισμού μιας μεταβλητής και μετά θα προχωρήσουμε στο μοντέρνο τρόπο.</p>
+
+			<p><Strong>index.html</Strong></p>
+			<link href="https://cdn.rawgit.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2/raw/36c2eb3e0c44133880485a143717bda9d180f2c1/GistDarkCode.css" rel="stylesheet" type="text/css">
+			<script src="https://gist.github.com/kassapoglou/0d4107dd34503e4d092df92a5a8cd5a2.js"></script>
+			<p><Strong>app.js</Strong></p>
+			<link href="https://cdn.rawgit.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2/raw/36c2eb3e0c44133880485a143717bda9d180f2c1/GistDarkCode.css" rel="stylesheet" type="text/css">
+			<script src="https://gist.github.com/kassapoglou/e51d21fbd029c92e556d9df84126b7c1.js"></script>
+			
+			<p><Strong>Output</Strong></p>
+			<img src="./Lesson5/pic_3.png" alt="Δωρεάν Μαθήματα JavaScript"/>
+		<p></p>
+
+		<p>Ο παραπάνω κώδικας ορίζει μια μεταβλητή με το όνομα team που μπορεί να αποθηκεύσει οποιαδήποτε 
+			τιμή. Επειδή όμως δεν έχουμε αναθέσει κάποια αρχική τιμή, αυτή τη στιγμή η variable team περιέχει 
+			undefined.</p>
+
+		<p>Μπορούμε όμως και να αναθέσουμε μια αρχική τιμή όταν ορίζουμε την μεταβλητή ή ακόμα να αναθέσουμε την τιμή λίγο αργότερα στον κώδικα.</p>
+		<p><Strong>app.js</Strong></p>
+		<link href="https://cdn.rawgit.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2/raw/36c2eb3e0c44133880485a143717bda9d180f2c1/GistDarkCode.css" rel="stylesheet" type="text/css">
+		<script src="https://gist.github.com/kassapoglou/b2cda8d132e781e611dfd6f4d3da409b.js"></script>
+		
+		<p><Strong>Output</Strong></p>
+		<img src="./Lesson5/pic_4.png" alt="Δωρεάν Μαθήματα JavaScript"/>
+	<p></p>
+
+<p>Επειδή έχουμε αναθέσει την τιμή Manchester City στην μεταβλητή team, αυτό σημαίνει ότι η 
+	μεταβλητή είναι είδος string. Φυσικά υπάρχουν και άλλα είδη τιμών που μπορούμε να αναθέσουμε 
+	στην μεταβλητή, αλλά σε αυτό το μάθημα θα μείνουμε μόνο στα strings. Από το επόμενο δωρεάν 
+	μάθημα JavaScript θα εξερευνήσουμε και τα υπόλοιπα είδη τιμών που μπορούν να πάρουν οι μεταβλητές. Σε 
+	αυτό το δωρεάν μάθημα JavaScript θα αναθέτουμε μόνο string τιμές στις μεταβλητές, αλλά και για τα 
+	string θα αφιερώσουμε την επόμενη ενότητα.</p>
+	<h3 class="content-h3">STATEMENTS ΚΑΙ COMMENTS</h3>
+<p>Στο προηγούμενο παράδειγμα γράψαμε την ολοκληρωμένη εντολή var team = “Manchester City”; και αυτό 
+	θεωρείται ένα ολοκληρωμένο statement. Ένα statement στην JavaScript είναι μια ολοκληρωμένη εντολή 
+	που τελειώνει με semicolon ( ; ). Αν και δεν είναι απαραίτητο να γράφετε κάθε φορά semicolon στο τέλος 
+	του κάθε statement, καλό είναι να το γράφετε για να ακολουθείτε τους σωστούς κανόνες 
+	σύνταξης της JavaScript.</p>
+
+<p>Αν και ο κώδικας μας είναι πολύ απλός, μπορεί κάποια στιγμή να γίνει πολύ πολύπλοκος. Τόσο 
+	πολύπλοκος που αν γυρίσετε πίσω σε αυτόν μερικούς μήνες αργότερα, να μην είσαστε σε θέση να 
+	θυμηθείτε αμέσως τι είχατε γράψει και να χρειαστεί να ξοδέψετε κάποιες έξτρα ώρες μέχρι να 
+	καταλάβετε την λειτουργία του. Τα πράγματα μπορούν να γίνουν χειρότερα όταν αντί για 
+	δικό σας κώδικας βρεθείτε μπροστά σε κώδικα που έχει γράψει κάποιος άλλος προγραμματιστής. Για 
+	αυτό λοιπόν το σκοπό χρησιμοποιούμε σχόλια έτσι ώστε να γράφουμε μικρές επεξηγηματικές περιγραφές 
+	σε διάφορα σημεία του κώδικα. Τα σχόλια, αν και δεν επηρεάζουν την εκτέλεση του κώδικα, δίνουν 
+	σαφή εξηγήσεις για το κομμάτι του κώδικα που εκτελείτε κάθε φορά.</p>
+
+<p>Για να γράψουμε σχόλια (comments) σε μια γραμμή χρησιμοποιούμε δύο forward-slashes ( // ) μπροστά 
+	από το μήνυμα, ενώ όταν θέλουμε να γράψουμε μεγαλύτερη περιγραφή με πολλαπλά σχόλια χρησιμοποιούμε 
+	forward-slash και asterisk (/*   */). Όπως θα παρατηρήσετε και από το output στο console του browser 
+	τα σχόλια δεν εκτυπώνονται.</p>
+	<p><Strong>app.js</Strong></p>
+		<link href="https://cdn.rawgit.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2/raw/36c2eb3e0c44133880485a143717bda9d180f2c1/GistDarkCode.css" rel="stylesheet" type="text/css">
+		<script src="https://gist.github.com/kassapoglou/8cc70f9bc986a052a11a2663aa706b27.js"></script>
+		
+		<p><Strong>Output</Strong></p>
+		<img src="./Lesson5/pic_5.png" alt="Δωρεάν Μαθήματα JavaScript"/>
+	<p></p>
+
+	<h3 class="content-h3">DEFINE VARIABLES WITH LET</h3>
+<p>Τώρα ας αναφερθούμε στο let που είναι ο μοντέρνος τρόπος να ορίζουμε μεταβλητές στην 
+	JavaScript. Αν και μπορεί να φαίνεται εκ πρώτης όψεως ότι η διαδικασία ορισμού 
+	μεταβλητών παραμένει η ίδια, στην πραγματικότητα έχουν αλλάξει πολλά πράγματα που μας 
+	προστατεύουν από πολλά λάθη που ίσως κάνουμε. Αργότερα θα μιλήσουμε και για την μεγάλη 
+	διαφορά μεταξύ let και var που είναι το εύρος δράσης τους (scope) αλλά για τώρα ας μείνουμε 
+	στις βασικές αρχές.</p>
+	<p><Strong>app.js</Strong></p>
+		<link href="https://cdn.rawgit.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2/raw/36c2eb3e0c44133880485a143717bda9d180f2c1/GistDarkCode.css" rel="stylesheet" type="text/css">
+		<script src="https://gist.github.com/kassapoglou/f6cb2f06e8beebcb41e34e749a4516d7.js"></script>
+		
+		<p><Strong>Output</Strong></p>
+		<img src="./Lesson5/pic_6.png" alt="Δωρεάν Μαθήματα JavaScript"/>
+	<p></p>
+	<h3 class="content-h3">DEFINING CONSTANTS WITH CONST</h3>
+<p>Για να ορίσουμε μια μεταβλητή σαν constant χρησιμοποιούμε τη λέξη const. Η διαφορά από το 
+	να χρησιμοποιήσουμε την let είναι ότι μια const μεταβλητή όταν ορίζεται πάντα πρέπει να 
+	έχει αρχική τιμή η οποία δεν επιτρέπεται να αλλάξει ξανά μέσα στον κώδικα. Στο παρακάτω 
+	παράδειγμα δίνουμε μια αρχική τιμή στην μεταβλητή team και μετά προσπαθούμε να αναθέσουμε 
+	μια καινούργια τιμή.</p>
+	<p><Strong>app.js</Strong></p>
+		<link href="https://cdn.rawgit.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2/raw/36c2eb3e0c44133880485a143717bda9d180f2c1/GistDarkCode.css" rel="stylesheet" type="text/css">
+		<script src="https://gist.github.com/kassapoglou/7423d332820a61279a1889c2792048dc.js"></script>
+		
+		<p><Strong>Output</Strong></p>
+		<img src="./Lesson5/pic_7.png" alt="Δωρεάν Μαθήματα JavaScript"/>
+	<p></p>
+<p>Αν και δεν υπάρχει κανένας περιορισμός από την JavaScript για το πως γράφουμε τις const 
+	μεταβλητές, συνηθίζεται να τις γράφουμε με κεφαλαία έτσι ώστε να μπορούμε γρήγορα να τις ξεχωρίσουμε.</p>
+	<p><Strong>app.js</Strong></p>
+		<link href="https://cdn.rawgit.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2/raw/36c2eb3e0c44133880485a143717bda9d180f2c1/GistDarkCode.css" rel="stylesheet" type="text/css">
+		<script src="https://gist.github.com/kassapoglou/f142d10c1e74d120d7bae5abd747dd91.js"></script>
+<p>Το output από το παραπάνω κώδικα είναι ακριβώς το ίδιο όπως στο προηγούμενο παράδειγμα. Από το επόμενο δωρεάν μάθημα JavaScript θα αρχίζουμε να βλέπουμε τα data types που υπάρχουν στην JavaScript.</p>	
+	
 						<!--<h3 class="content-h3">ΤΙ ΘΑ ΜΑΘΕΤΕ</h3>
 						<p>Στο πρώτο μέρος, των δωρεάν Python μαθημάτων, θα μάθετε όλες τις βασικές έννοιες που χρειάζεστε για να γράψετε τα πρώτα σας προγράμματα στην γλώσσα προγραμματισμού Python. Στην πραγματικότητα, η θεωρία που θα μάθετε, είναι σχεδόν η ίδια που θα μαθαίνατε σε οποιαδήποτε άλλη γλώσσα προγραμματισμού. </p>
 						<p>Θα αρχίσετε τα πρώτα σας βήματα στον προγραμματισμό με Python μαθαίνοντας τα διάφορα είδη data που υπάρχουν στην Python και πως μπορείτε να αποθηκεύσετε δεδομένα σε lists και dictionaries. Επίσης θα μάθετε πως να δημιουργήσετε ένα collection of data και πως μπορείτε να το χρησιμοποιήσετε με τον καλύτερο τρόπο στον κώδικα σας. Μετά θα προχωρήσουμε σε while loops και if statements έτσι ώστε να δώσουμε αυτόνομη λογική στα προγράμματα μας.</p>
@@ -289,125 +409,35 @@
 							<li>Battling challenging cost targets and the need to build.</li>
 						</ul>
 						<p>Quasar the only home we've ever known extraordinary claims require extraordinary evidence billions billions Drake Eqa tion. Stirred by starlight! At the edge of forever. Rich in mystery Sea of Tranquility. Are creatures of the cosmos descend from astronomers. Trillion and billions upon billions upon billions upon billions upon billions. upon billions upon billions!</p>-->
-						<h2>ΕΝΟΤΗΤΕΣ</h2>
+						<!-- <h2>ΕΝΟΤΗΤΕΣ</h2> -->
 				
 						<!-- sectionRow -->
-						<section class="sectionRow">
-							<h2 class="h6 text-uppercase fw-semi rowHeading">ΕΝΟΤΗΤΕΣ ΤΟΥ JAVASCRIPT COMPLETE COURSE</h2>
+						<!-- <section class="sectionRow">
+							<h2 class="h6 text-uppercase fw-semi rowHeading">ΕΝΟΤΗΤΕΣ ΤΟΥ JAVASCRIPT COMPLETE COURSE</h2> -->
 							<!-- sectionRowPanelGroup -->
-							<div class="panel-group sectionRowPanelGroup" id="accordion" role="tablist" aria-multiselectable="true">
+							<!-- <div class="panel-group sectionRowPanelGroup" id="accordion" role="tablist" aria-multiselectable="true"> -->
 								<!-- panel -->
-	<div class="panel panel-default">
-		<div class="panel-heading" role="tab" id="headingOne">
-			<h3 class="panel-title fw-normal">
-				<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-lesson1-how-Javascript-works-.html" style="color:blue;">ΕΝΟΤΗΤΑ 1 - How JavaScript Works</a>
-					<span class="accOpenerCol">
+	<!-- <div class="panel panel-default"> -->
+		<!-- <div class="panel-heading" role="tab" id="headingOne"> -->
+			<!-- <h3 class="panel-title fw-normal"> -->
+				<!-- <a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-unit1-environment-installation.html" style="color:blue;">ΕΝΟΤΗΤΑ 1 - Environment Installation</a> -->
+					<!-- <span class="accOpenerCol"> -->
 					
 					<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-					</span>
+					<!-- </span> -->
 					<!--<span class="accOpenerCol hd-phone">
 						<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
 						<time datetime="2011-01-12" class="timeCount">17 Min</time>
 					</span>-->
-				</a>
+				<!-- </a>
 			</h3>
 			
-		</div>
+		</div> -->
 
 		
 		<!-- collapseOne -->
 	
-	</div>
-
-	<div class="panel panel-default">
-		<div class="panel-heading" role="tab" id="headingOne">
-			<h3 class="panel-title fw-normal">
-				<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-lesson2-javascript-environment-setup.html" style="color:blue;">ΕΝΟΤΗΤΑ 2 - JavaScript Environment Setup</a>
-					<span class="accOpenerCol">
-					
-					<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-					</span>
-					<!--<span class="accOpenerCol hd-phone">
-						<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-						<time datetime="2011-01-12" class="timeCount">17 Min</time>
-					</span>-->
-				</a>
-			</h3>
-			
-		</div>
-
-		
-		<!-- collapseOne -->
-	
-	</div>
-
-
-	<div class="panel panel-default">
-		<div class="panel-heading" role="tab" id="headingOne">
-			<h3 class="panel-title fw-normal">
-				<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-lesson3-adding-javascript-code-to-an-html-page.html" style="color:blue;">ΕΝΟΤΗΤΑ 3 - Adding JavaScript Code to your HTML page</a>
-					<span class="accOpenerCol">
-					
-					<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-					</span>
-					<!--<span class="accOpenerCol hd-phone">
-						<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-						<time datetime="2011-01-12" class="timeCount">17 Min</time>
-					</span>-->
-				</a>
-			</h3>
-			
-		</div>
-
-		
-		<!-- collapseOne -->
-	
-	</div>
-
-	<div class="panel panel-default">
-		<div class="panel-heading" role="tab" id="headingOne">
-			<h3 class="panel-title fw-normal">
-				<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-lesson4-browser-console-and-helper-methods.html" style="color:blue;">ΕΝΟΤΗΤΑ 4 - Browser Console and Helper Methods</a>
-					<span class="accOpenerCol">
-					
-					<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-					</span>
-					<!--<span class="accOpenerCol hd-phone">
-						<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-						<time datetime="2011-01-12" class="timeCount">17 Min</time>
-					</span>-->
-				</a>
-			</h3>
-			
-		</div>
-
-		
-		<!-- collapseOne -->
-	
-	</div>
-
-
-	<div class="panel panel-default">
-		<div class="panel-heading" role="tab" id="headingOne">
-			<h3 class="panel-title fw-normal">
-				<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="javascript-lesson5-variables-and-comments.html" style="color:blue;">ΕΝΟΤΗΤΑ 5 - Variables and Comments</a>
-					<span class="accOpenerCol">
-					
-					<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-					</span>
-					<!--<span class="accOpenerCol hd-phone">
-						<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-						<time datetime="2011-01-12" class="timeCount">17 Min</time>
-					</span>-->
-				</a>
-			</h3>
-			
-		</div>
-
-		
-		<!-- collapseOne -->
-	
-	</div>
+	<!-- </div> -->
 	
 	<!-- <div class="panel panel-default">
 	<div class="panel-heading" role="tab" id="headingOne">
@@ -590,10 +620,10 @@
 								
 								<!-- panel -->
 							
-							</div>
+							<!-- </div> -->
 							
 							
-						</section>
+						<!-- </section> -->
 
 						
 						<!-- sectionRow -->
